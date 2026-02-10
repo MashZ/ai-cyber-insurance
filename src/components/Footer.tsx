@@ -41,7 +41,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-6">
               <a
-                href="https://www.linkedin.com/in/mashruk-zahid/"
+                href="https://www.linkedin.com/in/mashz/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-accent-500"
@@ -59,7 +59,7 @@ export default function Footer() {
                 <Linkedin className="h-6 w-6" />
               </a>
               <a
-                href="mailto:info@aicyberinsurance.com"
+                href="mailto:mzahid@alineahealth.com"
                 className="text-gray-400 hover:text-accent-500"
               >
                 <span className="sr-only">Email</span>

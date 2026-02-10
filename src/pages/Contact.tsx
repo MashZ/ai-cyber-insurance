@@ -76,10 +76,10 @@ export default function Contact() {
                     <p className="text-sm font-semibold leading-6 text-primary-800">Email</p>
                     <p className="mt-1 text-base leading-7 text-gray-600">
                       <a
-                        href="mailto:info@aicyberinsurance.com"
+                        href="mailto:mzahid@alineahealth.com"
                         className="hover:text-accent-600"
                       >
-                        info@aicyberinsurance.com
+                        mzahid@alineahealth.com
                       </a>
                     </p>
                   </dd>
@@ -111,12 +111,12 @@ export default function Contact() {
                     <p className="text-sm font-semibold leading-6 text-primary-800">Connect on LinkedIn</p>
                     <p className="mt-1 text-base leading-7 text-gray-600">
                       <a
-                        href="https://www.linkedin.com/in/mashruk-zahid/"
+                        href="https://www.linkedin.com/in/mashz/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-accent-600 block"
                       >
-                        Mashruk Zahid
+                        Mash Zahid
                       </a>
                       <a
                         href="https://www.linkedin.com/in/reddhimitra/"
@@ -190,7 +190,7 @@ export default function Contact() {
 
               <div className="mt-8">
                 <a
-                  href="mailto:info@aicyberinsurance.com?subject=Consultation Request"
+                  href="mailto:mzahid@alineahealth.com?subject=AI Insurance Risk Consultation Request"
                   className="block w-full rounded-md bg-accent-500 px-6 py-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-accent-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-600"
                 >
                   Request Consultation
