@@ -5,7 +5,7 @@ export default function About() {
     {
       name: 'Mash Zahid',
       role: 'Co-Founder | Technical & Delivery Lead',
-      image: 'https://media.licdn.com/dms/image/v2/D4E03AQFo9jMgcRxRhg/profile-displayphoto-scale_400_400/B4EZkfdwvgKUAg-/0/1757169519962?w=400&h=400&fit=crop',
+      image: 'https://media.licdn.com/dms/image/v2/D4E03AQFo9jMgcRxRhg/profile-displayphoto-scale_200_200/B4EZkfdwvgKUAY-/0/1757169519962?e=1772064000&v=beta&t=F5GHg0kQcUQ7oL5yKGAbBL_84PsbICclqWbap4HYCfg?w=400&h=400&fit=crop',
       bio: 'Global AI Enablement and Operations Strategy leader with extensive experience implementing enterprise and work automation systems. Most recently led AI initiatives at General Motors, including the AskGM chatbot integration with ServiceNow and Workday systems. Former IBM Associate Partner and KPMG consultant with expertise spanning automotive, energy utilities, telecom, and biotech sectors.',
       expertise: [
         'Agentic AI Architecture & Implementation',
@@ -24,7 +24,7 @@ export default function About() {
     {
       name: 'Reddhi Mitra',
       role: 'Co-Founder | Commercial & Operations Lead',
-      image: 'https://media.licdn.com/dms/image/v2/C5603AQHZurls28MIBw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1549586379025?w=400&h=400&fit=crop',
+      image: 'https://media.licdn.com/dms/image/v2/C5603AQHZurls28MIBw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1549586379101?e=1772064000&v=beta&t=BS7cVdjDU5hDiV46HviXnIVsESX4MxYWWyCyc0Z_alY?w=400&h=400&fit=crop',
       bio: '20-year veteran management consultant and operating executive with deep insurance industry expertise from FTI Consulting. Brings critical experience in cyber security risk assessment, having worked with insurance carriers on underwriting frameworks for cyber policies. Former IBM Associate Partner focused on Industry Transformation and Enterprise Strategy, with additional experience at AT&T driving large-scale business transformations.',
       expertise: [
         'Insurance Risk Assessment & Underwriting',
