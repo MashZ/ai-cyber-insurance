@@ -5,7 +5,7 @@ export default function About() {
     {
       name: 'Mash Zahid',
       role: 'Co-Founder | Technical & Delivery Lead',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop',
+      image: '/mash-zahid.jpeg',
       bio: 'Global AI Enablement and Operations Strategy leader with extensive experience implementing enterprise and work automation systems. Most recently led AI initiatives at General Motors, including the AskGM chatbot integration with ServiceNow and Workday systems. Former IBM Associate Partner and KPMG consultant with expertise spanning automotive, energy utilities, telecom, and biotech sectors.',
       expertise: [
         'Agentic AI Architecture & Implementation',
@@ -30,7 +30,7 @@ export default function About() {
     {
       name: 'Reddhi Mitra',
       role: 'Co-Founder | Commercial & Operations Lead',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
+      image: '/reddhi-mitra.jpeg',
       bio: '20-year veteran management consultant and operating executive with deep insurance industry expertise from FTI Consulting. Brings critical experience in cyber security risk assessment, having worked with insurance carriers on underwriting frameworks for cyber policies. Former IBM Associate Partner focused on Industry Transformation and Enterprise Strategy, with additional experience at AT&T driving large-scale business transformations.',
       expertise: [
         'Insurance Risk Assessment & Underwriting',
