@@ -66,7 +66,7 @@ const Contact = () => {
                   Mash Zahid
                 </h3>
                 <p className="text-accent text-sm font-medium mb-2">
-                  Technical & Delivery Lead
+                  Operations & Technical Lead
                 </p>
                 <p className="text-gray-500 text-sm mb-4">
                   For technical assessment scoping, AI system architecture questions, 
@@ -86,7 +86,7 @@ const Contact = () => {
               <div>
                 <h3 className="text-primary font-semibold text-lg">Reddhi Mitra</h3>
                 <p className="text-accent text-sm font-medium mb-2">
-                  Commercial & Operations Lead
+                  Commercial & Delivery Lead
                 </p>
                 <p className="text-gray-500 text-sm mb-4">
                   For partnership discussions, insurance carrier engagements, 
