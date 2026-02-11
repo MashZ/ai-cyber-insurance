@@ -42,50 +42,48 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-primary pt-24">
+    <div className="min-h-screen bg-white pt-24">
       {/* Header */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8">
+      <section className="py-14 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/30 text-accent text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+            <p className="text-sm font-semibold uppercase tracking-widest text-accent mb-5">
               About Discimen
-            </div>
-            <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Built by Consultants Who've Done the Work
+            </p>
+            <h1 className="text-3xl sm:text-4xl font-display font-bold text-primary mb-4">
+              Built by consultants who deliver
             </h1>
-            <p className="text-gray-400 text-lg leading-relaxed">
-              Discimen was founded by two management consultants with 
-              complementary expertise: one in enterprise agentic AI enablement and 
-              technical systems design, the other in insurance operations, risk 
-              management, and financial services compliance. Together, we bring the 
-              exact combination of skills needed to evaluate AI risk for the insurance 
-              industry.
+            <p className="text-gray-500 text-lg leading-relaxed">
+              Discimen was founded by two management consultants with complementary 
+              expertise: one in enterprise agentic AI enablement and technical systems 
+              design, the other in insurance operations, risk management, and financial 
+              services compliance. Together, we bring the exact combination of skills 
+              needed to evaluate AI risk for the insurance industry.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Mission */}
+      {/* Thesis */}
       <section className="py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-white/5 border border-white/10 rounded-xl p-8 sm:p-10 mb-16">
-            <h2 className="text-2xl font-bold text-white mb-4">Our Thesis</h2>
-            <p className="text-gray-400 leading-relaxed mb-4">
+          <div className="border border-gray-100 rounded-xl p-8 sm:p-10 mb-16">
+            <h2 className="text-2xl font-display font-bold text-primary mb-4">Our thesis</h2>
+            <p className="text-gray-500 leading-relaxed mb-4">
               The market for AI liability insurance is being established by pioneers like 
-              Armilla AI and Munich Re. But most insurance carriers don't have the in-house 
-              technical expertise to evaluate the AI risks they're being asked to underwrite. 
-              They need independent, third-party assessment — and the supply of qualified 
-              evaluators is thin.
+              Armilla AI and Munich Re. Most insurance carriers need independent, third-party 
+              assessment expertise to evaluate the AI risks they are being asked to 
+              underwrite\u2014and the supply of qualified evaluators remains thin.
             </p>
-            <p className="text-gray-400 leading-relaxed mb-4">
-              Discimen provides that supply. We're not building an insurance product. 
-              We're building the evaluation and audit capability that the insurance 
-              industry needs to confidently enter the AI risk market.
+            <p className="text-gray-500 leading-relaxed mb-4">
+              Discimen provides that supply. We are building the evaluation and audit 
+              capability that the insurance industry needs to confidently enter the 
+              AI risk market.
             </p>
-            <p className="text-gray-300 leading-relaxed font-medium">
-              We focus on work that is technical enough to require real expertise, process-oriented 
-              enough to scale, and recurring enough to build a sustainable business — not 
-              one-off consulting engagements.
+            <p className="text-gray-700 leading-relaxed font-medium">
+              We focus on work that is technical enough to require real expertise, 
+              process-oriented enough to scale, and recurring enough to build a 
+              sustainable business.
             </p>
           </div>
         </div>
@@ -94,21 +92,21 @@ const About = () => {
       {/* Founders */}
       <section className="py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl font-bold text-white mb-8">Founding Team</h2>
+          <h2 className="text-2xl font-display font-bold text-primary mb-8">Founding team</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {founders.map((founder, index) => (
               <div
                 key={index}
-                className="bg-white/5 border border-white/10 rounded-xl p-8"
+                className="border border-gray-100 rounded-xl p-8"
               >
                 <div className="flex items-start gap-5 mb-6">
                   <img
                     src={founder.image}
                     alt={founder.name}
-                    className="w-20 h-20 rounded-full object-cover border-2 border-accent/30 flex-shrink-0"
+                    className="w-20 h-20 rounded-full object-cover border-2 border-primary/10 flex-shrink-0"
                   />
                   <div>
-                    <h3 className="text-xl font-bold text-white">{founder.name}</h3>
+                    <h3 className="text-xl font-bold text-primary">{founder.name}</h3>
                     <p className="text-accent text-sm font-semibold mt-1">
                       {founder.role}
                     </p>
@@ -116,7 +114,7 @@ const About = () => {
                       href={founder.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-gray-400 hover:text-accent text-xs mt-2 transition-colors"
+                      className="inline-flex items-center gap-1 text-gray-400 hover:text-primary text-xs mt-2 transition-colors"
                     >
                       <Linkedin className="h-3.5 w-3.5" />
                       LinkedIn Profile
@@ -127,17 +125,17 @@ const About = () => {
 
                 <div className="space-y-3 mb-6">
                   {founder.bio.map((paragraph, i) => (
-                    <p key={i} className="text-gray-400 text-sm leading-relaxed">
+                    <p key={i} className="text-gray-500 text-sm leading-relaxed">
                       {paragraph}
                     </p>
                   ))}
                   {founder.bioOpenAI && (
-                    <p className="text-gray-400 text-sm leading-relaxed">
+                    <p className="text-gray-500 text-sm leading-relaxed">
                       <a
                         href="https://academy.openai.com"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-accent hover:text-accent/80 transition-colors"
+                        className="text-primary hover:text-accent-light transition-colors font-medium"
                       >
                         OpenAI Academy
                       </a>{' '}
@@ -149,14 +147,14 @@ const About = () => {
                 </div>
 
                 <div>
-                  <h4 className="text-white text-sm font-semibold mb-2">
+                  <h4 className="text-primary text-sm font-semibold mb-2">
                     Domain Expertise
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {founder.specialties.map((specialty, i) => (
                       <span
                         key={i}
-                        className="bg-accent/10 text-accent text-xs px-3 py-1 rounded-full border border-accent/20"
+                        className="bg-primary-50 text-primary text-xs px-3 py-1 rounded-full border border-primary/10"
                       >
                         {specialty}
                       </span>
@@ -170,33 +168,33 @@ const About = () => {
       </section>
 
       {/* Approach */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 border-t border-white/5">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary-50 mt-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl font-bold text-white mb-8">How We Think</h2>
+          <h2 className="text-2xl font-display font-bold text-primary mb-8">How we think</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                title: 'Proven Demand, Not Novelty',
+                title: 'Proven Demand',
                 description:
-                  'We\u2019re not inventing a category. AI risk evaluation services are already needed \u2014 there just aren\u2019t enough qualified providers. We fill the gap with deep expertise and a scalable model.',
+                  'AI risk evaluation services are already needed\u2014the market is established. We fill the gap with deep expertise and a scalable delivery model.',
               },
               {
-                title: 'Recurring, Not Project-Based',
+                title: 'Recurring Engagement',
                 description:
-                  'Our services are designed as ongoing engagements — annual audits, continuous monitoring, claims support — creating predictable recurring revenue rather than one-off consulting projects.',
+                  'Our services are designed as ongoing relationships\u2014annual audits, continuous monitoring, claims support\u2014creating predictable recurring revenue and deeper client outcomes.',
               },
               {
-                title: 'Operators, Not Technicians',
+                title: 'Operators Who Scale',
                 description:
-                  'We build a business, not a practice. As demand grows, we recruit specialized actuaries, data scientists, and auditors to execute. We design the methodology and scale the operation.',
+                  'We build a business, then a team. As demand grows, we recruit specialized actuaries, data scientists, and auditors. We design the methodology and scale the operation.',
               },
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-white/5 border border-white/10 rounded-lg p-6"
+                className="bg-white border border-gray-100 rounded-lg p-6"
               >
-                <h3 className="text-white font-semibold mb-3">{item.title}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <h3 className="text-primary font-semibold mb-3">{item.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">
                   {item.description}
                 </p>
               </div>
