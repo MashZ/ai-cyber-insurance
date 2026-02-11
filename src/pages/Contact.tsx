@@ -63,7 +63,7 @@ const Contact = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-white font-semibold text-lg">
-                  Mashruk (Mash) Zahid
+                  Mash Zahid
                 </h3>
                 <p className="text-accent text-sm font-medium mb-2">
                   Technical & Delivery Lead
@@ -73,7 +73,7 @@ const Contact = () => {
                   and industry-specific evaluation inquiries.
                 </p>
                 <a
-                  href="https://www.linkedin.com/in/mashruk-zahid/"
+                  href="https://www.linkedin.com/in/mashz/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-accent text-sm font-semibold hover:text-accent/80 transition-colors"

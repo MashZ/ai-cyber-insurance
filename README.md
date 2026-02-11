@@ -44,7 +44,7 @@ npm run preview # Preview production build
 
 ## Founders
 
-**Mashruk (Mash) Zahid** — Technical & Delivery Lead  
+**Mash Zahid** — Technical & Delivery Lead  
 Global AI Strategy leader, former IBM Associate Partner, Chicago Booth MBA
 
 **Reddhi Mitra** — Commercial & Operations Lead  
@@ -54,7 +54,7 @@ Global AI Strategy leader, former IBM Associate Partner, Chicago Booth MBA
 
 - **Website**: [discimen.com](https://discimen.com)
 - **Email**: info@discimen.com
-- **LinkedIn**: [Mashruk Zahid](https://www.linkedin.com/in/mashz/) · [Reddhi Mitra](https://www.linkedin.com/in/reddhimitra/)
+- **LinkedIn**: [Mash Zahid](https://www.linkedin.com/in/mashz/) · [Reddhi Mitra](https://www.linkedin.com/in/reddhimitra/)
 
 ---
 

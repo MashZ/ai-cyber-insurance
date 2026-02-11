@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Shield, Linkedin, Mail } from 'lucide-react';
+import { Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Shield className="h-7 w-7 text-accent" />
+              <img src="/discimen_logo.gif" alt="Discimen" className="h-8 w-auto" />
               <span className="text-lg font-bold text-white tracking-wide">
                 DISCIMEN
               </span>
@@ -62,13 +62,13 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/mashruk-zahid/"
+                  href="https://www.linkedin.com/in/mashz/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-accent text-sm transition-colors flex items-center gap-2"
                 >
                   <Linkedin className="h-4 w-4" />
-                  Mashruk Zahid
+                  Mash Zahid
                 </a>
               </li>
               <li>

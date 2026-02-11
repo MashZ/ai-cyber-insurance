@@ -3,14 +3,15 @@ import { Linkedin, ExternalLink } from 'lucide-react';
 const About = () => {
   const founders = [
     {
-      name: 'Mashruk (Mash) Zahid',
-      role: 'Co-Founder — Technical & Delivery Lead',
-      linkedin: 'https://www.linkedin.com/in/mashruk-zahid/',
+      name: 'Mash Zahid',
+      role: 'Co-Founder \u2014 Technical & Delivery Lead',
+      linkedin: 'https://www.linkedin.com/in/mashz/',
+      image: '/mash-zahid.jpg',
       bio: [
-        'Global AI Strategy and Transformation leader with extensive experience across enterprise AI implementations at Fortune 100 companies. Former IBM Associate Partner, KPMG management consultant, and enterprise AI architect.',
+        'Global AI Strategy and Transformation leader with extensive experience across enterprise AI implementations at Fortune 100 companies. Former IBM Associate Partner, KPMG global AI director, and enterprise AI architect.',
         'Led AI transformation at General Motors, converting 47,000+ annual HR cases from 4-day resolution to 30-second AI-powered responses. Deep expertise in AI system architecture, model evaluation, and agentic AI orchestration across manufacturing, healthcare, energy, and automotive sectors.',
-        'Delivered keynote on enterprise AI transformation to 6,800+ attendees at OpenAI Academy. Chicago Booth MBA with PhD coursework in Behavioral Finance and Financial Engineering.',
       ],
+      bioOpenAI: true,
       specialties: [
         'AI system architecture & model evaluation',
         'Enterprise AI transformation',
@@ -21,13 +22,15 @@ const About = () => {
     },
     {
       name: 'Reddhi Mitra',
-      role: 'Co-Founder — Commercial & Operations Lead',
+      role: 'Co-Founder \u2014 Commercial & Operations Lead',
       linkedin: 'https://www.linkedin.com/in/reddhimitra/',
+      image: '/reddhi-mitra.jpg',
       bio: [
         '20+ year management consulting veteran specializing in financial services risk management, insurance operations, and restructuring. Former IBM and FTI Consulting leader with deep expertise in model risk, compliance, and third-party administration.',
         'Extensive experience in insurance industry operations including underwriting process evaluation, claims administration, model inventory and architecture review, and regulatory compliance. Led restructuring and turnaround engagements requiring rigorous financial and operational risk assessment.',
         'Duke Fuqua MBA. Deep network across specialty insurance, reinsurance, and financial services risk management.',
       ],
+      bioOpenAI: false,
       specialties: [
         'Insurance operations & compliance',
         'Model risk & architecture review',
@@ -51,11 +54,12 @@ const About = () => {
               Built by Consultants Who've Done the Work
             </h1>
             <p className="text-gray-400 text-lg leading-relaxed">
-              Discimen was founded by two former IBM management consultants with 
-              complementary expertise: one in enterprise AI transformation and technical 
-              architecture, the other in insurance operations, risk management, and 
-              financial services compliance. Together, we bring the exact combination 
-              of skills needed to evaluate AI risk for the insurance industry.
+              Discimen was founded by two management consultants with 
+              complementary expertise: one in enterprise agentic AI enablement and 
+              technical systems design, the other in insurance operations, risk 
+              management, and financial services compliance. Together, we bring the 
+              exact combination of skills needed to evaluate AI risk for the insurance 
+              industry.
             </p>
           </div>
         </div>
@@ -97,21 +101,28 @@ const About = () => {
                 key={index}
                 className="bg-white/5 border border-white/10 rounded-xl p-8"
               >
-                <div className="mb-6">
-                  <h3 className="text-xl font-bold text-white">{founder.name}</h3>
-                  <p className="text-accent text-sm font-semibold mt-1">
-                    {founder.role}
-                  </p>
-                  <a
-                    href={founder.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-gray-400 hover:text-accent text-xs mt-2 transition-colors"
-                  >
-                    <Linkedin className="h-3.5 w-3.5" />
-                    LinkedIn Profile
-                    <ExternalLink className="h-3 w-3" />
-                  </a>
+                <div className="flex items-start gap-5 mb-6">
+                  <img
+                    src={founder.image}
+                    alt={founder.name}
+                    className="w-20 h-20 rounded-full object-cover border-2 border-accent/30 flex-shrink-0"
+                  />
+                  <div>
+                    <h3 className="text-xl font-bold text-white">{founder.name}</h3>
+                    <p className="text-accent text-sm font-semibold mt-1">
+                      {founder.role}
+                    </p>
+                    <a
+                      href={founder.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-gray-400 hover:text-accent text-xs mt-2 transition-colors"
+                    >
+                      <Linkedin className="h-3.5 w-3.5" />
+                      LinkedIn Profile
+                      <ExternalLink className="h-3 w-3" />
+                    </a>
+                  </div>
                 </div>
 
                 <div className="space-y-3 mb-6">
@@ -120,6 +131,21 @@ const About = () => {
                       {paragraph}
                     </p>
                   ))}
+                  {founder.bioOpenAI && (
+                    <p className="text-gray-400 text-sm leading-relaxed">
+                      <a
+                        href="https://academy.openai.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-accent hover:text-accent/80 transition-colors"
+                      >
+                        OpenAI Academy
+                      </a>{' '}
+                      speaker on Scaling Enterprise AI Through Systems Thinking. Chicago 
+                      Booth MBA with PhD coursework in Behavioral Finance and Financial 
+                      Engineering.
+                    </p>
+                  )}
                 </div>
 
                 <div>
