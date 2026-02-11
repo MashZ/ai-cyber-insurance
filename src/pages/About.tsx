@@ -6,7 +6,7 @@ const About = () => {
       name: 'Mash Zahid',
       role: 'Co-Founder \u2014 Technical & Delivery Lead',
       linkedin: 'https://www.linkedin.com/in/mashz/',
-      image: '/mash-zahid.jpg',
+      image: '/mash-zahid.jpeg',
       bio: [
         'Global AI Strategy and Transformation leader with extensive experience across enterprise AI implementations at Fortune 100 companies. Former IBM Associate Partner, KPMG global AI director, and enterprise AI architect.',
         'Led AI transformation at General Motors, converting 47,000+ annual HR cases from 4-day resolution to 30-second AI-powered responses. Deep expertise in AI system architecture, model evaluation, and agentic AI orchestration across manufacturing, healthcare, energy, and automotive sectors.',
@@ -24,7 +24,7 @@ const About = () => {
       name: 'Reddhi Mitra',
       role: 'Co-Founder \u2014 Commercial & Operations Lead',
       linkedin: 'https://www.linkedin.com/in/reddhimitra/',
-      image: '/reddhi-mitra.jpg',
+      image: '/reddhi-mitra.jpeg',
       bio: [
         '20+ year management consulting veteran specializing in financial services risk management, insurance operations, and restructuring. Former IBM and FTI Consulting leader with deep expertise in model risk, compliance, and third-party administration.',
         'Extensive experience in insurance industry operations including underwriting process evaluation, claims administration, model inventory and architecture review, and regulatory compliance. Led restructuring and turnaround engagements requiring rigorous financial and operational risk assessment.',
