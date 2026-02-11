@@ -16,7 +16,7 @@ const Contact = () => {
             <p className="text-gray-500 text-lg leading-relaxed">
               Whether you are an insurance carrier evaluating AI risk capabilities, an MGA 
               designing specialty products, or an enterprise seeking to strengthen your AI 
-              risk posture\u2014we look forward to hearing from you.
+              risk posture we look forward to hearing from you.
             </p>
           </div>
         </div>
@@ -47,7 +47,7 @@ const Contact = () => {
               <MapPin className="h-8 w-8 text-primary mb-4" />
               <h2 className="text-xl font-display font-bold text-primary mb-2">Based in</h2>
               <p className="text-gray-500 text-sm mb-6">
-                Miami, FL & Los Angeles, CA\u2014serving clients nationally and globally.
+                Miami, FL & Los Angeles, CA serving clients nationally and globally.
               </p>
               <p className="text-gray-400 text-sm">
                 Engagements conducted on-site and remotely.

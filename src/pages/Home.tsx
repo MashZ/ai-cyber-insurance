@@ -40,7 +40,7 @@ const Home = () => {
                 to="/contact"
                 className="inline-flex items-center justify-center gap-2 bg-primary text-white px-7 py-3 rounded font-semibold hover:bg-accent-light transition-colors"
               >
-                Start an Assessment
+                Request Assessment
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
@@ -67,8 +67,8 @@ const Home = () => {
               A new category of risk demands specialized evaluation
             </h2>
             <p className="text-gray-500 leading-relaxed">
-              AI-specific exposures\u2014hallucinations, algorithmic bias, model drift, 
-              IP infringement\u2014require assessment methodologies designed for how 
+              AI-specific exposures hallucinations, algorithmic bias, model drift, 
+              IP infringement require assessment methodologies designed for how 
               these systems actually behave. Discimen brings that depth.
             </p>
           </div>
@@ -120,7 +120,7 @@ const Home = () => {
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto">
               Designed for recurring engagement across the full AI insurance 
-              lifecycle\u2014from underwriting to compliance to claims.
+              lifecycle from underwriting to compliance to claims.
             </p>
           </div>
 
@@ -130,7 +130,7 @@ const Home = () => {
                 icon: Search,
                 title: 'Pre-Underwriting Risk Assessment',
                 description:
-                  'Model inventory, architecture review, vulnerability profiling, compliance mapping, and risk scoring\u2014delivered before the policy is written.',
+                  'Model inventory, architecture review, vulnerability profiling, compliance mapping, and risk scoring delivered before the policy is written.',
                 items: [
                   'AI model inventory & architecture review',
                   'Hallucination & error rate profiling',
@@ -203,7 +203,7 @@ const Home = () => {
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto">
               We bring management consulting experience across the sectors 
-              where AI adoption\u2014and AI risk\u2014is accelerating fastest.
+              where AI adoption and AI risk is accelerating fastest.
             </p>
           </div>
 
@@ -242,7 +242,7 @@ const Home = () => {
                 Pioneering insurers like Armilla AI and Munich Re have proven that 
                 AI-specific coverage is both viable and necessary. The opportunity 
                 now is for standard carriers and MGAs to enter this market with 
-                confidence\u2014backed by independent risk evaluation.
+                confidence backed by independent risk evaluation.
               </p>
               <p className="text-gray-500 leading-relaxed mb-5">
                 Discimen provides that evaluation. We enable insurance lines to 
@@ -252,7 +252,7 @@ const Home = () => {
               <p className="text-gray-500 leading-relaxed">
                 Whether you are an insurer entering AI liability coverage, an MGA 
                 designing specialty products, or an enterprise preparing for 
-                renewal\u2014we provide the expertise.
+                renewal we provide the expertise.
               </p>
             </div>
             <div className="space-y-4">
@@ -290,7 +290,7 @@ const Home = () => {
             to="/contact"
             className="inline-flex items-center gap-2 bg-primary text-white px-8 py-3.5 rounded font-semibold hover:bg-accent-light transition-colors"
           >
-            Request an Assessment
+            Request Assessment
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>

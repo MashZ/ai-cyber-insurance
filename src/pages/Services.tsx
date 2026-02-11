@@ -21,7 +21,7 @@ const Services = () => {
       title: 'Pre-Underwriting AI Risk Assessment',
       tagline: 'Before the policy is written',
       description:
-        'Comprehensive evaluation of AI systems prior to insurance underwriting\u2014providing carriers and MGAs with the independent risk intelligence required to price and structure AI liability coverage.',
+        'Comprehensive evaluation of AI systems prior to insurance underwriting providing carriers and MGAs with the independent risk intelligence required to price and structure AI liability coverage.',
       deliverables: [
         {
           icon: Database,
@@ -39,7 +39,7 @@ const Services = () => {
           icon: Scale,
           name: 'Algorithmic Bias & Fairness Evaluation',
           detail:
-            'Assess AI decision-making for discriminatory outcomes in hiring, lending, diagnostics, and customer-facing applications\u2014evaluating employment practices liability and regulatory exposure.',
+            'Assess AI decision-making for discriminatory outcomes in hiring, lending, diagnostics, and customer-facing applications evaluating employment practices liability and regulatory exposure.',
         },
         {
           icon: ClipboardList,
@@ -51,18 +51,18 @@ const Services = () => {
           icon: BarChart3,
           name: 'Risk Scoring & Underwriting Recommendation',
           detail:
-            'Produce a structured risk score and underwriting recommendation that feeds directly into carrier decision-making\u2014enabling confident policy issuance with clear risk parameters.',
+            'Produce a structured risk score and underwriting recommendation that feeds directly into carrier decision-making enabling confident policy issuance with clear risk parameters.',
         },
       ],
       buyerValue:
-        'Insurers and MGAs receive independent technical evaluation to underwrite AI-specific policies\u2014supported by purpose-built methodology.',
+        'Insurers and MGAs receive independent technical evaluation to underwrite AI-specific policies supported by purpose-built methodology.',
     },
     {
       icon: FileCheck,
       title: 'Ongoing Compliance & Performance Monitoring',
       tagline: 'During the policy period',
       description:
-        'Annual and periodic assessments ensuring AI systems remain compliant, performant, and aligned with insurance policy terms\u2014providing continuous risk visibility for policyholders and carriers alike.',
+        'Annual and periodic assessments ensuring AI systems remain compliant, performant, and aligned with insurance policy terms providing continuous risk visibility for policyholders and carriers alike.',
       deliverables: [
         {
           icon: Eye,
@@ -74,7 +74,7 @@ const Services = () => {
           icon: BarChart3,
           name: 'Model Drift & Performance Monitoring',
           detail:
-            'Track performance degradation, data drift, and calibration shifts over time\u2014the systematic risks that can erode AI reliability between underwriting cycles.',
+            'Track performance degradation, data drift, and calibration shifts over time the systematic risks that can erode AI reliability between underwriting cycles.',
         },
         {
           icon: ClipboardList,
@@ -92,7 +92,7 @@ const Services = () => {
           icon: FileCheck,
           name: 'Compliance Reporting',
           detail:
-            'Structured reporting for policyholders, carriers, and regulators\u2014producing audit-ready documentation that demonstrates ongoing AI governance.',
+            'Structured reporting for policyholders, carriers, and regulators producing audit-ready documentation that demonstrates ongoing AI governance.',
         },
       ],
       buyerValue:
@@ -109,7 +109,7 @@ const Services = () => {
           icon: Search,
           name: 'AI Incident Root Cause Analysis',
           detail:
-            'Technical investigation to determine exactly what failed\u2014model error, data issue, workflow misconfiguration, integration breakdown, or agentic decision chain failure.',
+            'Technical investigation to determine exactly what failed model error, data issue, workflow misconfiguration, integration breakdown, or agentic decision chain failure.',
         },
         {
           icon: Scale,
@@ -127,7 +127,7 @@ const Services = () => {
           icon: ClipboardList,
           name: 'Technical Evidence & Documentation',
           detail:
-            'Produce detailed technical documentation of findings\u2014model logs, performance data, workflow traces\u2014suitable for claims adjudication and dispute resolution.',
+            'Produce detailed technical documentation of findings model logs, performance data, workflow traces suitable for claims adjudication and dispute resolution.',
         },
         {
           icon: AlertTriangle,
@@ -237,7 +237,7 @@ const Services = () => {
                 step: '01',
                 title: 'Model Inventory',
                 description:
-                  'Catalog all AI/ML models deployed\u2014including foundation models, fine-tuned variants, and agentic orchestrations.',
+                  'Catalog all AI/ML models deployed including foundation models, fine-tuned variants, and agentic orchestrations.',
               },
               {
                 step: '02',
@@ -286,7 +286,7 @@ const Services = () => {
                 </h2>
                 <p className="text-gray-500 leading-relaxed mb-4">
                   We specialize exclusively in the risk categories created by generative AI 
-                  and autonomous AI agents\u2014the frontier technologies that require 
+                  and autonomous AI agents the frontier technologies that require 
                   purpose-built evaluation frameworks.
                 </p>
                 <p className="text-gray-500 leading-relaxed">

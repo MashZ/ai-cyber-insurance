@@ -4,12 +4,12 @@ const About = () => {
   const founders = [
     {
       name: 'Mash Zahid',
-      role: 'Co-Founder \u2014 Technical & Delivery Lead',
+      role: 'Co-Founder   Operations & Technical Lead',
       linkedin: 'https://www.linkedin.com/in/mashz/',
       image: '/mash-zahid.jpeg',
       bio: [
         'Global AI Strategy and Transformation leader with extensive experience across enterprise AI implementations at Fortune 100 companies. Former IBM Associate Partner, KPMG global AI director, and enterprise AI architect.',
-        'Led AI transformation at General Motors, converting 47,000+ annual HR cases from 4-day resolution to 30-second AI-powered responses. Deep expertise in AI system architecture, model evaluation, and agentic AI orchestration across manufacturing, healthcare, energy, and automotive sectors.',
+        'Most recently drove AI enablement at General Motors, converting People Services cases from 4-day resolution to 30-second AI-powered responses, and developing AI Literacy programs for all staff. Deep expertise in AI system architecture, model evaluation, and agentic AI orchestration across manufacturing, healthcare, energy, and automotive sectors.',
       ],
       bioOpenAI: true,
       specialties: [
@@ -22,7 +22,7 @@ const About = () => {
     },
     {
       name: 'Reddhi Mitra',
-      role: 'Co-Founder \u2014 Commercial & Operations Lead',
+      role: 'Co-Founder   Commercial & Delivery Lead',
       linkedin: 'https://www.linkedin.com/in/reddhimitra/',
       image: '/reddhi-mitra.jpeg',
       bio: [
@@ -73,7 +73,7 @@ const About = () => {
               The market for AI liability insurance is being established by pioneers like 
               Armilla AI and Munich Re. Most insurance carriers need independent, third-party 
               assessment expertise to evaluate the AI risks they are being asked to 
-              underwrite\u2014and the supply of qualified evaluators remains thin.
+              underwrite and the supply of qualified evaluators remains thin.
             </p>
             <p className="text-gray-500 leading-relaxed mb-4">
               Discimen provides that supply. We are building the evaluation and audit 
@@ -176,12 +176,12 @@ const About = () => {
               {
                 title: 'Proven Demand',
                 description:
-                  'AI risk evaluation services are already needed\u2014the market is established. We fill the gap with deep expertise and a scalable delivery model.',
+                  'AI risk evaluation services are already needed the market is established. We fill the gap with deep expertise and a scalable delivery model.',
               },
               {
                 title: 'Recurring Engagement',
                 description:
-                  'Our services are designed as ongoing relationships\u2014annual audits, continuous monitoring, claims support\u2014creating predictable recurring revenue and deeper client outcomes.',
+                  'Our services are designed as ongoing relationships annual audits, continuous monitoring, claims support creating predictable recurring revenue and deeper client outcomes.',
               },
               {
                 title: 'Operators Who Scale',
