@@ -1,309 +1,314 @@
 import { Link } from 'react-router-dom';
 import {
   Shield,
-  TrendingUp,
-  Users,
-  FileText,
-  CheckCircle,
-  ArrowRight,
-  Brain,
-  Lock,
-  Scale,
-  AlertCircle,
+  AlertTriangle,
+  Search,
   FileCheck,
+  ArrowRight,
+  Building2,
+  Factory,
+  Heart,
+  Zap,
+  Landmark,
+  TrendingUp,
 } from 'lucide-react';
 
-export default function Home() {
-  const stats = [
-    { value: '$4.8B', label: 'AI Insurance Market by 2032', sublabel: '80% CAGR' },
-    { value: '60%', label: 'Companies Hit by AI Cyberattacks', sublabel: 'Past year' },
-    { value: '$11B+', label: 'Cyber Insurance Market', sublabel: 'Doubled since 2022' },
-    { value: '83%', label: 'CEOs Cite Cyber as Top Constraint', sublabel: 'Insurance sector' },
-  ];
-
-  const coverageAreas = [
-    {
-      icon: Brain,
-      title: 'AI Performance Risks',
-      description: 'Model errors, hallucinations, inaccurate outputs, and performance failures',
-    },
-    {
-      icon: Lock,
-      title: 'Privacy & Data Leakage',
-      description: 'Confidential information exposure, PII violations, and regulatory compliance',
-    },
-    {
-      icon: Scale,
-      title: 'Regulatory Violations',
-      description: 'EU AI Act, NAIC requirements, algorithmic bias, and compliance frameworks',
-    },
-    {
-      icon: AlertCircle,
-      title: 'Model Output Liability',
-      description: 'Biased, harmful, or discriminatory outputs and content generation risks',
-    },
-    {
-      icon: FileCheck,
-      title: 'IP & Copyright',
-      description: 'Training data provenance, copyright infringement, and trade secret exposure',
-    },
-  ];
-
-  const services = [
-    {
-      title: 'For Insurance Carriers',
-      description: 'Pre-underwriting risk assessment to confidently price AI and cyber policies',
-      icon: Shield,
-    },
-    {
-      title: 'For Enterprises',
-      description: 'Risk reduction and documentation to lower insurance premiums',
-      icon: TrendingUp,
-    },
-    {
-      title: 'For Regulators',
-      description: 'Governance frameworks and compliance validation for emerging AI regulations',
-      icon: Scale,
-    },
-  ];
-
+const Home = () => {
   return (
-    <div className="bg-white">
+    <div className="min-h-screen bg-primary">
       {/* Hero Section */}
-      <div className="relative isolate overflow-hidden bg-gradient-to-br from-primary-800 to-primary-900">
-        <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
-          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
-            <div className="mt-24 sm:mt-32 lg:mt-16">
-              <span className="inline-flex items-center gap-x-2 rounded-full bg-accent-500/10 px-3 py-1 text-sm font-semibold leading-6 text-accent-400 ring-1 ring-inset ring-accent-500/20">
-                <TrendingUp className="h-4 w-4" />
-                $4.8B Market Opportunity
-              </span>
+      <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        {/* Subtle grid background */}
+        <div className="absolute inset-0 opacity-5">
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                'linear-gradient(rgba(212,175,55,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(212,175,55,0.3) 1px, transparent 1px)',
+              backgroundSize: '60px 60px',
+            }}
+          />
+        </div>
+
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/30 text-accent text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+              <Shield className="h-3.5 w-3.5" />
+              AI Risk Assessment & Audit
             </div>
-            <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Quantifying the Unquantifiable: AI & Cyber Risk Valuation
+
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+              Evaluate AI Risk.{' '}
+              <span className="text-accent">Underwrite with Confidence.</span>
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Insurance carriers need to price risks they don't fully understand. Enterprises deploy
-              AI without clear exposure quantification. Regulators demand governance frameworks
-              that don't yet exist. <span className="font-semibold text-accent-400">We bridge the gap.</span>
+
+            <p className="text-lg text-gray-300 leading-relaxed mb-8 max-w-2xl">
+              Discimen provides independent, third-party AI risk assessment and audit 
+              services for insurance carriers, MGAs, and enterprises deploying generative 
+              and agentic AI. We evaluate the risks that standard frameworks weren't 
+              built to measure.
             </p>
-            <div className="mt-10 flex items-center gap-x-6">
+
+            <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                to="/services"
-                className="rounded-md bg-accent-500 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-accent-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-600 flex items-center gap-2"
+                to="/contact"
+                className="inline-flex items-center justify-center gap-2 bg-accent text-primary px-6 py-3 rounded font-semibold hover:bg-accent/90 transition-colors"
               >
-                Explore Services
+                Start an Assessment
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
-                to="/about"
-                className="text-sm font-semibold leading-6 text-white hover:text-accent-400 flex items-center gap-2"
+                to="/services"
+                className="inline-flex items-center justify-center gap-2 border border-white/20 text-white px-6 py-3 rounded font-semibold hover:border-accent/50 hover:text-accent transition-colors"
               >
-                Meet the Team <ArrowRight className="h-4 w-4" />
+                Our Services
               </Link>
             </div>
           </div>
-          <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
-            <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-              <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
-                <img
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop"
-                  alt="AI risk analytics dashboard"
-                  width={2432}
-                  height={1442}
-                  className="w-[76rem] rounded-md shadow-2xl ring-1 ring-gray-900/10"
-                />
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-
-      {/* Stats Section */}
-      <div className="bg-gray-50 py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:max-w-none">
-            <div className="text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-primary-800 sm:text-4xl">
-                The Market Reality
-              </h2>
-              <p className="mt-4 text-lg leading-8 text-gray-600">
-                Why AI and cyber insurance needs specialized risk assessment now
-              </p>
-            </div>
-            <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
-              {stats.map((stat) => (
-                <div key={stat.label} className="flex flex-col bg-white p-8">
-                  <dt className="text-sm font-semibold leading-6 text-gray-600">{stat.label}</dt>
-                  <dd className="order-first text-3xl font-semibold tracking-tight text-primary-800">
-                    {stat.value}
-                  </dd>
-                  <dd className="mt-2 text-xs text-gray-500">{stat.sublabel}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </div>
-      </div>
+      </section>
 
       {/* Problem Statement */}
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-base font-semibold leading-7 text-accent-600">The Challenge</h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-primary-800 sm:text-4xl">
-              Three Critical Gaps in AI Insurance
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Traditional actuarial models break down when facing non-deterministic AI failures,
-              nth-party risk aggregation, and fragmenting regulatory frameworks.
-            </p>
-          </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-              {services.map((service) => (
-                <div key={service.title} className="flex flex-col">
-                  <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-primary-800">
-                    <service.icon className="h-5 w-5 flex-none text-accent-600" aria-hidden="true" />
-                    {service.title}
-                  </dt>
-                  <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                    <p className="flex-auto">{service.description}</p>
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </div>
-      </div>
-
-      {/* Coverage Areas */}
-      <div className="bg-gray-50 py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-base font-semibold leading-7 text-accent-600">Comprehensive Coverage</h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-primary-800 sm:text-4xl">
-              Five Core Risk Assessment Areas
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              From model performance failures to intellectual property exposure, we provide
-              specialized valuation services across all AI and cyber liability categories.
-            </p>
-          </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16">
-              {coverageAreas.map((area) => (
-                <div key={area.title} className="relative pl-16">
-                  <dt className="text-base font-semibold leading-7 text-primary-800">
-                    <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-lg bg-accent-500">
-                      <area.icon className="h-6 w-6 text-white" aria-hidden="true" />
-                    </div>
-                    {area.title}
-                  </dt>
-                  <dd className="mt-2 text-base leading-7 text-gray-600">{area.description}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </div>
-      </div>
-
-      {/* Why Us Section */}
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-base font-semibold leading-7 text-accent-600">Our Approach</h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-primary-800 sm:text-4xl">
-              First Principles + Systems Thinking
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              We deconstruct AI risk from fundamental axioms and map entire insurance ecosystems
-              to deliver assessment frameworks that actually work.
-            </p>
-          </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-              <div className="relative pl-16">
-                <dt className="text-base font-semibold leading-7 text-primary-800">
-                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-accent-500">
-                    <CheckCircle className="h-6 w-6 text-white" aria-hidden="true" />
-                  </div>
-                  Domain Expertise
-                </dt>
-                <dd className="mt-2 text-base leading-7 text-gray-600">
-                  Deep AI/ML technical knowledge combined with insurance industry experience from
-                  IBM, FTI Consulting, and enterprise transformations.
-                </dd>
-              </div>
-              <div className="relative pl-16">
-                <dt className="text-base font-semibold leading-7 text-primary-800">
-                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-accent-500">
-                    <CheckCircle className="h-6 w-6 text-white" aria-hidden="true" />
-                  </div>
-                  Objectivity
-                </dt>
-                <dd className="mt-2 text-base leading-7 text-gray-600">
-                  We serve both sides—carriers and policyholders—with strict ethical walls, building
-                  reputation as the trusted third-party assessor.
-                </dd>
-              </div>
-              <div className="relative pl-16">
-                <dt className="text-base font-semibold leading-7 text-primary-800">
-                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-accent-500">
-                    <CheckCircle className="h-6 w-6 text-white" aria-hidden="true" />
-                  </div>
-                  Methodology
-                </dt>
-                <dd className="mt-2 text-base leading-7 text-gray-600">
-                  Rigorous assessment frameworks based on NIST AI RMF, ISO 42001, and regulatory
-                  standards, not guesswork.
-                </dd>
-              </div>
-              <div className="relative pl-16">
-                <dt className="text-base font-semibold leading-7 text-primary-800">
-                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-accent-500">
-                    <CheckCircle className="h-6 w-6 text-white" aria-hidden="true" />
-                  </div>
-                  Speed to Market
-                </dt>
-                <dd className="mt-2 text-base leading-7 text-gray-600">
-                  Standardized offerings that scale while maintaining customization for enterprise-specific
-                  risk profiles.
-                </dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </div>
-
-      {/* CTA Section */}
-      <div className="bg-accent-500">
-        <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Ready to quantify your AI & cyber exposure?
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-primary/80 border-y border-white/5">
+        <div className="max-w-7xl mx-auto">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+              Standard Insurance Frameworks Weren't Built for AI
             </h2>
-            <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-accent-100">
-              Whether you're an insurance carrier seeking underwriting support, an enterprise
-              deploying AI systems, or a regulator developing governance frameworks—we can help.
+            <p className="text-gray-400 leading-relaxed">
+              AI incidents have spurred over 150 lawsuits in the US in the past five years. 
+              Traditional Tech E&O and cyber policies are silent or ambiguous on AI-specific failures — 
+              from hallucinations and model drift to algorithmic bias and IP infringement. 
+              Insurers need independent expertise to evaluate these novel exposures. 
+              That's where Discimen fits.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Link
-                to="/contact"
-                className="rounded-md bg-white px-6 py-3 text-sm font-semibold text-accent-600 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                icon: AlertTriangle,
+                title: 'AI Vendors',
+                description:
+                  'Contractual liability and performance warranty risks for companies building and licensing AI products.',
+              },
+              {
+                icon: Building2,
+                title: 'Corporations Using AI',
+                description:
+                  'Exposure to discrimination, hallucination, regulatory fines, and IP infringement from deployed AI systems.',
+              },
+              {
+                icon: TrendingUp,
+                title: 'Financial Loss & Interruption',
+                description:
+                  'Business disruption, flawed AI-driven decisions, and unforecasted operational losses requiring evaluation.',
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-white/5 border border-white/10 rounded-lg p-6 hover:border-accent/30 transition-colors"
               >
-                Schedule a Consultation
-              </Link>
-              <Link
-                to="/services"
-                className="text-sm font-semibold leading-6 text-white hover:text-accent-100"
+                <item.icon className="h-8 w-8 text-accent mb-4" />
+                <h3 className="text-white font-semibold text-lg mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Service Overview */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+              How We Work
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              Three service lines designed for recurring engagement — not one-off consulting 
+              projects. We integrate into your underwriting and compliance lifecycle.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: Search,
+                title: 'Pre-Underwriting AI Risk Assessment',
+                description:
+                  'Model inventory and architecture review, vulnerability identification, compliance gap analysis, and risk scoring — before the policy is written.',
+                items: [
+                  'AI model inventory & architecture review',
+                  'Hallucination & error rate profiling',
+                  'Algorithmic bias evaluation',
+                  'Regulatory compliance mapping (EU AI Act, NIST, SEC)',
+                  'Risk scoring and underwriting recommendation',
+                ],
+              },
+              {
+                icon: FileCheck,
+                title: 'Ongoing Compliance Monitoring',
+                description:
+                  'Annual and periodic review to ensure AI systems remain aligned with policy terms, regulatory standards, and operational thresholds.',
+                items: [
+                  'Annual AI system pressure testing',
+                  'Model drift and performance monitoring',
+                  'Policy-to-practice alignment audits',
+                  'Regulatory change impact assessment',
+                  'Compliance reporting for policyholders & carriers',
+                ],
+              },
+              {
+                icon: Shield,
+                title: 'Claims & Loss Evaluation',
+                description:
+                  'When a loss event occurs, we evaluate whether it was caused by AI failure vs. human error and validate the scope and magnitude of the claim.',
+                items: [
+                  'AI incident root cause analysis',
+                  'Loss attribution: AI failure vs. human error',
+                  'Claim magnitude validation',
+                  'Technical evidence documentation',
+                  'Expert witness and litigation support',
+                ],
+              },
+            ].map((service, index) => (
+              <div
+                key={index}
+                className="bg-white/5 border border-white/10 rounded-lg p-8 hover:border-accent/30 transition-all group"
               >
-                View Services <span aria-hidden="true">→</span>
-              </Link>
+                <service.icon className="h-10 w-10 text-accent mb-5" />
+                <h3 className="text-white font-bold text-lg mb-3">
+                  {service.title}
+                </h3>
+                <p className="text-gray-400 text-sm leading-relaxed mb-5">
+                  {service.description}
+                </p>
+                <ul className="space-y-2">
+                  {service.items.map((item, i) => (
+                    <li
+                      key={i}
+                      className="text-gray-400 text-sm flex items-start gap-2"
+                    >
+                      <span className="text-accent mt-1 text-xs">●</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Industries */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-primary/80 border-y border-white/5">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+              Industry Focus
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              We bring deep management consulting experience across the industries 
+              where AI adoption — and AI risk — is accelerating fastest.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+            {[
+              { icon: Heart, name: 'Healthcare', detail: 'Diagnostics, patient data, clinical AI' },
+              { icon: Factory, name: 'Manufacturing', detail: 'Predictive maintenance, quality AI' },
+              { icon: Zap, name: 'Energy', detail: 'Grid optimization, forecasting AI' },
+              { icon: Building2, name: 'Automotive', detail: 'Autonomous systems, supply chain AI' },
+              { icon: Landmark, name: 'Financial Services', detail: 'Lending, fraud detection, trading AI' },
+            ].map((industry, index) => (
+              <div
+                key={index}
+                className="bg-white/5 border border-white/10 rounded-lg p-5 text-center hover:border-accent/30 transition-colors"
+              >
+                <industry.icon className="h-8 w-8 text-accent mx-auto mb-3" />
+                <h3 className="text-white font-semibold text-sm mb-1">
+                  {industry.name}
+                </h3>
+                <p className="text-gray-500 text-xs">{industry.detail}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Market Context */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
+                The AI Insurance Market Is Emerging — Fast
+              </h2>
+              <p className="text-gray-400 leading-relaxed mb-4">
+                Pioneering insurers like Armilla AI (Lloyd's coverholder) and Munich Re 
+                (aiSure™) have established that AI-specific coverage is not only viable but 
+                necessary. Yet most carriers lack the in-house technical capability to 
+                evaluate AI risks at the depth these policies demand.
+              </p>
+              <p className="text-gray-400 leading-relaxed mb-4">
+                Discimen fills that gap. We provide the independent assessment and audit 
+                services that enable standard insurance lines to offer AI coverage without 
+                building an AI evaluation practice from scratch.
+              </p>
+              <p className="text-gray-400 leading-relaxed">
+                Whether you're an insurer entering AI liability for the first time, an MGA 
+                designing specialty products, or an enterprise seeking to strengthen your 
+                risk posture before renewal — we provide the expertise.
+              </p>
+            </div>
+            <div className="space-y-4">
+              {[
+                { stat: '150+', label: 'AI-related lawsuits in the US (past 5 years)' },
+                { stat: '74%', label: 'of companies already using AI in operations' },
+                { stat: '60%', label: 'of CEOs hesitant to invest further due to liability concerns' },
+                { stat: 'Silent', label: 'Most existing policies on AI-specific failures' },
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-white/5 border border-white/10 rounded-lg p-4 flex items-center gap-4"
+                >
+                  <span className="text-accent font-bold text-2xl min-w-[80px]">
+                    {item.stat}
+                  </span>
+                  <span className="text-gray-400 text-sm">{item.label}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-accent/5 border-t border-accent/20">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+            Ready to Evaluate Your AI Risk Exposure?
+          </h2>
+          <p className="text-gray-400 mb-8">
+            Whether you're an insurer, MGA, or enterprise — let's start with a conversation 
+            about your AI risk landscape.
+          </p>
+          <Link
+            to="/contact"
+            className="inline-flex items-center gap-2 bg-accent text-primary px-8 py-3 rounded font-semibold hover:bg-accent/90 transition-colors"
+          >
+            Request an Assessment
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+      </section>
     </div>
   );
-}
+};
+
+export default Home;

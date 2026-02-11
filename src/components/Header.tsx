@@ -1,99 +1,95 @@
-import { Link, useLocation } from 'react-router-dom';
-import { Shield, Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import { cn } from '@/lib/utils';
+import { Link, useLocation } from 'react-router-dom';
+import { Menu, X, Shield } from 'lucide-react';
 
-export default function Header() {
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'Services', href: '/services' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services' },
+    { name: 'About', path: '/about' },
+    { name: 'Contact', path: '/contact' },
   ];
 
-  const isActive = (href: string) => location.pathname === href;
+  const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
-        <div className="flex lg:flex-1">
-          <Link to="/" className="-m-1.5 p-1.5 flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary-800 to-primary-900">
-              <Shield className="h-6 w-6 text-accent-500" />
-            </div>
-            <span className="text-lg font-bold text-primary-800">
-              AI & Cyber Insurance Valuation
+    <header className="fixed top-0 w-full z-50 bg-primary/95 backdrop-blur-md border-b border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          <Link to="/" className="flex items-center space-x-2">
+            <Shield className="h-8 w-8 text-accent" />
+            <span className="text-xl font-bold text-white tracking-wide">
+              DISCIMEN
             </span>
           </Link>
-        </div>
 
-        <div className="flex lg:hidden">
-          <button
-            type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            <span className="sr-only">Toggle menu</span>
-            {mobileMenuOpen ? (
-              <X className="h-6 w-6" aria-hidden="true" />
-            ) : (
-              <Menu className="h-6 w-6" aria-hidden="true" />
-            )}
-          </button>
-        </div>
-
-        <div className="hidden lg:flex lg:gap-x-8">
-          {navigation.map((item) => (
-            <Link
-              key={item.name}
-              to={item.href}
-              className={cn(
-                'text-sm font-semibold leading-6 transition-colors',
-                isActive(item.href)
-                  ? 'text-accent-500'
-                  : 'text-gray-900 hover:text-accent-600'
-              )}
-            >
-              {item.name}
-            </Link>
-          ))}
-        </div>
-
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link
-            to="/contact"
-            className="rounded-md bg-gradient-to-br from-accent-500 to-accent-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:from-accent-600 hover:to-accent-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-600"
-          >
-            Get Started
-          </Link>
-        </div>
-      </nav>
-
-      {/* Mobile menu */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden">
-          <div className="space-y-2 px-4 pb-3 pt-2">
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex space-x-8">
             {navigation.map((item) => (
               <Link
                 key={item.name}
-                to={item.href}
-                className={cn(
-                  'block rounded-lg px-3 py-2 text-base font-semibold leading-7',
-                  isActive(item.href)
-                    ? 'bg-gray-50 text-accent-500'
-                    : 'text-gray-900 hover:bg-gray-50'
-                )}
-                onClick={() => setMobileMenuOpen(false)}
+                to={item.path}
+                className={`text-sm font-medium transition-colors duration-200 ${
+                  isActive(item.path)
+                    ? 'text-accent border-b-2 border-accent pb-1'
+                    : 'text-gray-300 hover:text-accent'
+                }`}
               >
                 {item.name}
               </Link>
             ))}
+          </nav>
+
+          <div className="hidden md:block">
+            <Link
+              to="/contact"
+              className="bg-accent text-primary px-5 py-2 rounded text-sm font-semibold hover:bg-accent/90 transition-colors"
+            >
+              Request Assessment
+            </Link>
           </div>
+
+          {/* Mobile menu button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden text-gray-300 hover:text-white"
+          >
+            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
-      )}
+
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <div className="md:hidden pb-4">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                to={item.path}
+                onClick={() => setIsOpen(false)}
+                className={`block py-2 text-sm font-medium ${
+                  isActive(item.path)
+                    ? 'text-accent'
+                    : 'text-gray-300 hover:text-accent'
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
+            <Link
+              to="/contact"
+              onClick={() => setIsOpen(false)}
+              className="block mt-3 bg-accent text-primary px-4 py-2 rounded text-sm font-semibold text-center"
+            >
+              Request Assessment
+            </Link>
+          </div>
+        )}
+      </div>
     </header>
   );
-}
+};
+
+export default Header;

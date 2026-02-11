@@ -1,299 +1,185 @@
-import { Linkedin, GraduationCap, Briefcase, Award, Target } from 'lucide-react';
+import { Linkedin, ExternalLink } from 'lucide-react';
 
-export default function About() {
+const About = () => {
   const founders = [
     {
-      name: 'Mash Zahid',
-      role: 'Co-Founder | Technical & Delivery Lead',
-      image: '/mash-zahid.jpeg',
-      bio: 'Global AI Enablement and Operations Strategy leader with extensive experience implementing enterprise and work automation systems. Most recently led AI initiatives at General Motors, including the AskGM chatbot integration with ServiceNow and Workday systems. Former IBM Associate Partner and KPMG consultant with expertise spanning automotive, energy utilities, telecom, and biotech sectors.',
-      expertise: [
-        'Agentic AI Architecture & Implementation',
-        'Enterprise AI Governance & Risk Management',
-        'Model Risk Management Frameworks',
-        'AI/ML System Security & Performance',
+      name: 'Mashruk (Mash) Zahid',
+      role: 'Co-Founder — Technical & Delivery Lead',
+      linkedin: 'https://www.linkedin.com/in/mashruk-zahid/',
+      bio: [
+        'Global AI Strategy and Transformation leader with extensive experience across enterprise AI implementations at Fortune 100 companies. Former IBM Associate Partner, KPMG management consultant, and enterprise AI architect.',
+        'Led AI transformation at General Motors, converting 47,000+ annual HR cases from 4-day resolution to 30-second AI-powered responses. Deep expertise in AI system architecture, model evaluation, and agentic AI orchestration across manufacturing, healthcare, energy, and automotive sectors.',
+        'Delivered keynote on enterprise AI transformation to 6,800+ attendees at OpenAI Academy. Chicago Booth MBA with PhD coursework in Behavioral Finance and Financial Engineering.',
       ],
-      education: 'Chicago Booth MBA + PhD Coursework in Behavioral Finance & Financial Engineering',
-      linkedin: 'https://www.linkedin.com/in/mashz',
-      highlights: [
-        {
-          text: 'OpenAI Academy speaker on ',
-          link: {
-            url: 'https://academy.openai.com/public/videos/scaling-enterprise-ai-through-systems-thinking-2025-09-25',
-            text: 'Scaling Enterprise AI Through Systems Thinking'
-          }
-        },
-        'Serve on Moveworks Architecture Review Board',
-        '20+ years implementing technology strategy and transformations',
+      specialties: [
+        'AI system architecture & model evaluation',
+        'Enterprise AI transformation',
+        'Manufacturing & automotive AI implementations',
+        'Healthcare AI (clinical data science)',
+        'Agentic AI orchestration',
       ],
     },
     {
       name: 'Reddhi Mitra',
-      role: 'Co-Founder | Commercial & Operations Lead',
-      image: '/reddhi-mitra.jpeg',
-      bio: '20-year veteran management consultant and operating executive with deep insurance industry expertise from FTI Consulting. Brings critical experience in cyber security risk assessment, having worked with insurance carriers on underwriting frameworks for cyber policies. Former IBM Associate Partner focused on Industry Transformation and Enterprise Strategy, with additional experience at AT&T driving large-scale business transformations.',
-      expertise: [
-        'Insurance Risk Assessment & Underwriting',
-        'Cybersecurity Forensics & Loss Evaluation',
-        'Enterprise Strategy & Business Development',
-        'Cross-Industry Transformation Leadership',
-      ],
-      education: 'Duke University - Fuqua School of Business (MBA)',
+      role: 'Co-Founder — Commercial & Operations Lead',
       linkedin: 'https://www.linkedin.com/in/reddhimitra/',
-      highlights: [
-        'Led cyber security insurance assessments at FTI Consulting',
-        'IBM Associate Partner - Industry Transformation',
-        'Specialist in insurance carrier operations',
+      bio: [
+        '20+ year management consulting veteran specializing in financial services risk management, insurance operations, and restructuring. Former IBM and FTI Consulting leader with deep expertise in model risk, compliance, and third-party administration.',
+        'Extensive experience in insurance industry operations including underwriting process evaluation, claims administration, model inventory and architecture review, and regulatory compliance. Led restructuring and turnaround engagements requiring rigorous financial and operational risk assessment.',
+        'Duke Fuqua MBA. Deep network across specialty insurance, reinsurance, and financial services risk management.',
+      ],
+      specialties: [
+        'Insurance operations & compliance',
+        'Model risk & architecture review',
+        'Financial services restructuring',
+        'Claims administration & TPA services',
+        'Specialty risk and reinsurance',
       ],
     },
   ];
 
   return (
-    <div className="bg-white">
-      {/* Hero */}
-      <div className="bg-gradient-to-br from-primary-800 to-primary-900 px-6 py-24 sm:py-32 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Domain Thought Leadership
-          </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-300">
-            Combining deep AI/ML technical expertise with insurance industry experience to bridge
-            the valuation gap in emerging risk categories.
-          </p>
-        </div>
-      </div>
-
-      {/* Mission */}
-      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-accent-600">Our Mission</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-primary-800 sm:text-4xl">
-            Quantifying the Unquantifiable
-          </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            We exist because traditional actuarial models break down when facing AI's non-deterministic
-            failures and rapidly fragmenting regulatory landscape. Insurance carriers, enterprises, and
-            regulators all need specialized expertise to navigate this $4.8B emerging market.
-          </p>
-        </div>
-
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-            <div className="relative pl-16">
-              <dt className="text-base font-semibold leading-7 text-primary-800">
-                <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-accent-500">
-                  <Target className="h-6 w-6 text-white" />
-                </div>
-                First Principles Thinking
-              </dt>
-              <dd className="mt-2 text-base leading-7 text-gray-600">
-                We deconstruct AI risk from fundamental axioms—non-deterministic failures, nth-party
-                aggregation, regulatory fragmentation—rather than relying on historical patterns.
-              </dd>
+    <div className="min-h-screen bg-primary pt-24">
+      {/* Header */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/30 text-accent text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+              About Discimen
             </div>
-            <div className="relative pl-16">
-              <dt className="text-base font-semibold leading-7 text-primary-800">
-                <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-accent-500">
-                  <Target className="h-6 w-6 text-white" />
-                </div>
-                Systems Mapping
-              </dt>
-              <dd className="mt-2 text-base leading-7 text-gray-600">
-                We map entire insurance ecosystems—carriers, MGAs, brokers, policyholders, regulators—
-                to understand interdependencies and design frameworks that scale.
-              </dd>
-            </div>
-            <div className="relative pl-16">
-              <dt className="text-base font-semibold leading-7 text-primary-800">
-                <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-accent-500">
-                  <Award className="h-6 w-6 text-white" />
-                </div>
-                Objectivity
-              </dt>
-              <dd className="mt-2 text-base leading-7 text-gray-600">
-                We serve both carriers and policyholders with strict ethical walls, building our
-                reputation as the trusted third-party assessor.
-              </dd>
-            </div>
-            <div className="relative pl-16">
-              <dt className="text-base font-semibold leading-7 text-primary-800">
-                <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-accent-500">
-                  <Award className="h-6 w-6 text-white" />
-                </div>
-                Speed to Market
-              </dt>
-              <dd className="mt-2 text-base leading-7 text-gray-600">
-                Standardized offerings that scale while maintaining customization for enterprise-specific
-                risk profiles and regulatory requirements.
-              </dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-
-      {/* Founders */}
-      <div className="bg-gray-50 py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:text-center mb-16">
-            <h2 className="text-base font-semibold leading-7 text-accent-600">Leadership</h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-primary-800 sm:text-4xl">
-              Meet the Founders
+            <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+              Built by Consultants Who've Done the Work
+            </h1>
+            <p className="text-gray-400 text-lg leading-relaxed">
+              Discimen was founded by two former IBM management consultants with 
+              complementary expertise: one in enterprise AI transformation and technical 
+              architecture, the other in insurance operations, risk management, and 
+              financial services compliance. Together, we bring the exact combination 
+              of skills needed to evaluate AI risk for the insurance industry.
             </p>
           </div>
+        </div>
+      </section>
 
-          <div className="space-y-20">
-            {founders.map((founder) => (
-              <div key={founder.name} className="mx-auto max-w-5xl">
-                <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
-                  <div className="lg:col-span-1">
-                    <div className="aspect-square overflow-hidden rounded-2xl bg-gray-100">
-                      <img
-                        src={founder.image}
-                        alt={founder.name}
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                    <h3 className="mt-6 text-2xl font-bold tracking-tight text-primary-800">
-                      {founder.name}
-                    </h3>
-                    <p className="text-base leading-7 text-accent-600 font-semibold">
-                      {founder.role}
+      {/* Mission */}
+      <section className="py-8 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-white/5 border border-white/10 rounded-xl p-8 sm:p-10 mb-16">
+            <h2 className="text-2xl font-bold text-white mb-4">Our Thesis</h2>
+            <p className="text-gray-400 leading-relaxed mb-4">
+              The market for AI liability insurance is being established by pioneers like 
+              Armilla AI and Munich Re. But most insurance carriers don't have the in-house 
+              technical expertise to evaluate the AI risks they're being asked to underwrite. 
+              They need independent, third-party assessment — and the supply of qualified 
+              evaluators is thin.
+            </p>
+            <p className="text-gray-400 leading-relaxed mb-4">
+              Discimen provides that supply. We're not building an insurance product. 
+              We're building the evaluation and audit capability that the insurance 
+              industry needs to confidently enter the AI risk market.
+            </p>
+            <p className="text-gray-300 leading-relaxed font-medium">
+              We focus on work that is technical enough to require real expertise, process-oriented 
+              enough to scale, and recurring enough to build a sustainable business — not 
+              one-off consulting engagements.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Founders */}
+      <section className="py-8 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl font-bold text-white mb-8">Founding Team</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {founders.map((founder, index) => (
+              <div
+                key={index}
+                className="bg-white/5 border border-white/10 rounded-xl p-8"
+              >
+                <div className="mb-6">
+                  <h3 className="text-xl font-bold text-white">{founder.name}</h3>
+                  <p className="text-accent text-sm font-semibold mt-1">
+                    {founder.role}
+                  </p>
+                  <a
+                    href={founder.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-gray-400 hover:text-accent text-xs mt-2 transition-colors"
+                  >
+                    <Linkedin className="h-3.5 w-3.5" />
+                    LinkedIn Profile
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                </div>
+
+                <div className="space-y-3 mb-6">
+                  {founder.bio.map((paragraph, i) => (
+                    <p key={i} className="text-gray-400 text-sm leading-relaxed">
+                      {paragraph}
                     </p>
-                    <a
-                      href={founder.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-4 inline-flex items-center gap-2 text-sm text-gray-600 hover:text-accent-600"
-                    >
-                      <Linkedin className="h-5 w-5" />
-                      LinkedIn Profile
-                    </a>
-                  </div>
+                  ))}
+                </div>
 
-                  <div className="lg:col-span-2">
-                    <p className="text-base leading-7 text-gray-600 mb-8">
-                      {founder.bio}
-                    </p>
-
-                    <div className="space-y-6">
-                      <div>
-                        <div className="flex items-center gap-2 mb-3">
-                          <Briefcase className="h-5 w-5 text-accent-600" />
-                          <h4 className="text-sm font-semibold text-primary-800">Core Expertise</h4>
-                        </div>
-                        <ul className="space-y-2">
-                          {founder.expertise.map((skill) => (
-                            <li key={skill} className="flex items-start gap-x-3">
-                              <div className="flex-none">
-                                <div className="h-6 w-6 rounded-full bg-accent-100 flex items-center justify-center">
-                                  <div className="h-2 w-2 rounded-full bg-accent-600" />
-                                </div>
-                              </div>
-                              <span className="text-sm text-gray-600">{skill}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-
-                      <div>
-                        <div className="flex items-center gap-2 mb-3">
-                          <GraduationCap className="h-5 w-5 text-accent-600" />
-                          <h4 className="text-sm font-semibold text-primary-800">Education</h4>
-                        </div>
-                        <p className="text-sm text-gray-600">{founder.education}</p>
-                      </div>
-
-                      <div>
-                        <div className="flex items-center gap-2 mb-3">
-                          <Award className="h-5 w-5 text-accent-600" />
-                          <h4 className="text-sm font-semibold text-primary-800">Highlights</h4>
-                        </div>
-                        <ul className="space-y-2">
-                          {founder.highlights.map((highlight, index) => (
-                            <li key={typeof highlight === 'string' ? highlight : index} className="flex items-start gap-x-3">
-                              <div className="flex-none">
-                                <div className="h-6 w-6 rounded-full bg-accent-100 flex items-center justify-center">
-                                  <div className="h-2 w-2 rounded-full bg-accent-600" />
-                                </div>
-                              </div>
-                              <span className="text-sm text-gray-600">
-                                {typeof highlight === 'string' ? (
-                                  highlight
-                                ) : (
-                                  <>
-                                    {highlight.text}
-                                    <a
-                                      href={highlight.link.url}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      className="text-accent-600 hover:text-accent-700 underline"
-                                    >
-                                      {highlight.link.text}
-                                    </a>
-                                  </>
-                                )}
-                              </span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
+                <div>
+                  <h4 className="text-white text-sm font-semibold mb-2">
+                    Domain Expertise
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {founder.specialties.map((specialty, i) => (
+                      <span
+                        key={i}
+                        className="bg-accent/10 text-accent text-xs px-3 py-1 rounded-full border border-accent/20"
+                      >
+                        {specialty}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Values */}
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-base font-semibold leading-7 text-accent-600">Our Values</h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-primary-800 sm:text-4xl">
-              Built on Expertise, Trust, and Rigor
-            </p>
-          </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-              <div className="flex flex-col">
-                <dt className="text-lg font-semibold leading-7 text-primary-800">
-                  Technical Rigor
-                </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">
-                    Every assessment grounded in NIST AI RMF, ISO 42001, and emerging regulatory frameworks.
-                    We don't guess—we measure, model, and quantify.
-                  </p>
-                </dd>
+      {/* Approach */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 border-t border-white/5">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl font-bold text-white mb-8">How We Think</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                title: 'Proven Demand, Not Novelty',
+                description:
+                  'We're not inventing a category. AI risk evaluation services are already needed — there just aren't enough qualified providers. We fill the gap with deep expertise and a scalable model.',
+              },
+              {
+                title: 'Recurring, Not Project-Based',
+                description:
+                  'Our services are designed as ongoing engagements — annual audits, continuous monitoring, claims support — creating predictable recurring revenue rather than one-off consulting projects.',
+              },
+              {
+                title: 'Operators, Not Technicians',
+                description:
+                  'We build a business, not a practice. As demand grows, we recruit specialized actuaries, data scientists, and auditors to execute. We design the methodology and scale the operation.',
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-white/5 border border-white/10 rounded-lg p-6"
+              >
+                <h3 className="text-white font-semibold mb-3">{item.title}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  {item.description}
+                </p>
               </div>
-              <div className="flex flex-col">
-                <dt className="text-lg font-semibold leading-7 text-primary-800">
-                  Client Advocacy
-                </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">
-                    Whether representing carriers or policyholders, we provide the most accurate
-                    assessment possible—even when it's not what the client wants to hear.
-                  </p>
-                </dd>
-              </div>
-              <div className="flex flex-col">
-                <dt className="text-lg font-semibold leading-7 text-primary-800">
-                  Continuous Learning
-                </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">
-                    AI and cyber risks evolve daily. We invest heavily in research, training, and
-                    staying ahead of the rapidly changing threat and regulatory landscape.
-                  </p>
-                </dd>
-              </div>
-            </dl>
+            ))}
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
-}
+};
+
+export default About;

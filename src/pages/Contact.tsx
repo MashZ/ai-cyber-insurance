@@ -1,268 +1,151 @@
-import { Mail, Linkedin, MapPin, Phone } from 'lucide-react';
+import { Mail, Linkedin, ArrowRight, MapPin } from 'lucide-react';
 
-export default function Contact() {
+const Contact = () => {
   return (
-    <div className="bg-white">
-      {/* Hero */}
-      <div className="bg-gradient-to-br from-primary-800 to-primary-900 px-6 py-24 sm:py-32 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Let's Discuss Your Risk Profile
-          </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-300">
-            Whether you're an insurance carrier, enterprise, or regulator—we're here to help
-            you navigate AI and cyber liability exposure.
-          </p>
+    <div className="min-h-screen bg-primary pt-24">
+      {/* Header */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/30 text-accent text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+              Get in Touch
+            </div>
+            <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+              Start a Conversation
+            </h1>
+            <p className="text-gray-400 text-lg leading-relaxed">
+              Whether you're an insurance carrier evaluating AI risk capabilities, an MGA 
+              designing specialty products, or an enterprise seeking to strengthen your AI 
+              risk posture — we'd like to hear from you.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
 
-      {/* Contact Information */}
-      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:max-w-none">
-          <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
-            {/* Contact Info */}
-            <div>
-              <h2 className="text-3xl font-bold tracking-tight text-primary-800">
-                Get in Touch
-              </h2>
-              <p className="mt-4 text-lg leading-8 text-gray-600">
-                We work with clients across three categories:
+      {/* Contact Methods */}
+      <section className="py-8 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            {/* Email */}
+            <div className="bg-white/5 border border-white/10 rounded-xl p-8">
+              <Mail className="h-8 w-8 text-accent mb-4" />
+              <h2 className="text-xl font-bold text-white mb-2">Email Us</h2>
+              <p className="text-gray-400 text-sm mb-6">
+                For general inquiries, assessment requests, or partnership discussions.
               </p>
-              <ul className="mt-8 space-y-4">
-                <li className="flex gap-x-3">
-                  <div className="flex-none">
-                    <div className="h-6 w-6 rounded-full bg-accent-100 flex items-center justify-center">
-                      <div className="h-2 w-2 rounded-full bg-accent-600" />
-                    </div>
-                  </div>
-                  <span className="text-gray-600">
-                    <strong className="font-semibold text-primary-800">Insurance Carriers & MGAs</strong> seeking
-                    pre-underwriting risk assessment
-                  </span>
-                </li>
-                <li className="flex gap-x-3">
-                  <div className="flex-none">
-                    <div className="h-6 w-6 rounded-full bg-accent-100 flex items-center justify-center">
-                      <div className="h-2 w-2 rounded-full bg-accent-600" />
-                    </div>
-                  </div>
-                  <span className="text-gray-600">
-                    <strong className="font-semibold text-primary-800">Enterprises</strong> deploying AI systems
-                    and need exposure quantification
-                  </span>
-                </li>
-                <li className="flex gap-x-3">
-                  <div className="flex-none">
-                    <div className="h-6 w-6 rounded-full bg-accent-100 flex items-center justify-center">
-                      <div className="h-2 w-2 rounded-full bg-accent-600" />
-                    </div>
-                  </div>
-                  <span className="text-gray-600">
-                    <strong className="font-semibold text-primary-800">Regulators</strong> developing governance
-                    frameworks for AI liability
-                  </span>
-                </li>
-              </ul>
-
-              <dl className="mt-16 space-y-8">
-                <div className="flex gap-x-4">
-                  <dt className="flex-none">
-                    <span className="sr-only">Email</span>
-                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent-500">
-                      <Mail className="h-6 w-6 text-white" aria-hidden="true" />
-                    </div>
-                  </dt>
-                  <dd>
-                    <p className="text-sm font-semibold leading-6 text-primary-800">Email</p>
-                    <p className="mt-1 text-base leading-7 text-gray-600">
-                      <a
-                        href="mailto:mzahid@alineahealth.com"
-                        className="hover:text-accent-600"
-                      >
-                        mzahid@alineahealth.com
-                      </a>
-                    </p>
-                  </dd>
-                </div>
-
-                <div className="flex gap-x-4">
-                  <dt className="flex-none">
-                    <span className="sr-only">Location</span>
-                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent-500">
-                      <MapPin className="h-6 w-6 text-white" aria-hidden="true" />
-                    </div>
-                  </dt>
-                  <dd>
-                    <p className="text-sm font-semibold leading-6 text-primary-800">Locations</p>
-                    <p className="mt-1 text-base leading-7 text-gray-600">
-                      Miami, FL | Los Angeles, CA
-                    </p>
-                  </dd>
-                </div>
-
-                <div className="flex gap-x-4">
-                  <dt className="flex-none">
-                    <span className="sr-only">LinkedIn</span>
-                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent-500">
-                      <Linkedin className="h-6 w-6 text-white" aria-hidden="true" />
-                    </div>
-                  </dt>
-                  <dd>
-                    <p className="text-sm font-semibold leading-6 text-primary-800">Connect on LinkedIn</p>
-                    <p className="mt-1 text-base leading-7 text-gray-600">
-                      <a
-                        href="https://www.linkedin.com/in/mashz/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-accent-600 block"
-                      >
-                        Mash Zahid
-                      </a>
-                      <a
-                        href="https://www.linkedin.com/in/reddhimitra/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-accent-600 block"
-                      >
-                        Reddhi Mitra
-                      </a>
-                    </p>
-                  </dd>
-                </div>
-              </dl>
+              <a
+                href="mailto:info@discimen.com"
+                className="inline-flex items-center gap-2 text-accent font-semibold hover:text-accent/80 transition-colors"
+              >
+                info@discimen.com
+                <ArrowRight className="h-4 w-4" />
+              </a>
             </div>
 
-            {/* CTA Card */}
-            <div className="rounded-2xl bg-gray-50 p-10">
-              <h3 className="text-2xl font-bold tracking-tight text-primary-800">
-                Schedule a Consultation
-              </h3>
-              <p className="mt-4 text-base leading-7 text-gray-600">
-                Initial consultations are complimentary. We'll discuss your specific needs and
-                determine if our specialized risk assessment services are a good fit.
+            {/* Location */}
+            <div className="bg-white/5 border border-white/10 rounded-xl p-8">
+              <MapPin className="h-8 w-8 text-accent mb-4" />
+              <h2 className="text-xl font-bold text-white mb-2">Based in</h2>
+              <p className="text-gray-400 text-sm mb-6">
+                Miami, FL & Los Angeles, CA — serving clients nationally and globally.
               </p>
+              <p className="text-gray-500 text-sm">
+                Engagements conducted on-site and remotely.
+              </p>
+            </div>
+          </div>
 
-              <div className="mt-8 space-y-6">
-                <div className="rounded-lg bg-white p-6 shadow-professional">
-                  <h4 className="text-lg font-semibold text-primary-800">What to Expect</h4>
-                  <ul className="mt-4 space-y-3">
-                    <li className="flex items-start gap-x-3">
-                      <div className="flex-none">
-                        <div className="h-6 w-6 rounded-full bg-accent-100 flex items-center justify-center">
-                          <div className="h-2 w-2 rounded-full bg-accent-600" />
-                        </div>
-                      </div>
-                      <span className="text-sm text-gray-600">
-                        30-minute discovery call to understand your risk profile
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-x-3">
-                      <div className="flex-none">
-                        <div className="h-6 w-6 rounded-full bg-accent-100 flex items-center justify-center">
-                          <div className="h-2 w-2 rounded-full bg-accent-600" />
-                        </div>
-                      </div>
-                      <span className="text-sm text-gray-600">
-                        Discussion of relevant service offerings and pricing
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-x-3">
-                      <div className="flex-none">
-                        <div className="h-6 w-6 rounded-full bg-accent-100 flex items-center justify-center">
-                          <div className="h-2 w-2 rounded-full bg-accent-600" />
-                        </div>
-                      </div>
-                      <span className="text-sm text-gray-600">
-                        Proposal delivery within 48 hours
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="rounded-lg bg-accent-50 border border-accent-200 p-6">
-                  <p className="text-sm font-semibold text-accent-900">Typical Engagement Timeline</p>
-                  <p className="mt-2 text-sm text-accent-800">
-                    Most assessments are completed in 4-8 weeks. Emergency response available for
-                    post-loss situations requiring immediate attention.
-                  </p>
-                </div>
+          {/* Founders Direct */}
+          <div className="bg-white/5 border border-white/10 rounded-xl p-8 sm:p-10">
+            <h2 className="text-2xl font-bold text-white mb-6">
+              Connect Directly with Our Founders
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-white font-semibold text-lg">
+                  Mashruk (Mash) Zahid
+                </h3>
+                <p className="text-accent text-sm font-medium mb-2">
+                  Technical & Delivery Lead
+                </p>
+                <p className="text-gray-400 text-sm mb-4">
+                  For technical assessment scoping, AI system architecture questions, 
+                  and industry-specific evaluation inquiries.
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/mashruk-zahid/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-accent text-sm font-semibold hover:text-accent/80 transition-colors"
+                >
+                  <Linkedin className="h-4 w-4" />
+                  Connect on LinkedIn
+                </a>
               </div>
 
-              <div className="mt-8">
+              <div>
+                <h3 className="text-white font-semibold text-lg">Reddhi Mitra</h3>
+                <p className="text-accent text-sm font-medium mb-2">
+                  Commercial & Operations Lead
+                </p>
+                <p className="text-gray-400 text-sm mb-4">
+                  For partnership discussions, insurance carrier engagements, 
+                  MGA/MGU relationships, and service scoping.
+                </p>
                 <a
-                  href="mailto:mzahid@alineahealth.com?subject=AI Insurance Risk Consultation Request"
-                  className="block w-full rounded-md bg-accent-500 px-6 py-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-accent-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-600"
+                  href="https://www.linkedin.com/in/reddhimitra/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-accent text-sm font-semibold hover:text-accent/80 transition-colors"
                 >
-                  Request Consultation
+                  <Linkedin className="h-4 w-4" />
+                  Connect on LinkedIn
                 </a>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* FAQ */}
-      <div className="bg-gray-50 py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
-            <h2 className="text-2xl font-bold leading-10 tracking-tight text-primary-800">
-              Frequently Asked Questions
-            </h2>
-            <dl className="mt-10 space-y-8 divide-y divide-gray-900/10">
-              <div className="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                <dt className="text-base font-semibold leading-7 text-primary-800 lg:col-span-5">
-                  How do you price your services?
-                </dt>
-                <dd className="mt-4 lg:col-span-7 lg:mt-0">
-                  <p className="text-base leading-7 text-gray-600">
-                    We offer fixed-fee engagements for assessments ($50K-300K depending on scope),
-                    retainer-based ongoing monitoring ($10K-30K/month), and percentage-of-claim
-                    pricing for post-loss evaluations (5-8%).
-                  </p>
-                </dd>
+      {/* Who Should Reach Out */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 border-t border-white/5">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl font-bold text-white mb-8 text-center">
+            Who We Work With
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                title: 'Insurance Carriers & Reinsurers',
+                description:
+                  'Looking to enter or expand AI liability coverage but need independent technical evaluation capability to underwrite confidently.',
+              },
+              {
+                title: 'MGAs & MGUs',
+                description:
+                  'Designing specialty AI insurance products and need outsourced assessment services to support your underwriting process.',
+              },
+              {
+                title: 'Enterprises Deploying AI',
+                description:
+                  'Seeking to quantify your AI risk exposure, strengthen governance, and demonstrate insurability to carriers at renewal.',
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-white/5 border border-white/10 rounded-lg p-6"
+              >
+                <h3 className="text-white font-semibold mb-3">{item.title}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  {item.description}
+                </p>
               </div>
-
-              <div className="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                <dt className="text-base font-semibold leading-7 text-primary-800 lg:col-span-5">
-                  Can you serve both carriers and policyholders?
-                </dt>
-                <dd className="mt-4 lg:col-span-7 lg:mt-0">
-                  <p className="text-base leading-7 text-gray-600">
-                    Yes, but we maintain strict ethical walls. Separate teams handle carrier-retained
-                    vs. policyholder-retained engagements, and we disclose any conflicts. Our
-                    reputation depends on objectivity.
-                  </p>
-                </dd>
-              </div>
-
-              <div className="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                <dt className="text-base font-semibold leading-7 text-primary-800 lg:col-span-5">
-                  What industries do you serve?
-                </dt>
-                <dd className="mt-4 lg:col-span-7 lg:mt-0">
-                  <p className="text-base leading-7 text-gray-600">
-                    Any enterprise deploying AI systems: healthcare, financial services, energy/utilities,
-                    technology, retail, and manufacturing. We develop industry-specific assessment
-                    frameworks as needed.
-                  </p>
-                </dd>
-              </div>
-
-              <div className="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                <dt className="text-base font-semibold leading-7 text-primary-800 lg:col-span-5">
-                  How quickly can you respond to emergencies?
-                </dt>
-                <dd className="mt-4 lg:col-span-7 lg:mt-0">
-                  <p className="text-base leading-7 text-gray-600">
-                    For post-loss scenarios (data breaches, AI system failures), we can mobilize
-                    within 24-48 hours and deliver preliminary assessments within 1-2 weeks.
-                  </p>
-                </dd>
-              </div>
-            </dl>
+            ))}
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
-}
+};
+
+export default Contact;
