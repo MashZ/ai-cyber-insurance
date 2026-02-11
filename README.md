@@ -54,7 +54,7 @@ Global AI Strategy leader, former IBM Associate Partner, Chicago Booth MBA
 
 - **Website**: [discimen.com](https://discimen.com)
 - **Email**: info@discimen.com
-- **LinkedIn**: [Mashruk Zahid](https://www.linkedin.com/in/mashruk-zahid/) · [Reddhi Mitra](https://www.linkedin.com/in/reddhimitra/)
+- **LinkedIn**: [Mashruk Zahid](https://www.linkedin.com/in/mashz/) · [Reddhi Mitra](https://www.linkedin.com/in/reddhimitra/)
 
 ---
 
