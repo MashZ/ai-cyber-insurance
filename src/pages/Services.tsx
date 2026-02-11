@@ -80,7 +80,7 @@ const Services = () => {
           icon: ClipboardList,
           name: 'Policy-to-Practice Alignment Audits',
           detail:
-            'Compare the company's actual AI governance procedures against insurance policy requirements. Identify deltas, document gaps, and recommend remediation.',
+            'Compare the company\u2019s actual AI governance procedures against insurance policy requirements. Identify deltas, document gaps, and recommend remediation.',
         },
         {
           icon: Scale,

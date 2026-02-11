@@ -152,7 +152,7 @@ const About = () => {
               {
                 title: 'Proven Demand, Not Novelty',
                 description:
-                  'We're not inventing a category. AI risk evaluation services are already needed — there just aren't enough qualified providers. We fill the gap with deep expertise and a scalable model.',
+                  'We\u2019re not inventing a category. AI risk evaluation services are already needed \u2014 there just aren\u2019t enough qualified providers. We fill the gap with deep expertise and a scalable model.',
               },
               {
                 title: 'Recurring, Not Project-Based',
