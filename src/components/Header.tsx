@@ -25,7 +25,7 @@ export default function Header() {
             <img
               src="/discimen_logo_gray.png"
               alt="Discimen"
-              className="h-9 w-9 object-contain"
+              className="h-12 w-12 object-contain"
             />
             <span className="font-display text-[#0f2b46] text-2xl font-bold tracking-tight hover:text-[#0f4377] transition-colors">
               Discimen
