@@ -89,7 +89,7 @@ export default function About() {
                     Mash Zahid
                   </h3>
                   <p className="text-sm text-[#0f4377] font-medium">
-                    Co-Founder — Technical & Delivery Lead
+                    Co-Founder — Technical & Operations Lead
                   </p>
                 </div>
                 <a
@@ -157,7 +157,7 @@ export default function About() {
                     Reddhi Mitra
                   </h3>
                   <p className="text-sm text-[#0f4377] font-medium">
-                    Co-Founder — Commercial & Operations Lead
+                    Co-Founder — Commercial & Delivery Lead
                   </p>
                 </div>
                 <a
