@@ -1,274 +1,342 @@
 import { Link } from 'react-router-dom';
 import {
   ArrowRight,
-  Building2,
-  Factory,
-  Heart,
-  Zap,
-  Landmark,
+  Shield,
   TrendingUp,
-  Search,
-  FileCheck,
-  ShieldCheck,
-  AlertTriangle,
+  Scale,
+  Building2,
+  Zap,
+  Target,
+  BarChart3,
+  CheckCircle2,
 } from 'lucide-react';
 
-const Home = () => {
+export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Hero */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+    <main className="pt-20">
+      {/* ─── Hero ─── */}
+      <section className="relative overflow-hidden">
+        {/* Subtle grid texture */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage:
+              'linear-gradient(#0f2b46 1px, transparent 1px), linear-gradient(90deg, #0f2b46 1px, transparent 1px)',
+            backgroundSize: '48px 48px',
+          }}
+        />
+        <div className="max-w-6xl mx-auto px-6 lg:px-8 pt-20 pb-24 lg:pt-28 lg:pb-32 relative">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-widest text-accent mb-5">
-              AI Risk Assessment &amp; Audit
+            {/* Eyebrow */}
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0f2b46]/5 mb-8">
+              <div className="w-1.5 h-1.5 rounded-full bg-[#0f4377]" />
+              <span className="text-xs font-semibold tracking-widest text-[#0f4377] uppercase">
+                AI Transition Advisory
+              </span>
+            </div>
+
+            <h1 className="font-fraunces text-[#0f2b46] text-4xl md:text-5xl lg:text-[3.5rem] font-semibold leading-[1.12] tracking-tight mb-3">
+              Navigate the shift from legacy SaaS to AI-native operations.
+              <span className="text-[#0f4377]/50"> Without breaking compliance.</span>
+            </h1>
+            <p className="text-sm text-slate-400 italic mb-6">
+              discimen — Latin: peril, discriminating difference.
             </p>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-display font-bold text-primary leading-[1.15] mb-6">
-              Independent expertise for underwriting AI risk
-            </h1>
-
-            <p className="text-lg text-gray-500 leading-relaxed mb-10 max-w-2xl">
-              Discimen provides third-party AI risk assessment and audit services 
-              for insurance carriers, MGAs, and enterprises deploying generative 
-              and agentic AI. We deliver the risk intelligence that AI liability 
-              coverage requires.
+            <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-10 max-w-2xl">
+              Enterprise software is being repriced. AI-native platforms are replacing legacy systems.
+              Discimen helps regulated enterprises manage the transition — governing the risk,
+              measuring the ROI, and ensuring every move is defensible to your board, your
+              regulators, and your insurers.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center gap-2 bg-primary text-white px-7 py-3 rounded font-semibold hover:bg-accent-light transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold text-white bg-[#0f2b46] rounded-lg hover:bg-[#0f4377] transition-colors duration-200"
               >
-                Request Assessment
-                <ArrowRight className="h-4 w-4" />
+                Schedule a Briefing
+                <ArrowRight size={16} />
               </Link>
               <Link
-                to="/services"
-                className="inline-flex items-center justify-center gap-2 border border-gray-200 text-primary px-7 py-3 rounded font-semibold hover:border-primary/40 transition-colors"
+                to="/straddle-framework"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold text-[#0f2b46] bg-white border border-slate-200 rounded-lg hover:border-slate-300 hover:bg-slate-50 transition-all duration-200"
               >
-                View Services
+                Explore the Straddle Framework
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Divider line */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <hr className="border-gray-100" />
-      </div>
+      {/* ─── Market Context Banner ─── */}
+      <section className="bg-[#0f2b46] text-white">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8 py-12 lg:py-14">
+          <p className="text-sm font-semibold tracking-widest text-white/40 uppercase mb-8">
+            The Inflection Point
+          </p>
+          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+            {[
+              {
+                stat: '$300B+',
+                label: 'wiped from SaaS market caps in early 2026',
+              },
+              {
+                stat: '50%',
+                label: 'of IT tickets now automatable by AI-native platforms like Serval',
+              },
+              {
+                stat: 'Aug 2026',
+                label: 'EU AI Act general application deadline for high-risk systems',
+              },
+            ].map((item) => (
+              <div key={item.stat}>
+                <p className="font-fraunces text-3xl md:text-4xl font-semibold text-white mb-2">
+                  {item.stat}
+                </p>
+                <p className="text-sm text-white/60 leading-relaxed">{item.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-      {/* Three customer segments */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      {/* ─── Who We Serve ─── */}
+      <section className="py-20 lg:py-24">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="max-w-2xl mb-14">
-            <h2 className="text-3xl font-display font-bold text-primary mb-4">
-              A new category of risk demands specialized evaluation
+            <p className="text-xs font-semibold tracking-widest text-[#0f4377] uppercase mb-3">
+              Built for Decision-Makers
+            </p>
+            <h2 className="font-fraunces text-[#0f2b46] text-3xl md:text-4xl font-semibold leading-tight mb-4">
+              We speak the language of the C-suite, not the lab.
             </h2>
-            <p className="text-gray-500 leading-relaxed">
-              AI-specific exposures hallucinations, algorithmic bias, model drift, 
-              IP infringement require assessment methodologies designed for how 
-              these systems actually behave. Discimen brings that depth.
+            <p className="text-slate-600 leading-relaxed">
+              AI transformation decisions are being made in the CFO's office and the CEO's
+              boardroom — not the CTO's lab. Discimen translates technical AI risk into the
+              financial, operational, and regulatory terms that drive executive action.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* CFO Card */}
+            <div className="group bg-white border border-slate-200 rounded-2xl p-8 hover:border-slate-300 hover:shadow-sm transition-all duration-300">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-[#0f2b46]/5 flex items-center justify-center flex-shrink-0">
+                  <BarChart3 className="text-[#0f2b46]" size={22} />
+                </div>
+                <div>
+                  <h3 className="font-fraunces text-[#0f2b46] text-xl font-semibold mb-1">
+                    For the CFO
+                  </h3>
+                  <p className="text-sm text-slate-500">
+                    Financial risk clarity for AI investment decisions
+                  </p>
+                </div>
+              </div>
+              <ul className="space-y-3">
+                {[
+                  'Total cost of ownership: legacy SaaS vs. AI-native alternatives',
+                  'Risk-adjusted ROI models for platform migration decisions',
+                  'Financial exposure quantification for regulatory non-compliance',
+                  'Insurance-grade risk scoring for AI product liability',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2.5 text-sm text-slate-600">
+                    <CheckCircle2
+                      size={16}
+                      className="text-[#0f4377] mt-0.5 flex-shrink-0"
+                    />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* CEO Card */}
+            <div className="group bg-white border border-slate-200 rounded-2xl p-8 hover:border-slate-300 hover:shadow-sm transition-all duration-300">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-[#0f2b46]/5 flex items-center justify-center flex-shrink-0">
+                  <Target className="text-[#0f2b46]" size={22} />
+                </div>
+                <div>
+                  <h3 className="font-fraunces text-[#0f2b46] text-xl font-semibold mb-1">
+                    For the CEO
+                  </h3>
+                  <p className="text-sm text-slate-500">
+                    Strategic confidence for board-level AI transformation
+                  </p>
+                </div>
+              </div>
+              <ul className="space-y-3">
+                {[
+                  'Independent evaluation of AI-native vs. legacy platform decisions',
+                  'Board-ready governance frameworks that demonstrate fiduciary diligence',
+                  'Competitive positioning analysis: who in your industry is moving and how',
+                  'Transition roadmaps that balance operational continuity with modernization',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2.5 text-sm text-slate-600">
+                    <CheckCircle2
+                      size={16}
+                      className="text-[#0f4377] mt-0.5 flex-shrink-0"
+                    />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── Four Service Lines ─── */}
+      <section className="py-20 lg:py-24 bg-slate-50/50">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="max-w-2xl mb-14">
+            <p className="text-xs font-semibold tracking-widest text-[#0f4377] uppercase mb-3">
+              What We Do
+            </p>
+            <h2 className="font-fraunces text-[#0f2b46] text-3xl md:text-4xl font-semibold leading-tight mb-4">
+              Four capabilities. One integrated advisory.
+            </h2>
+            <p className="text-slate-600 leading-relaxed">
+              From strategic transition planning to insurance-grade risk scoring, Discimen covers
+              the full lifecycle of enterprise AI adoption for regulated industries.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                icon: AlertTriangle,
-                title: 'AI Vendors',
-                description:
-                  'Contractual liability and performance warranty risks for companies building and licensing AI products.',
+                icon: TrendingUp,
+                title: 'AI Transition Advisory',
+                desc: 'Independent evaluation of whether to stay on legacy platforms, layer AI on top, or rip-and-replace with AI-native alternatives. We map the decision space, quantify the trade-offs, and build the business case.',
+                tag: 'Strategic',
+              },
+              {
+                icon: Scale,
+                title: 'Straddle Framework',
+                desc: 'A structured methodology for running legacy and AI-native systems in parallel — managing dual operations, migrating workloads incrementally, and governing both simultaneously without compliance gaps.',
+                tag: 'Operational',
+              },
+              {
+                icon: Shield,
+                title: 'AI Governance Layer',
+                desc: 'Productized governance assessments for agentic AI deployments — covering decision authority mapping, escalation protocols, audit trails, regulatory alignment, and operational risk exposure.',
+                tag: 'Compliance',
               },
               {
                 icon: Building2,
-                title: 'Corporations Deploying AI',
-                description:
-                  'Exposure to discrimination, hallucination, regulatory fines, and IP infringement from production AI systems.',
+                title: 'AI Risk Assessment',
+                desc: 'Insurance-grade risk evaluation for AI systems — model inventory, architecture review, vulnerability profiling, and actuarial risk scoring that underwriters and product liability insurers can price from.',
+                tag: 'Insurance',
               },
-              {
-                icon: TrendingUp,
-                title: 'Financial Loss & Interruption',
-                description:
-                  'Business disruption, flawed AI-driven decisions, and operational losses requiring independent evaluation.',
-              },
-            ].map((item, index) => (
+            ].map((item) => (
               <div
-                key={index}
-                className="border border-gray-100 rounded-lg p-7 hover:border-primary/20 transition-colors"
+                key={item.title}
+                className="bg-white border border-slate-200 rounded-2xl p-8 hover:border-slate-300 hover:shadow-sm transition-all duration-300"
               >
-                <item.icon className="h-7 w-7 text-primary mb-4" />
-                <h3 className="text-primary font-semibold text-lg mb-2">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-[#0f2b46]/5 flex items-center justify-center">
+                    <item.icon className="text-[#0f2b46]" size={20} />
+                  </div>
+                  <span className="text-[10px] font-bold tracking-widest text-[#0f4377]/60 uppercase px-2 py-1 bg-[#0f4377]/5 rounded">
+                    {item.tag}
+                  </span>
+                </div>
+                <h3 className="font-fraunces text-[#0f2b46] text-xl font-semibold mb-3">
                   {item.title}
                 </h3>
-                <p className="text-gray-500 text-sm leading-relaxed">
-                  {item.description}
-                </p>
+                <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link
+              to="/services"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-[#0f4377] hover:text-[#0f2b46] transition-colors"
+            >
+              View full service details
+              <ArrowRight size={14} />
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Service overview */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl font-display font-bold text-primary mb-4">
-              Three service lines. One lifecycle.
-            </h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">
-              Designed for recurring engagement across the full AI insurance 
-              lifecycle from underwriting to compliance to claims.
+      {/* ─── Industries ─── */}
+      <section className="py-20 lg:py-24">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="max-w-2xl mb-14">
+            <p className="text-xs font-semibold tracking-widest text-[#0f4377] uppercase mb-3">
+              Industry Focus
             </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: Search,
-                title: 'Pre-Underwriting Risk Assessment',
-                description:
-                  'Model inventory, architecture review, vulnerability profiling, compliance mapping, and risk scoring delivered before the policy is written.',
-                items: [
-                  'AI model inventory & architecture review',
-                  'Hallucination & error rate profiling',
-                  'Algorithmic bias evaluation',
-                  'Regulatory compliance mapping (EU AI Act, NIST, SEC)',
-                  'Risk scoring and underwriting recommendation',
-                ],
-              },
-              {
-                icon: FileCheck,
-                title: 'Ongoing Compliance Monitoring',
-                description:
-                  'Annual and periodic review ensuring AI systems remain aligned with policy terms, regulatory standards, and operational thresholds.',
-                items: [
-                  'Annual AI system pressure testing',
-                  'Model drift and performance monitoring',
-                  'Policy-to-practice alignment audits',
-                  'Regulatory change impact assessment',
-                  'Compliance reporting for policyholders & carriers',
-                ],
-              },
-              {
-                icon: ShieldCheck,
-                title: 'Claims & Loss Evaluation',
-                description:
-                  'When a loss event occurs, we determine root cause, validate claim scope, and distinguish AI failure from human error.',
-                items: [
-                  'AI incident root cause analysis',
-                  'Loss attribution: AI failure vs. human error',
-                  'Claim magnitude validation',
-                  'Technical evidence documentation',
-                  'Expert witness and litigation support',
-                ],
-              },
-            ].map((service, index) => (
-              <div
-                key={index}
-                className="bg-white border border-gray-100 rounded-lg p-8 hover:shadow-sm transition-all"
-              >
-                <service.icon className="h-8 w-8 text-primary mb-5" />
-                <h3 className="text-primary font-bold text-lg mb-3 font-display">
-                  {service.title}
-                </h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-5">
-                  {service.description}
-                </p>
-                <ul className="space-y-2">
-                  {service.items.map((item, i) => (
-                    <li
-                      key={i}
-                      className="text-gray-500 text-sm flex items-start gap-2"
-                    >
-                      <span className="text-primary/40 mt-0.5 text-xs">\u25CF</span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Industries */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl font-display font-bold text-primary mb-4">
-              Deep industry experience
+            <h2 className="font-fraunces text-[#0f2b46] text-3xl md:text-4xl font-semibold leading-tight mb-4">
+              Deep expertise in regulated industries where the stakes are highest.
             </h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">
-              We bring management consulting experience across the sectors 
-              where AI adoption and AI risk is accelerating fastest.
-            </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-5">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {[
-              { icon: Heart, name: 'Healthcare', detail: 'Diagnostics, patient data, clinical AI' },
-              { icon: Factory, name: 'Manufacturing', detail: 'Predictive maintenance, quality AI' },
-              { icon: Zap, name: 'Energy', detail: 'Grid optimization, forecasting AI' },
-              { icon: Building2, name: 'Automotive', detail: 'Autonomous systems, supply chain AI' },
-              { icon: Landmark, name: 'Financial Services', detail: 'Lending, fraud detection, trading AI' },
-            ].map((industry, index) => (
+              { name: 'Manufacturing', detail: 'Process safety, supply chain AI, quality systems' },
+              { name: 'Healthcare', detail: 'Clinical AI, patient safety, HIPAA compliance' },
+              { name: 'Energy & Utilities', detail: 'Grid operations, regulatory compliance, workforce AI' },
+              { name: 'Automotive', detail: 'ADAS/AV systems, product liability, safety-critical AI' },
+              { name: 'Financial Services', detail: 'Model risk, fair lending, algorithmic trading' },
+            ].map((industry) => (
               <div
-                key={index}
-                className="border border-gray-100 rounded-lg p-6 text-center hover:border-primary/20 transition-colors"
+                key={industry.name}
+                className="bg-white border border-slate-200 rounded-xl p-5 hover:border-slate-300 transition-colors group"
               >
-                <industry.icon className="h-7 w-7 text-primary mx-auto mb-3" />
-                <h3 className="text-primary font-semibold text-sm mb-1">
+                <p className="font-fraunces text-[#0f2b46] text-sm font-semibold mb-1.5">
                   {industry.name}
-                </h3>
-                <p className="text-gray-400 text-xs">{industry.detail}</p>
+                </p>
+                <p className="text-xs text-slate-500 leading-relaxed">{industry.detail}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Market context */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-3xl font-display font-bold text-primary mb-6">
-                The AI insurance market is here
-              </h2>
-              <p className="text-gray-500 leading-relaxed mb-5">
-                Pioneering insurers like Armilla AI and Munich Re have proven that 
-                AI-specific coverage is both viable and necessary. The opportunity 
-                now is for standard carriers and MGAs to enter this market with 
-                confidence backed by independent risk evaluation.
-              </p>
-              <p className="text-gray-500 leading-relaxed mb-5">
-                Discimen provides that evaluation. We enable insurance lines to 
-                offer AI coverage by delivering the technical assessment and audit 
-                capability the underwriting process demands.
-              </p>
-              <p className="text-gray-500 leading-relaxed">
-                Whether you are an insurer entering AI liability coverage, an MGA 
-                designing specialty products, or an enterprise preparing for 
-                renewal we provide the expertise.
-              </p>
-            </div>
-            <div className="space-y-4">
+      {/* ─── Differentiator ─── */}
+      <section className="py-20 lg:py-24 bg-[#0f2b46]">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-xs font-semibold tracking-widest text-white/40 uppercase mb-6">
+              Why Discimen
+            </p>
+            <h2 className="font-fraunces text-white text-3xl md:text-4xl font-semibold leading-tight mb-6">
+              Independent. Operational. Sector-specific.
+            </h2>
+            <p className="text-white/60 text-lg leading-relaxed mb-12">
+              Strategy firms sell top-down frameworks. Technology vendors sell their own platform.
+              Big Four sell audit hours. Discimen delivers hands-on AI transition advisory built
+              on actual enterprise AI implementation experience — not theory.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-8">
               {[
-                { stat: '150+', label: 'AI-related lawsuits in the US (past 5 years)' },
-                { stat: '74%', label: 'of companies already using AI in operations' },
-                { stat: '60%', label: 'of CEOs cite liability concerns as the barrier to further AI investment' },
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-white border border-gray-100 rounded-lg p-5 flex items-center gap-5"
-                >
-                  <span className="text-primary font-display font-bold text-3xl min-w-[80px]">
-                    {item.stat}
-                  </span>
-                  <span className="text-gray-500 text-sm leading-snug">{item.label}</span>
+                {
+                  icon: Zap,
+                  title: 'Practitioner-led',
+                  desc: 'Founded by leaders who have built and deployed enterprise AI systems at Fortune 500 scale — not observed from the outside.',
+                },
+                {
+                  icon: Shield,
+                  title: 'Vendor-independent',
+                  desc: 'We help you evaluate ServiceNow vs. Serval, Salesforce vs. AI-native CRM, legacy vs. modern. We don\'t sell platforms.',
+                },
+                {
+                  icon: Scale,
+                  title: 'Regulation-ready',
+                  desc: 'Every assessment maps to EU AI Act, NIST AI RMF, ISO 42001, and sector-specific frameworks. Defensible by design.',
+                },
+              ].map((item) => (
+                <div key={item.title} className="text-left">
+                  <item.icon className="text-white/40 mb-4" size={24} />
+                  <h3 className="font-fraunces text-white text-lg font-semibold mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-white/50 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -276,27 +344,28 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-display font-bold text-primary mb-4">
-            Ready to scope your AI risk evaluation?
-          </h2>
-          <p className="text-gray-500 mb-10">
-            Every engagement starts with a conversation about your AI landscape, 
-            coverage objectives, and the depth of assessment required.
-          </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-2 bg-primary text-white px-8 py-3.5 rounded font-semibold hover:bg-accent-light transition-colors"
-          >
-            Request Assessment
-            <ArrowRight className="h-4 w-4" />
-          </Link>
+      {/* ─── CTA ─── */}
+      <section className="py-20 lg:py-24">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="font-fraunces text-[#0f2b46] text-3xl md:text-4xl font-semibold leading-tight mb-4">
+              The window is open. Enterprises are making platform decisions now.
+            </h2>
+            <p className="text-slate-600 leading-relaxed mb-8">
+              Whether you're evaluating AI-native ITSM, building governance for agentic
+              deployments, or quantifying AI risk for your insurers — Discimen can help you
+              move with confidence.
+            </p>
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-semibold text-white bg-[#0f2b46] rounded-lg hover:bg-[#0f4377] transition-colors duration-200"
+            >
+              Schedule a Briefing
+              <ArrowRight size={16} />
+            </Link>
+          </div>
         </div>
       </section>
-    </div>
+    </main>
   );
-};
-
-export default Home;
+}

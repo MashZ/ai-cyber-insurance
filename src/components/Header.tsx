@@ -2,89 +2,95 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
-const Header = () => {
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
-  const navigation = [
-    { name: 'Home', path: '/' },
-    { name: 'Services', path: '/services' },
-    { name: 'About', path: '/about' },
-    { name: 'Contact', path: '/contact' },
+  const navLinks = [
+    { to: '/', label: 'Home' },
+    { to: '/services', label: 'Services' },
+    { to: '/straddle-framework', label: 'Straddle Framework' },
+    { to: '/about', label: 'About' },
+    { to: '/contact', label: 'Contact' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <Link to="/" className="flex items-center space-x-2.5">
-            <img src="/discimen_logo.gif" alt="Discimen" className="h-9 w-auto" />
-            <span className="text-xl font-display font-bold text-primary tracking-wide">
-              DISCIMEN
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <div className="flex items-center justify-between h-20">
+          {/* Logo */}
+          <Link to="/" className="flex items-center gap-3 group">
+            <div className="w-9 h-9 rounded-lg bg-[#0f2b46] flex items-center justify-center">
+              <span className="text-white font-fraunces text-lg font-bold leading-none">D</span>
+            </div>
+            <span className="font-fraunces text-[#0f2b46] text-xl font-semibold tracking-tight">
+              Discimen
             </span>
           </Link>
 
-          <nav className="hidden md:flex space-x-8">
-            {navigation.map((item) => (
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-1">
+            {navLinks.map((link) => (
               <Link
-                key={item.name}
-                to={item.path}
-                className={`text-sm font-medium transition-colors duration-200 ${
-                  isActive(item.path)
-                    ? 'text-primary border-b-2 border-primary pb-1'
-                    : 'text-gray-400 hover:text-primary'
+                key={link.to}
+                to={link.to}
+                className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
+                  isActive(link.to)
+                    ? 'text-[#0f2b46] bg-slate-50'
+                    : 'text-slate-500 hover:text-[#0f2b46] hover:bg-slate-50/60'
                 }`}
               >
-                {item.name}
+                {link.label}
               </Link>
             ))}
-          </nav>
-
-          <div className="hidden md:block">
             <Link
               to="/contact"
-              className="bg-primary text-white px-5 py-2 rounded text-sm font-semibold hover:bg-accent-light transition-colors"
+              className="ml-4 px-5 py-2.5 text-sm font-medium text-white bg-[#0f2b46] rounded-lg hover:bg-[#0f4377] transition-colors duration-200"
             >
-              Request Assessment
+              Get Started
             </Link>
-          </div>
+          </nav>
 
+          {/* Mobile Toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-gray-500 hover:text-primary"
+            className="md:hidden p-2 text-slate-600 hover:text-[#0f2b46]"
           >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
+        {/* Mobile Nav */}
         {isOpen && (
-          <div className="md:hidden pb-4 border-t border-gray-50 mt-2 pt-2">
-            {navigation.map((item) => (
+          <nav className="md:hidden pb-6 border-t border-slate-100 pt-4">
+            <div className="flex flex-col gap-1">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  onClick={() => setIsOpen(false)}
+                  className={`px-4 py-3 text-sm font-medium rounded-lg ${
+                    isActive(link.to)
+                      ? 'text-[#0f2b46] bg-slate-50'
+                      : 'text-slate-500 hover:text-[#0f2b46]'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
               <Link
-                key={item.name}
-                to={item.path}
+                to="/contact"
                 onClick={() => setIsOpen(false)}
-                className={`block py-2.5 text-sm font-medium ${
-                  isActive(item.path) ? 'text-primary' : 'text-gray-500 hover:text-primary'
-                }`}
+                className="mt-2 mx-4 px-5 py-3 text-sm font-medium text-white bg-[#0f2b46] rounded-lg text-center"
               >
-                {item.name}
+                Get Started
               </Link>
-            ))}
-            <Link
-              to="/contact"
-              onClick={() => setIsOpen(false)}
-              className="block mt-3 bg-primary text-white px-4 py-2.5 rounded text-sm font-semibold text-center"
-            >
-              Request Assessment
-            </Link>
-          </div>
+            </div>
+          </nav>
         )}
       </div>
     </header>
   );
-};
-
-export default Header;
+}

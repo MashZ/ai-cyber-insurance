@@ -1,10 +1,8 @@
-# Discimen — AI Risk Assessment & Audit
-
-**Independent, third-party AI risk assessment and audit services for insurance carriers, MGAs, and enterprises deploying generative and agentic AI.**
+# Discimen — AI Transition Advisory for Regulated Enterprises
 
 ## Overview
 
-Discimen provides the independent evaluation and audit capability that the insurance industry needs to confidently underwrite AI-specific coverage. Our three service lines span the full AI insurance lifecycle: pre-underwriting risk assessment, ongoing compliance monitoring, and claims & loss evaluation.
+Discimen helps regulated enterprises navigate the transition from legacy SaaS to AI-native operations — managing the risk, building the governance, and measuring the ROI — so they can move fast without breaking compliance.
 
 ## Technology Stack
 
@@ -39,7 +37,7 @@ npm run dev
 ```
 ├── src/
 │   ├── components/       # Header, Footer
-│   ├── pages/           # Home, Services, About, Contact
+│   ├── pages/           # Home, Services, StraddleFramework, About, Contact
 │   ├── App.tsx          # Main app with routing
 │   ├── main.tsx         # Entry point
 │   └── index.css        # Global styles + font imports
@@ -52,16 +50,28 @@ npm run dev
 
 ## Service Lines
 
-1. **Pre-Underwriting AI Risk Assessment** — Model inventory, architecture review, vulnerability profiling, compliance mapping, risk scoring
-2. **Ongoing Compliance Monitoring** — Annual pressure testing, model drift monitoring, policy alignment audits, regulatory change assessment
-3. **Claims & Loss Evaluation** — Root cause analysis, loss attribution, claim validation, technical evidence, expert witness support
+1. **AI Transition Advisory** — Independent evaluation of legacy vs. AI-native platform decisions, TCO modeling, business case development, vendor due diligence, migration roadmap design
+2. **Straddle Framework** — Structured methodology for running legacy and AI-native systems in parallel during transition, with dual governance, workload migration sequencing, and operational continuity monitoring
+3. **AI Governance Layer** — Productized governance assessments for agentic AI deployments, regulatory alignment mapping (EU AI Act, NIST AI RMF, ISO 42001), shadow AI detection, board oversight frameworks
+4. **AI Risk Assessment** — Insurance-grade risk evaluation across the full lifecycle: pre-underwriting assessment, ongoing compliance monitoring, and claims & loss evaluation for AI product liability
+
+## Target Audience
+
+- **CFOs** — Financial risk clarity for AI investment and platform migration decisions
+- **CEOs** — Strategic confidence for board-level AI transformation
+- **Insurers** — Third-party risk assessment for AI underwriting and claims
+- **General Counsel** — Regulatory compliance assessment and documentation
+
+## Industry Focus
+
+Manufacturing, Healthcare, Energy & Utilities, Automotive, Financial Services
 
 ## Founders
 
-**Mash Zahid** — Technical & Delivery Lead
-Global AI Strategy leader, former IBM Associate Partner, Chicago Booth MBA
+**Mash Zahid** — Co-Founder, Technical & Delivery Lead
+Global AI Strategy leader, former IBM Associate Partner, Chicago Booth MBA, Moveworks Architecture Review Board
 
-**Reddhi Mitra** — Commercial & Operations Lead
+**Reddhi Mitra** — Co-Founder, Commercial & Operations Lead
 20-year management consultant, FTI Consulting and IBM veteran, Duke Fuqua MBA
 
 ## Contact

@@ -1,151 +1,159 @@
-import { Mail, Linkedin, ArrowRight, MapPin } from 'lucide-react';
+import { Mail, Linkedin, ArrowUpRight } from 'lucide-react';
 
-const Contact = () => {
+export default function Contact() {
   return (
-    <div className="min-h-screen bg-white pt-24">
-      {/* Header */}
-      <section className="py-14 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-widest text-accent mb-5">
-              Get in Touch
-            </p>
-            <h1 className="text-3xl sm:text-4xl font-display font-bold text-primary mb-4">
-              Start a conversation
-            </h1>
-            <p className="text-gray-500 text-lg leading-relaxed">
-              Whether you are an insurance carrier evaluating AI risk capabilities, an MGA 
-              designing specialty products, or an enterprise seeking to strengthen your AI 
-              risk posture we look forward to hearing from you.
-            </p>
+    <main className="pt-20">
+      {/* ─── Hero ─── */}
+      <section className="pt-16 pb-20 lg:pt-20 lg:pb-24">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16">
+            {/* Left */}
+            <div>
+              <p className="text-xs font-semibold tracking-widest text-[#0f4377] uppercase mb-4">
+                Get Started
+              </p>
+              <h1 className="font-fraunces text-[#0f2b46] text-4xl md:text-5xl font-semibold leading-tight mb-6">
+                Schedule an executive briefing.
+              </h1>
+              <p className="text-lg text-slate-600 leading-relaxed mb-8">
+                Every engagement begins with a 45-minute conversation where we assess your
+                current AI landscape, identify the highest-impact transition opportunities,
+                and outline a path forward — at no cost and no obligation.
+              </p>
+
+              <div className="space-y-6">
+                <div>
+                  <p className="text-xs font-semibold tracking-widest text-slate-400 uppercase mb-3">
+                    What to expect
+                  </p>
+                  <div className="space-y-3 text-sm text-slate-600">
+                    <p>
+                      <span className="font-semibold text-[#0f2b46]">First 15 minutes:</span>{' '}
+                      We listen. Understanding your current SaaS portfolio, AI initiatives, regulatory
+                      landscape, and the decisions you're facing.
+                    </p>
+                    <p>
+                      <span className="font-semibold text-[#0f2b46]">Next 15 minutes:</span>{' '}
+                      We share what we're seeing in your industry — who's moving, what's working,
+                      and where the risks are materializing.
+                    </p>
+                    <p>
+                      <span className="font-semibold text-[#0f2b46]">Final 15 minutes:</span>{' '}
+                      We outline potential paths forward and discuss whether Discimen is the right
+                      partner for your specific situation. Sometimes we're not — and we'll tell
+                      you that directly.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="pt-6 border-t border-slate-100">
+                  <p className="text-xs font-semibold tracking-widest text-slate-400 uppercase mb-3">
+                    Best suited for
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      'CEOs evaluating AI-native platform transitions',
+                      'CFOs modeling AI investment ROI',
+                      'CIOs building agentic AI governance',
+                      'General Counsel assessing AI regulatory compliance',
+                      'Insurers underwriting AI-related risk',
+                    ].map((tag) => (
+                      <span
+                        key={tag}
+                        className="text-xs px-3 py-1.5 bg-slate-50 text-slate-600 rounded-lg"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right — Contact Details */}
+            <div className="lg:pt-12">
+              <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
+                <h2 className="font-fraunces text-[#0f2b46] text-xl font-semibold mb-6">
+                  Reach us directly
+                </h2>
+
+                <div className="space-y-6">
+                  {/* Email */}
+                  <div>
+                    <p className="text-xs font-semibold tracking-widest text-slate-400 uppercase mb-2">
+                      Email
+                    </p>
+                    <a
+                      href="mailto:info@discimen.com"
+                      className="inline-flex items-center gap-2 text-[#0f2b46] font-medium hover:text-[#0f4377] transition-colors"
+                    >
+                      <Mail size={16} />
+                      info@discimen.com
+                    </a>
+                  </div>
+
+                  {/* LinkedIn */}
+                  <div>
+                    <p className="text-xs font-semibold tracking-widest text-slate-400 uppercase mb-3">
+                      Connect on LinkedIn
+                    </p>
+                    <div className="space-y-3">
+                      <a
+                        href="https://www.linkedin.com/in/mashz/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-between p-3 bg-white border border-slate-200 rounded-lg hover:border-slate-300 transition-colors group"
+                      >
+                        <div className="flex items-center gap-3">
+                          <Linkedin size={16} className="text-[#0f4377]" />
+                          <div>
+                            <p className="text-sm font-medium text-[#0f2b46]">Mash Zahid</p>
+                            <p className="text-xs text-slate-500">Technical & Delivery Lead</p>
+                          </div>
+                        </div>
+                        <ArrowUpRight
+                          size={14}
+                          className="text-slate-400 group-hover:text-[#0f4377] transition-colors"
+                        />
+                      </a>
+                      <a
+                        href="https://www.linkedin.com/in/reddhimitra/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-between p-3 bg-white border border-slate-200 rounded-lg hover:border-slate-300 transition-colors group"
+                      >
+                        <div className="flex items-center gap-3">
+                          <Linkedin size={16} className="text-[#0f4377]" />
+                          <div>
+                            <p className="text-sm font-medium text-[#0f2b46]">Reddhi Mitra</p>
+                            <p className="text-xs text-slate-500">Commercial & Operations Lead</p>
+                          </div>
+                        </div>
+                        <ArrowUpRight
+                          size={14}
+                          className="text-slate-400 group-hover:text-[#0f4377] transition-colors"
+                        />
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Industries */}
+                  <div className="pt-6 border-t border-slate-200">
+                    <p className="text-xs font-semibold tracking-widest text-slate-400 uppercase mb-3">
+                      Industries We Serve
+                    </p>
+                    <p className="text-sm text-slate-600 leading-relaxed">
+                      Manufacturing, Healthcare, Energy & Utilities, Automotive, Financial
+                      Services — regulated industries where AI transition risk and governance
+                      requirements are highest.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
-      {/* Contact Methods */}
-      <section className="py-8 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            {/* Email */}
-            <div className="border border-gray-100 rounded-xl p-8">
-              <Mail className="h-8 w-8 text-primary mb-4" />
-              <h2 className="text-xl font-display font-bold text-primary mb-2">Email us</h2>
-              <p className="text-gray-500 text-sm mb-6">
-                For general inquiries, assessment requests, or partnership discussions.
-              </p>
-              <a
-                href="mailto:info@discimen.com"
-                className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent-light transition-colors"
-              >
-                info@discimen.com
-                <ArrowRight className="h-4 w-4" />
-              </a>
-            </div>
-
-            {/* Location */}
-            <div className="border border-gray-100 rounded-xl p-8">
-              <MapPin className="h-8 w-8 text-primary mb-4" />
-              <h2 className="text-xl font-display font-bold text-primary mb-2">Based in</h2>
-              <p className="text-gray-500 text-sm mb-6">
-                Miami, FL & Los Angeles, CA serving clients nationally and globally.
-              </p>
-              <p className="text-gray-400 text-sm">
-                Engagements conducted on-site and remotely.
-              </p>
-            </div>
-          </div>
-
-          {/* Founders Direct */}
-          <div className="border border-gray-100 rounded-xl p-8 sm:p-10">
-            <h2 className="text-2xl font-display font-bold text-primary mb-6">
-              Connect directly with our founders
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-primary font-semibold text-lg">
-                  Mash Zahid
-                </h3>
-                <p className="text-accent text-sm font-medium mb-2">
-                  Operations & Technical Lead
-                </p>
-                <p className="text-gray-500 text-sm mb-4">
-                  For technical assessment scoping, AI system architecture questions, 
-                  and industry-specific evaluation inquiries.
-                </p>
-                <a
-                  href="https://www.linkedin.com/in/mashz/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-primary text-sm font-semibold hover:text-accent-light transition-colors"
-                >
-                  <Linkedin className="h-4 w-4" />
-                  Connect on LinkedIn
-                </a>
-              </div>
-
-              <div>
-                <h3 className="text-primary font-semibold text-lg">Reddhi Mitra</h3>
-                <p className="text-accent text-sm font-medium mb-2">
-                  Commercial & Delivery Lead
-                </p>
-                <p className="text-gray-500 text-sm mb-4">
-                  For partnership discussions, insurance carrier engagements, 
-                  MGA/MGU relationships, and service scoping.
-                </p>
-                <a
-                  href="https://www.linkedin.com/in/reddhimitra/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-primary text-sm font-semibold hover:text-accent-light transition-colors"
-                >
-                  <Linkedin className="h-4 w-4" />
-                  Connect on LinkedIn
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Who Should Reach Out */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary-50 mt-8">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl font-display font-bold text-primary mb-8 text-center">
-            Who we work with
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                title: 'Insurance Carriers & Reinsurers',
-                description:
-                  'Entering or expanding AI liability coverage and seeking independent technical evaluation capability to underwrite confidently.',
-              },
-              {
-                title: 'MGAs & MGUs',
-                description:
-                  'Designing specialty AI insurance products and seeking outsourced assessment services to support underwriting processes.',
-              },
-              {
-                title: 'Enterprises Deploying AI',
-                description:
-                  'Quantifying AI risk exposure, strengthening governance, and demonstrating insurability to carriers at renewal.',
-              },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="bg-white border border-gray-100 rounded-lg p-6"
-              >
-                <h3 className="text-primary font-semibold mb-3">{item.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">
-                  {item.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-    </div>
+    </main>
   );
-};
-
-export default Contact;
+}
