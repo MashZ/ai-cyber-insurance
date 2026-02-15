@@ -14,12 +14,13 @@ import AbstractHeroViz from '../components/AbstractHeroViz';
 
 export default function Home() {
   return (
-    <main className="pt-20">
+    <main className="pt-20 relative">
+      {/* ─── Full-page animated background ─── */}
+      <AbstractHeroViz />
+
       {/* ─── Hero ─── */}
-      <section className="relative overflow-hidden min-h-[600px] lg:min-h-[680px]">
-        {/* Animated abstract visualization (canvas) */}
-        <AbstractHeroViz />
-        {/* Subtle grid texture overlay for depth */}
+      <section className="relative overflow-hidden">
+        {/* Subtle grid texture */}
         <div
           className="absolute inset-0 opacity-[0.02]"
           style={{
@@ -28,12 +29,10 @@ export default function Home() {
             backgroundSize: '48px 48px',
           }}
         />
-        {/* Content gradient — ensures text readability over animation */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-white/40 lg:to-transparent" />
         <div className="max-w-6xl mx-auto px-6 lg:px-8 pt-20 pb-24 lg:pt-28 lg:pb-32 relative">
           <div className="max-w-3xl">
             {/* Eyebrow */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0f2b46]/5 mb-8">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/70 backdrop-blur-sm border border-slate-200/50 mb-8">
               <div className="w-1.5 h-1.5 rounded-full bg-[#0f4377]" />
               <span className="text-xs font-semibold tracking-widest text-[#0f4377] uppercase">
                 AI Transition Advisory
@@ -65,7 +64,7 @@ export default function Home() {
               </Link>
               <Link
                 to="/straddle-framework"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold text-[#0f2b46] bg-white border border-slate-200 rounded-lg hover:border-slate-300 hover:bg-slate-50 transition-all duration-200"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold text-[#0f2b46] bg-white/80 backdrop-blur-sm border border-slate-200 rounded-lg hover:border-slate-300 hover:bg-white transition-all duration-200"
               >
                 Explore the Straddle Framework
               </Link>
@@ -75,7 +74,7 @@ export default function Home() {
       </section>
 
       {/* ─── Market Context Banner ─── */}
-      <section className="bg-[#0f2b46] text-white">
+      <section className="bg-[#0f2b46]/95 backdrop-blur-sm text-white relative">
         <div className="max-w-6xl mx-auto px-6 lg:px-8 py-12 lg:py-14">
           <p className="text-sm font-semibold tracking-widest text-white/40 uppercase mb-8">
             The Inflection Point
@@ -107,8 +106,9 @@ export default function Home() {
       </section>
 
       {/* ─── Who We Serve ─── */}
-      <section className="py-20 lg:py-24">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+      <section className="py-20 lg:py-24 relative">
+        <div className="absolute inset-0 bg-white/80 backdrop-blur-[2px]" />
+        <div className="max-w-6xl mx-auto px-6 lg:px-8 relative">
           <div className="max-w-2xl mb-14">
             <p className="text-xs font-semibold tracking-widest text-[#0f4377] uppercase mb-3">
               Built for Decision-Makers
@@ -117,15 +117,15 @@ export default function Home() {
               We speak the language of the C-suite, not the lab.
             </h2>
             <p className="text-slate-600 leading-relaxed">
-              AI transformation decisions are being made in the CFO's office and the CEO's
-              boardroom — not the CTO's lab. Discimen translates technical AI risk into the
+              AI transformation decisions are being made in the CFO&#39;s office and the CEO&#39;s
+              boardroom — not the CTO&#39;s lab. Discimen translates technical AI risk into the
               financial, operational, and regulatory terms that drive executive action.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
             {/* CFO Card */}
-            <div className="group bg-white border border-slate-200 rounded-2xl p-8 hover:border-slate-300 hover:shadow-sm transition-all duration-300">
+            <div className="group bg-white/90 backdrop-blur-sm border border-slate-200 rounded-2xl p-8 hover:border-slate-300 hover:shadow-sm transition-all duration-300">
               <div className="flex items-start gap-4 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-[#0f2b46]/5 flex items-center justify-center flex-shrink-0">
                   <BarChart3 className="text-[#0f2b46]" size={22} />
@@ -158,7 +158,7 @@ export default function Home() {
             </div>
 
             {/* CEO Card */}
-            <div className="group bg-white border border-slate-200 rounded-2xl p-8 hover:border-slate-300 hover:shadow-sm transition-all duration-300">
+            <div className="group bg-white/90 backdrop-blur-sm border border-slate-200 rounded-2xl p-8 hover:border-slate-300 hover:shadow-sm transition-all duration-300">
               <div className="flex items-start gap-4 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-[#0f2b46]/5 flex items-center justify-center flex-shrink-0">
                   <Target className="text-[#0f2b46]" size={22} />
@@ -194,8 +194,9 @@ export default function Home() {
       </section>
 
       {/* ─── Four Service Lines ─── */}
-      <section className="py-20 lg:py-24 bg-slate-50/50">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+      <section className="py-20 lg:py-24 relative">
+        <div className="absolute inset-0 bg-slate-50/85 backdrop-blur-[2px]" />
+        <div className="max-w-6xl mx-auto px-6 lg:px-8 relative">
           <div className="max-w-2xl mb-14">
             <p className="text-xs font-semibold tracking-widest text-[#0f4377] uppercase mb-3">
               What We Do
@@ -238,7 +239,7 @@ export default function Home() {
             ].map((item) => (
               <div
                 key={item.title}
-                className="bg-white border border-slate-200 rounded-2xl p-8 hover:border-slate-300 hover:shadow-sm transition-all duration-300"
+                className="bg-white/90 backdrop-blur-sm border border-slate-200 rounded-2xl p-8 hover:border-slate-300 hover:shadow-sm transition-all duration-300"
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-lg bg-[#0f2b46]/5 flex items-center justify-center">
@@ -269,8 +270,9 @@ export default function Home() {
       </section>
 
       {/* ─── Industries ─── */}
-      <section className="py-20 lg:py-24">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+      <section className="py-20 lg:py-24 relative">
+        <div className="absolute inset-0 bg-white/80 backdrop-blur-[2px]" />
+        <div className="max-w-6xl mx-auto px-6 lg:px-8 relative">
           <div className="max-w-2xl mb-14">
             <p className="text-xs font-semibold tracking-widest text-[#0f4377] uppercase mb-3">
               Industry Focus
@@ -290,7 +292,7 @@ export default function Home() {
             ].map((industry) => (
               <div
                 key={industry.name}
-                className="bg-white border border-slate-200 rounded-xl p-5 hover:border-slate-300 transition-colors group"
+                className="bg-white/90 backdrop-blur-sm border border-slate-200 rounded-xl p-5 hover:border-slate-300 transition-colors group"
               >
                 <p className="font-fraunces text-[#0f2b46] text-sm font-semibold mb-1.5">
                   {industry.name}
@@ -303,8 +305,8 @@ export default function Home() {
       </section>
 
       {/* ─── Differentiator ─── */}
-      <section className="py-20 lg:py-24 bg-[#0f2b46]">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+      <section className="py-20 lg:py-24 bg-[#0f2b46]/95 backdrop-blur-sm relative">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8 relative">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-xs font-semibold tracking-widest text-white/40 uppercase mb-6">
               Why Discimen
@@ -328,7 +330,7 @@ export default function Home() {
                 {
                   icon: Shield,
                   title: 'Vendor-independent',
-                  desc: 'We help you evaluate ServiceNow vs. Serval, Salesforce vs. AI-native CRM, legacy vs. modern. We don\'t sell platforms.',
+                  desc: "We help you evaluate ServiceNow vs. Serval, Salesforce vs. AI-native CRM, legacy vs. modern. We don\u2019t sell platforms.",
                 },
                 {
                   icon: Scale,
@@ -350,14 +352,15 @@ export default function Home() {
       </section>
 
       {/* ─── CTA ─── */}
-      <section className="py-20 lg:py-24">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+      <section className="py-20 lg:py-24 relative">
+        <div className="absolute inset-0 bg-white/85 backdrop-blur-[2px]" />
+        <div className="max-w-6xl mx-auto px-6 lg:px-8 relative">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="font-fraunces text-[#0f2b46] text-3xl md:text-4xl font-semibold leading-tight mb-4">
               The window is open. Enterprises are making platform decisions now.
             </h2>
             <p className="text-slate-600 leading-relaxed mb-8">
-              Whether you're evaluating AI-native ITSM, building governance for agentic
+              Whether you&#39;re evaluating AI-native ITSM, building governance for agentic
               deployments, or quantifying AI risk for your insurers — Discimen can help you
               move with confidence.
             </p>

@@ -1,11 +1,10 @@
 import { useEffect, useRef } from 'react';
 
 /**
- * AbstractHeroViz — A premium animated visualization inspired by Bain's Strategy hero.
- * Renders flowing organic shapes, morphing connection lines, and floating governance nodes
- * that suggest transformation, risk assessment, and strategic navigation.
- *
- * Uses pure Canvas API for smooth 60fps animation. Falls back gracefully on low-power devices.
+ * AbstractHeroViz — Ambient animated background visualization.
+ * Renders flowing organic shapes, morphing connection lines, and floating nodes
+ * suggesting transformation, governance, and strategic navigation.
+ * Designed as a full-page fixed background — intentionally subtle.
  */
 export default function AbstractHeroViz() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -21,12 +20,10 @@ export default function AbstractHeroViz() {
     let height: number;
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
 
-    // ── Resize ──
     function resize() {
       if (!canvas) return;
-      const rect = canvas.getBoundingClientRect();
-      width = rect.width;
-      height = rect.height;
+      width = window.innerWidth;
+      height = window.innerHeight;
       canvas.width = width * dpr;
       canvas.height = height * dpr;
       ctx!.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -34,13 +31,13 @@ export default function AbstractHeroViz() {
     resize();
     window.addEventListener('resize', resize);
 
-    // ── Color palette (Discimen navy/steel blue) ──
-    const NAVY = { r: 15, g: 43, b: 70 };      // #0f2b46
-    const STEEL = { r: 15, g: 67, b: 119 };     // #0f4377
-    const LIGHT = { r: 148, g: 176, b: 204 };   // muted blue-gray
-    const ACCENT = { r: 59, g: 130, b: 191 };   // vibrant mid-blue
+    // ── Palette ──
+    const NAVY = { r: 15, g: 43, b: 70 };
+    const STEEL = { r: 15, g: 67, b: 119 };
+    const LIGHT = { r: 148, g: 176, b: 204 };
+    const ACCENT = { r: 59, g: 130, b: 191 };
 
-    // ── Nodes — floating strategic decision points ──
+    // ── Nodes ──
     interface Node {
       x: number; y: number;
       baseX: number; baseY: number;
@@ -54,7 +51,7 @@ export default function AbstractHeroViz() {
       pulse: number;
     }
 
-    const nodeCount = 18;
+    const nodeCount = 22;
     const nodes: Node[] = [];
 
     function initNodes() {
@@ -63,116 +60,106 @@ export default function AbstractHeroViz() {
         const baseX = Math.random() * width;
         const baseY = Math.random() * height;
         nodes.push({
-          x: baseX,
-          y: baseY,
-          baseX,
-          baseY,
-          vx: (Math.random() - 0.5) * 0.3,
-          vy: (Math.random() - 0.5) * 0.3,
-          radius: 2 + Math.random() * 4,
+          x: baseX, y: baseY,
+          baseX, baseY,
+          vx: (Math.random() - 0.5) * 0.2,
+          vy: (Math.random() - 0.5) * 0.2,
+          radius: 1.5 + Math.random() * 3,
           phase: Math.random() * Math.PI * 2,
-          speed: 0.002 + Math.random() * 0.004,
-          orbitRadius: 20 + Math.random() * 60,
-          opacity: 0.15 + Math.random() * 0.45,
-          ring: Math.random() > 0.65,
+          speed: 0.001 + Math.random() * 0.003,
+          orbitRadius: 15 + Math.random() * 50,
+          opacity: 0.08 + Math.random() * 0.25,
+          ring: Math.random() > 0.7,
           pulse: Math.random() * Math.PI * 2,
         });
       }
     }
     initNodes();
 
-    // ── Organic blobs — morphing shapes suggesting transformation ──
+    // ── Organic blobs ──
     interface Blob {
       cx: number; cy: number;
       radiusX: number; radiusY: number;
-      rotation: number;
-      rotSpeed: number;
+      rotation: number; rotSpeed: number;
       phase: number;
       color: { r: number; g: number; b: number };
       opacity: number;
-      breathSpeed: number;
-      breathAmp: number;
+      breathSpeed: number; breathAmp: number;
     }
 
     const blobs: Blob[] = [
       {
-        cx: 0.65, cy: 0.3,
+        cx: 0.7, cy: 0.25,
+        radiusX: 220, radiusY: 170,
+        rotation: 0, rotSpeed: 0.00025,
+        phase: 0, color: STEEL,
+        opacity: 0.035,
+        breathSpeed: 0.0008, breathAmp: 25,
+      },
+      {
+        cx: 0.3, cy: 0.55,
         radiusX: 180, radiusY: 140,
-        rotation: 0, rotSpeed: 0.0003,
-        phase: 0,
-        color: STEEL,
-        opacity: 0.06,
-        breathSpeed: 0.001,
-        breathAmp: 20,
+        rotation: Math.PI / 3, rotSpeed: -0.0003,
+        phase: Math.PI / 2, color: NAVY,
+        opacity: 0.03,
+        breathSpeed: 0.001, breathAmp: 20,
       },
       {
-        cx: 0.4, cy: 0.6,
-        radiusX: 150, radiusY: 120,
-        rotation: Math.PI / 3, rotSpeed: -0.0004,
-        phase: Math.PI / 2,
-        color: NAVY,
-        opacity: 0.05,
-        breathSpeed: 0.0012,
-        breathAmp: 25,
+        cx: 0.85, cy: 0.75,
+        radiusX: 140, radiusY: 110,
+        rotation: Math.PI / 6, rotSpeed: 0.00035,
+        phase: Math.PI, color: ACCENT,
+        opacity: 0.025,
+        breathSpeed: 0.0007, breathAmp: 18,
       },
       {
-        cx: 0.8, cy: 0.7,
-        radiusX: 110, radiusY: 90,
-        rotation: Math.PI / 6, rotSpeed: 0.0005,
-        phase: Math.PI,
-        color: ACCENT,
-        opacity: 0.04,
-        breathSpeed: 0.0008,
-        breathAmp: 15,
+        cx: 0.15, cy: 0.85,
+        radiusX: 120, radiusY: 100,
+        rotation: Math.PI / 4, rotSpeed: 0.0002,
+        phase: Math.PI * 1.5, color: STEEL,
+        opacity: 0.02,
+        breathSpeed: 0.0009, breathAmp: 15,
       },
     ];
 
-    // ── Flow lines — curved paths connecting nodes ──
+    // ── Flow line with traveling dot ──
     function drawFlowLine(
       ctx: CanvasRenderingContext2D,
       x1: number, y1: number,
       x2: number, y2: number,
-      opacity: number,
-      t: number
+      opacity: number, t: number
     ) {
       const mx = (x1 + x2) / 2;
       const my = (y1 + y2) / 2;
       const dx = x2 - x1;
       const dy = y2 - y1;
       const dist = Math.sqrt(dx * dx + dy * dy);
-
-      // Perpendicular offset for curve
       const perpX = -dy / dist;
       const perpY = dx / dist;
-      const curveOffset = Math.sin(t * 0.001 + dist * 0.01) * dist * 0.15;
-
+      const curveOffset = Math.sin(t * 0.0008 + dist * 0.01) * dist * 0.12;
       const cpx = mx + perpX * curveOffset;
       const cpy = my + perpY * curveOffset;
 
       ctx.beginPath();
       ctx.moveTo(x1, y1);
       ctx.quadraticCurveTo(cpx, cpy, x2, y2);
-      ctx.strokeStyle = `rgba(${STEEL.r}, ${STEEL.g}, ${STEEL.b}, ${opacity * 0.35})`;
-      ctx.lineWidth = 0.8;
+      ctx.strokeStyle = `rgba(${STEEL.r}, ${STEEL.g}, ${STEEL.b}, ${opacity * 0.2})`;
+      ctx.lineWidth = 0.6;
       ctx.stroke();
 
-      // Traveling dot along the line
-      const dotT = ((t * 0.0005 + dist * 0.001) % 1);
+      // Traveling dot
+      const dotT = ((t * 0.0004 + dist * 0.001) % 1);
       const dotX = (1 - dotT) * (1 - dotT) * x1 + 2 * (1 - dotT) * dotT * cpx + dotT * dotT * x2;
       const dotY = (1 - dotT) * (1 - dotT) * y1 + 2 * (1 - dotT) * dotT * cpy + dotT * dotT * y2;
 
       ctx.beginPath();
-      ctx.arc(dotX, dotY, 1.5, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(${ACCENT.r}, ${ACCENT.g}, ${ACCENT.b}, ${opacity * 0.6})`;
+      ctx.arc(dotX, dotY, 1.2, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${ACCENT.r}, ${ACCENT.g}, ${ACCENT.b}, ${opacity * 0.4})`;
       ctx.fill();
     }
 
-    // ── Draw an organic blob shape ──
-    function drawBlob(
-      ctx: CanvasRenderingContext2D,
-      blob: Blob,
-      t: number
-    ) {
+    // ── Blob drawing ──
+    function drawBlob(ctx: CanvasRenderingContext2D, blob: Blob, t: number) {
       const cx = blob.cx * width;
       const cy = blob.cy * height;
       const breath = Math.sin(t * blob.breathSpeed + blob.phase) * blob.breathAmp;
@@ -184,141 +171,119 @@ export default function AbstractHeroViz() {
       ctx.translate(cx, cy);
       ctx.rotate(rot);
 
-      // Organic shape using multiple bezier curves with noise
       ctx.beginPath();
-      const points = 8;
-      for (let i = 0; i <= points; i++) {
-        const angle = (i / points) * Math.PI * 2;
-        const noise = Math.sin(angle * 3 + t * 0.001 + blob.phase) * 0.15 +
-                      Math.sin(angle * 5 + t * 0.0007) * 0.08;
-        const r = (Math.cos(angle) * Math.cos(angle) * rx * rx + Math.sin(angle) * Math.sin(angle) * ry * ry);
-        const radius = Math.sqrt(r) * (1 + noise);
-        const px = Math.cos(angle) * radius;
-        const py = Math.sin(angle) * radius;
-
+      const pts = 8;
+      for (let i = 0; i <= pts; i++) {
+        const angle = (i / pts) * Math.PI * 2;
+        const noise =
+          Math.sin(angle * 3 + t * 0.0008 + blob.phase) * 0.12 +
+          Math.sin(angle * 5 + t * 0.0006) * 0.06;
+        const r = Math.sqrt(
+          Math.cos(angle) ** 2 * rx * rx + Math.sin(angle) ** 2 * ry * ry
+        ) * (1 + noise);
+        const px = Math.cos(angle) * r;
+        const py = Math.sin(angle) * r;
         if (i === 0) {
           ctx.moveTo(px, py);
         } else {
-          const prevAngle = ((i - 1) / points) * Math.PI * 2;
-          const prevNoise = Math.sin(prevAngle * 3 + t * 0.001 + blob.phase) * 0.15 +
-                            Math.sin(prevAngle * 5 + t * 0.0007) * 0.08;
-          const prevR = Math.sqrt(
-            Math.cos(prevAngle) * Math.cos(prevAngle) * rx * rx +
-            Math.sin(prevAngle) * Math.sin(prevAngle) * ry * ry
-          ) * (1 + prevNoise);
-
-          const midAngle = (prevAngle + angle) / 2;
-          const midNoise = Math.sin(midAngle * 3 + t * 0.001 + blob.phase) * 0.2;
-          const midR = Math.sqrt(
-            Math.cos(midAngle) * Math.cos(midAngle) * rx * rx +
-            Math.sin(midAngle) * Math.sin(midAngle) * ry * ry
-          ) * (1 + midNoise);
-
-          const cpx = Math.cos(midAngle) * midR;
-          const cpy = Math.sin(midAngle) * midR;
-          ctx.quadraticCurveTo(cpx, cpy, px, py);
+          const pa = ((i - 1) / pts) * Math.PI * 2;
+          const ma = (pa + angle) / 2;
+          const mn =
+            Math.sin(ma * 3 + t * 0.0008 + blob.phase) * 0.15;
+          const mr = Math.sqrt(
+            Math.cos(ma) ** 2 * rx * rx + Math.sin(ma) ** 2 * ry * ry
+          ) * (1 + mn);
+          ctx.quadraticCurveTo(Math.cos(ma) * mr, Math.sin(ma) * mr, px, py);
         }
       }
       ctx.closePath();
 
-      // Gradient fill
       const grad = ctx.createRadialGradient(0, 0, 0, 0, 0, Math.max(rx, ry));
-      grad.addColorStop(0, `rgba(${blob.color.r}, ${blob.color.g}, ${blob.color.b}, ${blob.opacity * 1.2})`);
-      grad.addColorStop(0.6, `rgba(${blob.color.r}, ${blob.color.g}, ${blob.color.b}, ${blob.opacity * 0.5})`);
+      grad.addColorStop(0, `rgba(${blob.color.r}, ${blob.color.g}, ${blob.color.b}, ${blob.opacity})`);
+      grad.addColorStop(0.6, `rgba(${blob.color.r}, ${blob.color.g}, ${blob.color.b}, ${blob.opacity * 0.4})`);
       grad.addColorStop(1, `rgba(${blob.color.r}, ${blob.color.g}, ${blob.color.b}, 0)`);
       ctx.fillStyle = grad;
       ctx.fill();
-
       ctx.restore();
     }
 
-    // ── Scan line — horizontal sweep suggesting assessment ──
+    // ── Slow scan line ──
     function drawScanLine(ctx: CanvasRenderingContext2D, t: number) {
-      const y = ((t * 0.00015) % 1) * height;
-      const grad = ctx.createLinearGradient(0, y - 40, 0, y + 40);
+      const y = ((t * 0.0001) % 1) * height;
+      const grad = ctx.createLinearGradient(0, y - 50, 0, y + 50);
       grad.addColorStop(0, 'rgba(59, 130, 191, 0)');
-      grad.addColorStop(0.5, 'rgba(59, 130, 191, 0.03)');
+      grad.addColorStop(0.5, 'rgba(59, 130, 191, 0.015)');
       grad.addColorStop(1, 'rgba(59, 130, 191, 0)');
       ctx.fillStyle = grad;
-      ctx.fillRect(0, y - 40, width, 80);
+      ctx.fillRect(0, y - 50, width, 100);
     }
 
-    // ── Main animation loop ──
+    // ── Render loop ──
     function draw(t: number) {
       if (!ctx) return;
       ctx.clearRect(0, 0, width, height);
 
-      // Layer 1: Organic blobs (background)
-      for (const blob of blobs) {
-        drawBlob(ctx, blob, t);
-      }
+      // Blobs
+      for (const blob of blobs) drawBlob(ctx, blob, t);
 
-      // Layer 2: Scan line
+      // Scan
       drawScanLine(ctx, t);
 
-      // Layer 3: Update and draw connections between nearby nodes
-      const connectionDist = Math.min(width, height) * 0.35;
+      // Connections
+      const maxDist = Math.min(width, height) * 0.3;
       for (let i = 0; i < nodes.length; i++) {
         const a = nodes[i];
-        // Orbital drift
         a.x = a.baseX + Math.cos(t * a.speed + a.phase) * a.orbitRadius;
         a.y = a.baseY + Math.sin(t * a.speed * 0.7 + a.phase) * a.orbitRadius * 0.6;
-        // Slow wander
         a.baseX += a.vx;
         a.baseY += a.vy;
-        // Wrap around
-        if (a.baseX < -50) a.baseX = width + 50;
-        if (a.baseX > width + 50) a.baseX = -50;
-        if (a.baseY < -50) a.baseY = height + 50;
-        if (a.baseY > height + 50) a.baseY = -50;
+        if (a.baseX < -60) a.baseX = width + 60;
+        if (a.baseX > width + 60) a.baseX = -60;
+        if (a.baseY < -60) a.baseY = height + 60;
+        if (a.baseY > height + 60) a.baseY = -60;
 
         for (let j = i + 1; j < nodes.length; j++) {
           const b = nodes[j];
           const dx = b.x - a.x;
           const dy = b.y - a.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
-          if (dist < connectionDist) {
-            const opacity = (1 - dist / connectionDist) * Math.min(a.opacity, b.opacity);
-            drawFlowLine(ctx, a.x, a.y, b.x, b.y, opacity, t);
+          if (dist < maxDist) {
+            const op = (1 - dist / maxDist) * Math.min(a.opacity, b.opacity);
+            drawFlowLine(ctx, a.x, a.y, b.x, b.y, op, t);
           }
         }
       }
 
-      // Layer 4: Draw nodes
-      for (const node of nodes) {
-        const pulseScale = 1 + Math.sin(t * 0.003 + node.pulse) * 0.2;
+      // Nodes
+      for (const n of nodes) {
+        const ps = 1 + Math.sin(t * 0.002 + n.pulse) * 0.15;
 
-        if (node.ring) {
-          // Ring node — suggests governance checkpoint
+        if (n.ring) {
           ctx.beginPath();
-          ctx.arc(node.x, node.y, node.radius * pulseScale * 1.8, 0, Math.PI * 2);
-          ctx.strokeStyle = `rgba(${ACCENT.r}, ${ACCENT.g}, ${ACCENT.b}, ${node.opacity * 0.4})`;
-          ctx.lineWidth = 0.8;
+          ctx.arc(n.x, n.y, n.radius * ps * 2, 0, Math.PI * 2);
+          ctx.strokeStyle = `rgba(${ACCENT.r}, ${ACCENT.g}, ${ACCENT.b}, ${n.opacity * 0.25})`;
+          ctx.lineWidth = 0.6;
           ctx.stroke();
         }
 
-        // Core dot
         ctx.beginPath();
-        ctx.arc(node.x, node.y, node.radius * pulseScale, 0, Math.PI * 2);
-        const dotGrad = ctx.createRadialGradient(
-          node.x, node.y, 0,
-          node.x, node.y, node.radius * pulseScale
-        );
-        dotGrad.addColorStop(0, `rgba(${LIGHT.r}, ${LIGHT.g}, ${LIGHT.b}, ${node.opacity})`);
-        dotGrad.addColorStop(1, `rgba(${STEEL.r}, ${STEEL.g}, ${STEEL.b}, ${node.opacity * 0.3})`);
-        ctx.fillStyle = dotGrad;
+        ctx.arc(n.x, n.y, n.radius * ps, 0, Math.PI * 2);
+        const dg = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, n.radius * ps);
+        dg.addColorStop(0, `rgba(${LIGHT.r}, ${LIGHT.g}, ${LIGHT.b}, ${n.opacity * 0.7})`);
+        dg.addColorStop(1, `rgba(${STEEL.r}, ${STEEL.g}, ${STEEL.b}, ${n.opacity * 0.2})`);
+        ctx.fillStyle = dg;
         ctx.fill();
 
         // Glow
         ctx.beginPath();
-        ctx.arc(node.x, node.y, node.radius * pulseScale * 2.5, 0, Math.PI * 2);
-        const glowGrad = ctx.createRadialGradient(
-          node.x, node.y, node.radius * pulseScale * 0.5,
-          node.x, node.y, node.radius * pulseScale * 2.5
+        ctx.arc(n.x, n.y, n.radius * ps * 2.5, 0, Math.PI * 2);
+        const gg = ctx.createRadialGradient(
+          n.x, n.y, n.radius * ps * 0.5,
+          n.x, n.y, n.radius * ps * 2.5
         );
-        glowGrad.addColorStop(0, `rgba(${ACCENT.r}, ${ACCENT.g}, ${ACCENT.b}, ${node.opacity * 0.15})`);
-        glowGrad.addColorStop(1, `rgba(${ACCENT.r}, ${ACCENT.g}, ${ACCENT.b}, 0)`);
-        ctx.fillStyle = glowGrad;
+        gg.addColorStop(0, `rgba(${ACCENT.r}, ${ACCENT.g}, ${ACCENT.b}, ${n.opacity * 0.08})`);
+        gg.addColorStop(1, `rgba(${ACCENT.r}, ${ACCENT.g}, ${ACCENT.b}, 0)`);
+        ctx.fillStyle = gg;
         ctx.fill();
       }
 
@@ -336,8 +301,8 @@ export default function AbstractHeroViz() {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 w-full h-full pointer-events-none"
-      style={{ mixBlendMode: 'normal' }}
+      className="fixed inset-0 w-screen h-screen pointer-events-none"
+      style={{ zIndex: 0 }}
       aria-hidden="true"
     />
   );

@@ -1,99 +1,134 @@
 import { Link } from 'react-router-dom';
+import { Linkedin, Mail } from 'lucide-react';
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <footer className="bg-[#0f2b46] text-white/40">
-      <div className="max-w-6xl mx-auto px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-4 gap-10 mb-12">
+    <footer className="bg-[#f0f2f5] border-t border-gray-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
-          <div className="md:col-span-1">
-            <Link to="/" className="flex items-center gap-3 mb-4">
-              <img
-                src="/discimen_logo_gray.png"
-                alt="Discimen"
-                className="w-8 h-8 rounded-lg object-contain brightness-0 invert opacity-60"
-              />
-              <span className="font-fraunces text-white text-lg font-semibold tracking-tight">
-                Discimen
+          <div className="md:col-span-2">
+            <div className="flex items-center space-x-2.5 mb-4">
+              <img src="/discimen_logo_gray.png" alt="Discimen" className="h-8 w-auto" />
+              <span className="text-lg font-bold text-[#0f2b46] tracking-wide">
+                DISCIMEN
               </span>
-            </Link>
-            <p className="text-sm leading-relaxed">
-              Independent AI transition advisory for regulated enterprises.
+            </div>
+            <p className="text-gray-500 text-sm leading-relaxed max-w-md">
+              Independent AI transition advisory and risk assessment for
+              regulated enterprises navigating the shift to AI-native operations.
             </p>
           </div>
 
           {/* Services */}
           <div>
-            <p className="text-xs font-semibold tracking-widest text-white/20 uppercase mb-4">
+            <h4 className="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">
               Services
-            </p>
-            <div className="space-y-2.5">
-              <Link to="/services#transition-advisory" className="block text-sm hover:text-white/70 transition-colors">
-                AI Transition Advisory
-              </Link>
-              <Link to="/straddle-framework" className="block text-sm hover:text-white/70 transition-colors">
-                Straddle Framework
-              </Link>
-              <Link to="/services#governance-layer" className="block text-sm hover:text-white/70 transition-colors">
-                AI Governance Layer
-              </Link>
-              <Link to="/services#risk-assessment" className="block text-sm hover:text-white/70 transition-colors">
-                AI Risk Assessment
-              </Link>
-            </div>
+            </h4>
+            <ul className="space-y-2.5 text-sm">
+              <li>
+                <Link
+                  to="/services#transition-advisory"
+                  className="text-gray-500 hover:text-[#0f2b46] transition-colors"
+                >
+                  AI Transition Advisory
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/straddle-framework"
+                  className="text-gray-500 hover:text-[#0f2b46] transition-colors"
+                >
+                  Straddle Framework
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services#governance-layer"
+                  className="text-gray-500 hover:text-[#0f2b46] transition-colors"
+                >
+                  AI Governance Layer
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services#risk-assessment"
+                  className="text-gray-500 hover:text-[#0f2b46] transition-colors"
+                >
+                  AI Risk Assessment
+                </Link>
+              </li>
+            </ul>
           </div>
 
-          {/* Company */}
+          {/* Connect */}
           <div>
-            <p className="text-xs font-semibold tracking-widest text-white/20 uppercase mb-4">
-              Company
-            </p>
-            <div className="space-y-2.5">
-              <Link to="/about" className="block text-sm hover:text-white/70 transition-colors">
-                About
-              </Link>
-              <Link to="/contact" className="block text-sm hover:text-white/70 transition-colors">
-                Contact
-              </Link>
-            </div>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <p className="text-xs font-semibold tracking-widest text-white/20 uppercase mb-4">
+            <h4 className="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">
               Connect
-            </p>
-            <div className="space-y-2.5">
-              <a href="mailto:info@discimen.com" className="block text-sm hover:text-white/70 transition-colors">
-                info@discimen.com
-              </a>
-              <a
-                href="https://www.linkedin.com/in/mashz/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-sm hover:text-white/70 transition-colors"
-              >
-                Mash Zahid — LinkedIn
-              </a>
-              <a
-                href="https://www.linkedin.com/in/reddhimitra/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-sm hover:text-white/70 transition-colors"
-              >
-                Reddhi Mitra — LinkedIn
-              </a>
-            </div>
+            </h4>
+            <ul className="space-y-2.5 text-sm">
+              <li>
+                <a
+                  href="mailto:info@discimen.com"
+                  className="inline-flex items-center gap-1.5 text-gray-500 hover:text-[#0f2b46] transition-colors"
+                >
+                  <Mail size={14} />
+                  info@discimen.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/mashz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-gray-500 hover:text-[#0f2b46] transition-colors"
+                >
+                  <Linkedin size={14} />
+                  Mash Zahid
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/reddhimitra/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-gray-500 hover:text-[#0f2b46] transition-colors"
+                >
+                  <Linkedin size={14} />
+                  Reddhi Mitra
+                </a>
+              </li>
+              <li>
+                <Link
+                  to="/about"
+                  className="text-gray-500 hover:text-[#0f2b46] transition-colors"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="text-gray-500 hover:text-[#0f2b46] transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-xs">&copy; {new Date().getFullYear()} Discimen. All rights reserved.</p>
-          <p className="text-xs">
+        <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center gap-3">
+          <p className="text-xs text-gray-400">
+            &copy; {new Date().getFullYear()} Discimen. All rights reserved.
+          </p>
+          <p className="text-xs text-gray-400">
             AI Transition Advisory &middot; Governance &middot; Risk Assessment
           </p>
         </div>
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;
