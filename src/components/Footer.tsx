@@ -9,9 +9,14 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2.5 mb-4">
-              <img src="/discimen_logo_gray.png" alt="Discimen" className="h-8 w-auto" />
-              <span className="text-lg font-bold text-[#0f2b46] tracking-wide">
-                DISCIMEN
+              <img 
+                src="/discimen_logo_gray.png" 
+                alt="Discimen" 
+                className="h-9 w-9 object-contain"
+                style={{ mixBlendMode: 'multiply' }}
+              />
+              <span className="font-display text-[#0f2b46] text-2xl font-bold tracking-tight">
+                Discimen
               </span>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed max-w-md">
