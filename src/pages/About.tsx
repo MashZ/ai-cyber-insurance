@@ -245,14 +245,9 @@ export default function About() {
                 <tbody className="divide-y divide-slate-100">
                   {[
                     {
-                      competitor: 'Armilla AI',
-                      angle: 'AI model risk scoring as an MGA',
-                      diff: 'Operational transition risk and governance, not just model-level scoring',
-                    },
-                    {
-                      competitor: 'Munich Re',
-                      angle: 'AI risk insurance and actuarial products',
-                      diff: 'Practical governance frameworks that feed into insurance, not insurance products themselves',
+                      competitor: 'Niche Specialty Companies',
+                      angle: 'AI risk insurance and actuarial products with AI model risk scoring',
+                      diff: 'Operational transition risk and practical governance frameworks that inform insurance pricing',
                     },
                     {
                       competitor: 'McKinsey / BCG',
