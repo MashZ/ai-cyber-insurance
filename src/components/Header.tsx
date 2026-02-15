@@ -22,9 +22,11 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 rounded-lg bg-[#0f2b46] flex items-center justify-center">
-              <span className="text-white font-fraunces text-lg font-bold leading-none">D</span>
-            </div>
+            <img
+              src="/discimen_logo_gray.png"
+              alt="Discimen"
+              className="w-9 h-9 rounded-lg object-contain"
+            />
             <span className="font-fraunces text-[#0f2b46] text-xl font-semibold tracking-tight">
               Discimen
             </span>

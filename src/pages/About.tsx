@@ -75,6 +75,14 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Mash */}
             <div className="bg-white border border-slate-200 rounded-2xl p-8">
+              {/* Profile Photo */}
+              <div className="w-28 h-28 rounded-2xl overflow-hidden mb-6 bg-slate-100">
+                <img
+                  src="/mash-zahid.jpg"
+                  alt="Mash Zahid"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="flex items-start justify-between mb-6">
                 <div>
                   <h3 className="font-fraunces text-[#0f2b46] text-2xl font-semibold mb-1">
@@ -135,6 +143,14 @@ export default function About() {
 
             {/* Reddhi */}
             <div className="bg-white border border-slate-200 rounded-2xl p-8">
+              {/* Profile Photo */}
+              <div className="w-28 h-28 rounded-2xl overflow-hidden mb-6 bg-slate-100">
+                <img
+                  src="/reddhi-mitra.jpg"
+                  alt="Reddhi Mitra"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="flex items-start justify-between mb-6">
                 <div>
                   <h3 className="font-fraunces text-[#0f2b46] text-2xl font-semibold mb-1">

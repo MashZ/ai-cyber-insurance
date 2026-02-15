@@ -8,9 +8,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center">
-                <span className="text-white font-fraunces text-base font-bold leading-none">D</span>
-              </div>
+              <img
+                src="/discimen_logo_gray.png"
+                alt="Discimen"
+                className="w-8 h-8 rounded-lg object-contain brightness-0 invert opacity-60"
+              />
               <span className="font-fraunces text-white text-lg font-semibold tracking-tight">
                 Discimen
               </span>

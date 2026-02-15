@@ -10,21 +10,26 @@ import {
   BarChart3,
   CheckCircle2,
 } from 'lucide-react';
+import AbstractHeroViz from '../components/AbstractHeroViz';
 
 export default function Home() {
   return (
     <main className="pt-20">
       {/* ─── Hero ─── */}
-      <section className="relative overflow-hidden">
-        {/* Subtle grid texture */}
+      <section className="relative overflow-hidden min-h-[600px] lg:min-h-[680px]">
+        {/* Animated abstract visualization (canvas) */}
+        <AbstractHeroViz />
+        {/* Subtle grid texture overlay for depth */}
         <div
-          className="absolute inset-0 opacity-[0.03]"
+          className="absolute inset-0 opacity-[0.02]"
           style={{
             backgroundImage:
               'linear-gradient(#0f2b46 1px, transparent 1px), linear-gradient(90deg, #0f2b46 1px, transparent 1px)',
             backgroundSize: '48px 48px',
           }}
         />
+        {/* Content gradient — ensures text readability over animation */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-white/40 lg:to-transparent" />
         <div className="max-w-6xl mx-auto px-6 lg:px-8 pt-20 pb-24 lg:pt-28 lg:pb-32 relative">
           <div className="max-w-3xl">
             {/* Eyebrow */}
