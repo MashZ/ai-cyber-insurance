@@ -59,15 +59,6 @@ export default function Resources() {
                   Launch the Lab
                   <ExternalLink size={16} />
                 </a>
-                <a
-                  href="https://github.com/MashZ/agenticaienablement"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold text-white/80 border border-white/20 rounded-lg hover:border-white/40 hover:text-white transition-all duration-200"
-                >
-                  View Source on GitHub
-                  <ExternalLink size={14} />
-                </a>
               </div>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
