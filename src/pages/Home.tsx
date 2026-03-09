@@ -77,17 +77,21 @@ export default function Home() {
       <section className="bg-[#0f2b46]/95 backdrop-blur-sm text-white relative">
         <div className="max-w-6xl mx-auto px-6 lg:px-8 py-12 lg:py-14">
           <p className="text-sm font-semibold tracking-widest text-white/40 uppercase mb-8">
-            The Inflection Point
+            The 2026 Inflection Point
           </p>
-          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
             {[
               {
                 stat: '$300B+',
                 label: 'wiped from SaaS market caps in early 2026',
               },
               {
-                stat: '50%',
-                label: 'of IT tickets now automatable by AI-native platforms like Serval',
+                stat: '74%',
+                label: 'of organizations plan to deploy autonomous agents this year',
+              },
+              {
+                stat: '21%',
+                label: 'have proper AI governance frameworks in place',
               },
               {
                 stat: 'Aug 2026',
@@ -300,6 +304,54 @@ export default function Home() {
                 <p className="text-xs text-slate-500 leading-relaxed">{industry.detail}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── Resources Teaser ─── */}
+      <section className="py-16 lg:py-20 relative">
+        <div className="absolute inset-0 bg-slate-50/85 backdrop-blur-[2px]" />
+        <div className="max-w-6xl mx-auto px-6 lg:px-8 relative">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-xs font-semibold tracking-widest text-[#0f4377] uppercase mb-3">
+                Resources
+              </p>
+              <h2 className="font-fraunces text-[#0f2b46] text-3xl font-semibold leading-tight mb-4">
+                Interactive tools and market intelligence for the AI transition.
+              </h2>
+              <p className="text-slate-600 leading-relaxed mb-6">
+                Explore the Agentic AI Enablement Lab, the 2026 competitive battlecard
+                vs. the Big Five consultancies, and the CFO decision framework that
+                grounds every Discimen engagement.
+              </p>
+              <Link
+                to="/resources"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-[#0f4377] hover:text-[#0f2b46] transition-colors"
+              >
+                Explore all resources
+                <ArrowRight size={14} />
+              </Link>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { label: 'Enablement Lab', desc: 'Interactive first-principles AI demo' },
+                { label: 'Battlecard', desc: 'Discimen vs. McKinsey, Accenture, IBM' },
+                { label: 'CFO Framework', desc: 'TCO, ROI, and governance metrics' },
+                { label: 'Market Data', desc: '2026 enterprise AI intelligence' },
+              ].map((item) => (
+                <Link
+                  key={item.label}
+                  to="/resources"
+                  className="bg-white/90 backdrop-blur-sm border border-slate-200 rounded-xl p-5 hover:border-slate-300 hover:shadow-sm transition-all group"
+                >
+                  <p className="font-fraunces text-[#0f2b46] text-sm font-semibold mb-1 group-hover:text-[#0f4377] transition-colors">
+                    {item.label}
+                  </p>
+                  <p className="text-xs text-slate-500">{item.desc}</p>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>

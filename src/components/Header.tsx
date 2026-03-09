@@ -10,6 +10,7 @@ export default function Header() {
     { to: '/', label: 'Home' },
     { to: '/services', label: 'Services' },
     { to: '/straddle-framework', label: 'Straddle Framework' },
+    { to: '/resources', label: 'Resources' },
     { to: '/about', label: 'About' },
     { to: '/contact', label: 'Contact' },
   ];
