@@ -40,8 +40,8 @@ export default function Resources() {
               <p className="text-white/60 leading-relaxed mb-6">
                 An interactive demonstration of how first-principles decomposition and
                 systems thinking transform enterprise operations. Built using the same
-                methodology behind the GM HR transformation that took 47,000 cases from
-                4-day resolution to 30 seconds.
+                methodology behind an actual Manufacturing enterprise transformation that took 47,000 cases from
+                4-day resolution to 30 seconds that was completed in 2025.
               </p>
               <p className="text-white/50 text-sm leading-relaxed mb-8">
                 Walk through a real IT service desk scenario to see how agentic AI patterns
