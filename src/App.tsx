@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import EquipoiseFramework from './pages/EquipoiseFramework';
 import Resources from './pages/Resources';
+import EnablementLab from './pages/EnablementLab';
 import About from './pages/About';
 import Contact from './pages/Contact';
 
@@ -29,6 +30,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/equipoise-framework" element={<EquipoiseFramework />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/resources/enablement-lab" element={<EnablementLab />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
