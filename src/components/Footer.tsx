@@ -41,10 +41,10 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/straddle-framework"
+                  to="/equipoise-framework"
                   className="text-gray-500 hover:text-[#0f2b46] transition-colors"
                 >
-                  Straddle Framework
+                  Equipoise Framework
                 </Link>
               </li>
               <li>

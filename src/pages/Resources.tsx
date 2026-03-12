@@ -40,8 +40,8 @@ export default function Resources() {
               <p className="text-white/60 leading-relaxed mb-6">
                 An interactive demonstration of how first-principles decomposition and
                 systems thinking transform enterprise operations. Built using the same
-                methodology behind an actual Manufacturing enterprise transformation that took 47,000 cases from
-                4-day resolution to 30 seconds that was completed in 2025.
+                methodology behind the GM HR transformation that took 47,000 cases from
+                4-day resolution to 30 seconds.
               </p>
               <p className="text-white/50 text-sm leading-relaxed mb-8">
                 Walk through a real IT service desk scenario to see how agentic AI patterns
@@ -58,6 +58,15 @@ export default function Resources() {
                 >
                   Launch the Lab
                   <ExternalLink size={16} />
+                </a>
+                <a
+                  href="https://github.com/MashZ/agenticaienablement"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold text-white/80 border border-white/20 rounded-lg hover:border-white/40 hover:text-white transition-all duration-200"
+                >
+                  View Source on GitHub
+                  <ExternalLink size={14} />
                 </a>
               </div>
             </div>
@@ -226,7 +235,7 @@ export default function Resources() {
                   },
                   {
                     dim: 'Methodology',
-                    discimen: 'Straddle Framework: autonomous workflows with insured risk.',
+                    discimen: 'Equipoise Framework: decision rights mapping with insured risk.',
                     mckinsey: 'Workflow redesign from "AI that chats" to "AI that settles."',
                     accenture: 'Cognitive network platforms and sovereign cloud.',
                     ibm: 'Policy enforcement and security-first scaling.',

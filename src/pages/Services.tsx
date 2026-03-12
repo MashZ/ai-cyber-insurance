@@ -118,8 +118,8 @@ export default function Services() {
         </div>
       </section>
 
-      {/* ─── Service 2: Straddle Framework ─── */}
-      <section id="straddle-framework" className="py-20 lg:py-24 border-t border-slate-100">
+      {/* ─── Service 2: Equipoise Framework ─── */}
+      <section id="equipoise-framework" className="py-20 lg:py-24 border-t border-slate-100">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
             {/* Left */}
@@ -133,18 +133,19 @@ export default function Services() {
                 </span>
               </div>
               <h2 className="font-fraunces text-[#0f2b46] text-3xl font-semibold leading-tight mb-4">
-                The Straddle Framework
+                The Equipoise Framework
               </h2>
               <p className="text-slate-600 leading-relaxed mb-6">
                 Most enterprises cannot execute a clean break from legacy platforms. Data is too
-                embedded, workflows too complex, contracts too long. The Straddle Framework provides
-                a structured methodology for running legacy and AI-native systems in parallel while
-                maintaining governance of both.
+                embedded, workflows too complex, contracts too long. The Equipoise Framework provides
+                a structured methodology for running legacy and AI-native systems in deliberate
+                equilibrium — resolving C-suite jurisdictional competition and maintaining governance
+                of both.
               </p>
               <p className="text-sm text-slate-500 leading-relaxed">
                 Developed from real-world enterprise AI transformation engagements across
-                manufacturing, healthcare, and energy — industries where the straddle is most
-                complex and governance requirements most stringent.
+                manufacturing, healthcare, and energy — industries where cross-functional tensions are
+                most complex and governance requirements most stringent.
               </p>
             </div>
 

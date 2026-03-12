@@ -63,10 +63,10 @@ export default function Home() {
                 <ArrowRight size={16} />
               </Link>
               <Link
-                to="/straddle-framework"
+                to="/equipoise-framework"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold text-[#0f2b46] bg-white/80 backdrop-blur-sm border border-slate-200 rounded-lg hover:border-slate-300 hover:bg-white transition-all duration-200"
               >
-                Explore the Straddle Framework
+                Explore the Equipoise Framework
               </Link>
             </div>
           </div>
@@ -224,8 +224,8 @@ export default function Home() {
               },
               {
                 icon: Scale,
-                title: 'Straddle Framework',
-                desc: 'A structured methodology for running legacy and AI-native systems in parallel — managing dual operations, migrating workloads incrementally, and governing both simultaneously without compliance gaps.',
+                title: 'Equipoise Framework',
+                desc: 'A structured methodology for running legacy and AI-native systems in parallel — managing dual operations, resolving C-suite jurisdictional competition over AI decisions, and governing both simultaneously without compliance gaps.',
                 tag: 'Operational',
               },
               {

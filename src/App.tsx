@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Services from './pages/Services';
-import StraddleFramework from './pages/StraddleFramework';
+import EquipoiseFramework from './pages/EquipoiseFramework';
 import Resources from './pages/Resources';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -27,7 +27,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/straddle-framework" element={<StraddleFramework />} />
+            <Route path="/equipoise-framework" element={<EquipoiseFramework />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
