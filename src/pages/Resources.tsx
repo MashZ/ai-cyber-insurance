@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Brain, BarChart3, Shield, Zap, Network, Bot, TrendingUp } from 'lucide-react';
+import { ArrowRight, ExternalLink, Brain, BarChart3, Shield, Zap, Network, Bot, TrendingUp } from 'lucide-react';
 
 export default function Resources() {
   return (
@@ -50,13 +50,15 @@ export default function Resources() {
                 precision matters more than raw model power.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  to="/resources/enablement-lab"
+                <a
+                  href="https://agenticaienablement.lovable.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold text-[#0f2b46] bg-white rounded-lg hover:bg-slate-100 transition-colors duration-200"
                 >
                   Launch the Lab
-                  <ArrowRight size={16} />
-                </Link>
+                  <ExternalLink size={16} />
+                </a>
               </div>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
