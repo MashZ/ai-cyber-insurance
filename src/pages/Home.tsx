@@ -40,18 +40,14 @@ export default function Home() {
             </div>
 
             <h1 className="font-fraunces text-[#0f2b46] text-4xl md:text-5xl lg:text-[3.5rem] font-semibold leading-[1.12] tracking-tight mb-3">
-              Navigate the shift from legacy SaaS to AI-native operations.
-              <span className="text-[#0f4377]/50"> Without breaking compliance.</span>
+              Rethinking deep expertise and structure around AI.
             </h1>
             <p className="text-sm text-slate-400 italic mb-6">
               discimen — Latin: peril, discriminating difference.
             </p>
 
             <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-10 max-w-2xl">
-              Enterprise software is being repriced. AI-native platforms are replacing legacy systems.
-              Discimen helps regulated enterprises manage the transition — governing the risk,
-              measuring the ROI, and ensuring every move is defensible to your board, your
-              regulators, and your insurers.
+              AI applications are ultimately far less of a technical issue in many cases, and much more about rethinking the deep expertise and structure of your organization around AI. There is no shortcut to executive decisions about how AI is going to relate to employees, what the company should look like, and how it will compete in the future. These are fundamental, even existential, questions.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
