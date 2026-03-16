@@ -12,12 +12,16 @@ const Footer = () => {
               <img 
                 src="/discimen_logo_new.png" 
                 alt="Discimen" 
-                className="h-12 w-12 object-contain"
-                style={{ mixBlendMode: 'multiply' }}
+                className="h-12 w-12 object-contain mix-blend-multiply"
               />
-              <span className="font-display text-[#0f2b46] text-2xl font-bold tracking-tight">
-                Discimen
-              </span>
+              <div className="flex flex-col justify-center translate-y-0.5">
+                <span className="font-display text-[#0f2b46] text-2xl font-bold tracking-tight leading-none">
+                  Discimen
+                </span>
+                <span className="text-[9px] font-semibold tracking-widest text-[#0f2b46]/60 uppercase mt-1">
+                  AI ENABLEMENT & STRATEGY ADVISORY
+                </span>
+              </div>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed max-w-md">
               Independent AI transition advisory and risk assessment for

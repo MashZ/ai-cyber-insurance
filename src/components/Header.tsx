@@ -26,11 +26,16 @@ export default function Header() {
             <img
               src="/discimen_logo_new.png"
               alt="Discimen"
-              className="h-12 w-12 object-contain"
+              className="h-12 w-12 object-contain mix-blend-multiply"
             />
-            <span className="font-display text-[#0f2b46] text-2xl font-bold tracking-tight hover:text-[#0f4377] transition-colors">
-              Discimen
-            </span>
+            <div className="flex flex-col justify-center translate-y-0.5">
+              <span className="font-display text-[#0f2b46] text-2xl font-bold tracking-tight group-hover:text-[#0f4377] transition-colors leading-none">
+                Discimen
+              </span>
+              <span className="text-[9px] font-semibold tracking-widest text-slate-500 uppercase mt-1">
+                AI ENABLEMENT & STRATEGY ADVISORY
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Nav */}
