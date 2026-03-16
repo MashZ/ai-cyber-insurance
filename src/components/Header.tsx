@@ -24,7 +24,7 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <img
-              src="/discimen_logo_gray.png"
+              src="/discimen_logo_new.png"
               alt="Discimen"
               className="h-12 w-12 object-contain"
             />

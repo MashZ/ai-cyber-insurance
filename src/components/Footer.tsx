@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2.5 mb-4">
               <img 
-                src="/discimen_logo_gray.png" 
+                src="/discimen_logo_new.png" 
                 alt="Discimen" 
                 className="h-12 w-12 object-contain"
                 style={{ mixBlendMode: 'multiply' }}
