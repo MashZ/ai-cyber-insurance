@@ -16,7 +16,7 @@ export default function About() {
             </h1>
             <p className="text-lg text-slate-600 leading-relaxed">
               Discimen was founded by enterprise AI leaders who have deployed, governed, and
-              scaled AI systems at Fortune 500 companies — not theorized about them from the
+              scaled AI systems at Fortune 500 companies, rather than theorizing about them from the
               outside. Our advisory is grounded in what actually works when technology meets
               organizational reality.
             </p>
@@ -39,7 +39,7 @@ export default function About() {
               <p>
                 Strategy consulting firms sell top-down transformation frameworks but have never
                 configured a ServiceNow workflow or deployed an AI agent in production.
-                Technology vendors sell their own platform — their advice is structurally conflicted.
+                Technology vendors sell their own platform; their advice is structurally conflicted.
                 The Big Four sell compliance audit hours at scale but lack the technical depth
                 to evaluate AI architecture decisions.
               </p>
@@ -51,7 +51,7 @@ export default function About() {
                 a CFO, a board, and a regulator.
               </p>
               <p>
-                That's Discimen — from the Latin: <em>peril, discriminating difference</em>.
+                That's Discimen, from the Latin: <em>peril, discriminating difference</em>.
                 The ability to make clear-eyed decisions when the stakes are highest and
                 the path is least clear.
               </p>
@@ -89,7 +89,7 @@ export default function About() {
                     Mash Zahid
                   </h3>
                   <p className="text-sm text-[#0f4377] font-medium">
-                    Co-Founder — Technical & Operations Lead
+                    Co-Founder, Technical & Operations Lead
                   </p>
                 </div>
                 <a
@@ -105,7 +105,7 @@ export default function About() {
               <div className="space-y-4 text-sm text-slate-600 leading-relaxed">
                 <p>
                   Global AI Strategy and Transformation leader with enterprise AI deployment
-                  experience at General Motors, where he led the AskGM chatbot transformation —
+                  experience at General Motors, where he led the AskGM chatbot transformation,
                   converting 47,000 annual HR cases from 4-day to 30-second resolution with 67%
                   first-contact resolution.
                 </p>
@@ -157,7 +157,7 @@ export default function About() {
                     Reddhi Mitra
                   </h3>
                   <p className="text-sm text-[#0f4377] font-medium">
-                    Co-Founder — Commercial & Delivery Lead
+                    Co-Founder, Commercial & Delivery Lead
                   </p>
                 </div>
                 <a
@@ -262,7 +262,7 @@ export default function About() {
                     {
                       competitor: 'AI-native vendors',
                       angle: 'Platform sales (Serval, etc.)',
-                      diff: 'Independent advisory — we help enterprises evaluate vendors, not sell platforms',
+                      diff: 'Independent advisory: we help enterprises evaluate vendors, not sell platforms',
                     },
                   ].map((row) => (
                     <tr key={row.competitor}>
@@ -288,7 +288,7 @@ export default function About() {
               Let's talk about your AI transition.
             </h2>
             <p className="text-slate-600 leading-relaxed mb-8">
-              We start with a conversation — understanding where you are, where the market is
+              We start with a conversation: understanding where you are, where the market is
               moving, and what decisions are in front of you. No pitch deck. No platform to sell.
               Just clarity.
             </p>

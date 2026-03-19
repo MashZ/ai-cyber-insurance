@@ -18,7 +18,7 @@ export default function Contact() {
               <p className="text-lg text-slate-600 leading-relaxed mb-8">
                 Every engagement begins with a 45-minute conversation where we assess your
                 current AI landscape, identify the highest-impact transition opportunities,
-                and outline a path forward — at no cost and no obligation.
+                and outline a path forward, at no cost and no obligation.
               </p>
 
               <div className="space-y-6">
@@ -144,7 +144,7 @@ export default function Contact() {
                     </p>
                     <p className="text-sm text-slate-600 leading-relaxed">
                       Manufacturing, Healthcare, Energy & Utilities, Automotive, Financial
-                      Services — regulated industries where AI transition risk and governance
+                      Services: regulated industries where AI transition risk and governance
                       requirements are highest.
                     </p>
                   </div>

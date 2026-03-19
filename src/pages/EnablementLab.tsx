@@ -11,10 +11,6 @@ import {
   AlertTriangle,
   CheckCircle2,
   Zap,
-  BarChart3,
-  Users,
-  Shield,
-  Clock,
   Send,
 } from 'lucide-react';
 
@@ -35,9 +31,9 @@ const TIER_COSTS: Record<string,number> = {
   TIER_3_ORCHESTRATION: 0.50,
 };
 const TIER_LABELS: Record<string,string> = {
-  TIER_1_AUTOMATION: 'Tier 1 — Simple RAG Automation',
-  TIER_2_AGENT_ASSIST: 'Tier 2 — Stateful Agent Assist',
-  TIER_3_ORCHESTRATION: 'Tier 3 — Multi-Agent Orchestration',
+  TIER_1_AUTOMATION: 'Tier 1: Simple RAG Automation',
+  TIER_2_AGENT_ASSIST: 'Tier 2: Stateful Agent Assist',
+  TIER_3_ORCHESTRATION: 'Tier 3: Multi-Agent Orchestration',
 };
 const TIER_COLORS: Record<string,string> = {
   TIER_1_AUTOMATION: '#22c55e',
@@ -94,7 +90,7 @@ function routeTicket(
     rationale = `High complexity (${complexity}) or urgency requires multi-agent coordination`;
   } else {
     tier = 'TIER_2_AGENT_ASSIST';
-    rationale = `Moderate complexity (${complexity}) — agent assistance with AI suggestions`;
+    rationale = `Moderate complexity (${complexity}): agent assistance with AI suggestions`;
   }
 
   const approaches: Record<string,string> = {
@@ -131,7 +127,7 @@ const DEMO_TICKETS = [
     category: 'Password Reset', priority: 'Low', department: 'Marketing',
   },
   {
-    desc: 'VPN keeps disconnecting. This is urgent — I cannot access client files and have a deadline today.',
+    desc: 'VPN keeps disconnecting. This is urgent: I cannot access client files and have a deadline today.',
     category: 'Network/VPN', priority: 'Medium', department: 'Sales',
   },
   {
@@ -227,7 +223,7 @@ export default function EnablementLab() {
       statLabel: 'advantage from learning systems at 24 months',
       content:
         'Static systems decline over time as the world changes around them. A learning system improving 8% per month compounds to a 6.3x advantage in two years. This is the engine that separates the 5% who succeed from the 95% who do not.',
-      insight: 'Not better tools — better learning loops. The compound effect is the competitive moat.',
+      insight: 'Not better tools, but better learning loops. The compound effect is the competitive moat.',
     },
   ];
 
@@ -259,7 +255,7 @@ export default function EnablementLab() {
             </h1>
             <p className="text-lg text-slate-600 leading-relaxed mb-2">
               An interactive demonstration of how first-principles decomposition and systems
-              thinking transform enterprise operations — using the same methodology behind the
+              thinking transform enterprise operations, using the same methodology behind the
               GM HR transformation (47,000 cases from 4-day resolution to 30 seconds).
             </p>
             <p className="text-sm text-slate-400 leading-relaxed">
@@ -306,7 +302,7 @@ export default function EnablementLab() {
               </h2>
               <p className="text-slate-600 leading-relaxed">
                 Before writing any AI code, ask: what are the irreducible truths about this
-                problem? Not what we assume, not what we have always done — what MUST be true?
+                problem? Not what we assume, not what we have always done: what MUST be true?
                 Four fundamental truths emerge from IT service desk data.
               </p>
             </div>
@@ -367,9 +363,9 @@ export default function EnablementLab() {
               </h3>
               <div className="space-y-4">
                 {[
-                  { label: 'Tier 1 — Simple RAG', pct: 60, cost: '$0.001/query', color: '#22c55e' },
-                  { label: 'Tier 2 — Stateful Agent', pct: 30, cost: '$0.02/query', color: '#0f4377' },
-                  { label: 'Tier 3 — Multi-Agent', pct: 10, cost: '$0.50/query', color: '#dc2626' },
+                  { label: 'Tier 1: Simple RAG', pct: 60, cost: '$0.001/query', color: '#22c55e' },
+                  { label: 'Tier 2: Stateful Agent', pct: 30, cost: '$0.02/query', color: '#0f4377' },
+                  { label: 'Tier 3: Multi-Agent', pct: 10, cost: '$0.50/query', color: '#dc2626' },
                 ].map((t) => (
                   <div key={t.label}>
                     <div className="flex justify-between text-sm mb-1.5">
@@ -416,7 +412,7 @@ export default function EnablementLab() {
                 Phase 2: Recompose with Systems Thinking
               </h2>
               <p className="text-slate-600 leading-relaxed">
-                We have four fundamental truths — but how do they interact? This is where systems
+                We have four fundamental truths. But how do they interact? This is where systems
                 thinking comes in. We map feedback loops, identify productive tensions, and
                 simulate the compound effect of learning systems.
               </p>
@@ -451,13 +447,13 @@ export default function EnablementLab() {
                   Productive Tensions
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                  Fast resolution vs. quality is not a trade-off to eliminate — it is a design
+                  Fast resolution vs. quality is not a trade-off to eliminate, it is a design
                   input. Complex issues have LOWER satisfaction when rushed. Netflix uses
                   freedom-vs-responsibility tension to drive deployment tools. Same principle.
                 </p>
                 <div className="bg-amber-50 border border-amber-200 rounded-lg p-3">
                   <p className="text-xs font-semibold text-amber-700">
-                    The Speed/Quality tension is NOT a trade-off — it is a design input.
+                    The Speed/Quality tension is NOT a trade-off: it is a design input.
                   </p>
                 </div>
               </div>
@@ -584,7 +580,7 @@ export default function EnablementLab() {
               </h2>
               <p className="text-slate-600 leading-relaxed">
                 Translate systems thinking into executable code. The routing engine implements
-                every insight from decomposition and recomposition — urgency detection, complexity
+                every insight from decomposition and recomposition: urgency detection, complexity
                 scoring, and tiered routing that matches cost to value.
               </p>
             </div>

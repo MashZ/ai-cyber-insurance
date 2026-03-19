@@ -40,16 +40,16 @@ export default function EquipoiseFramework() {
               The Equipoise Framework
             </h1>
             <p className="text-sm text-slate-400 italic mb-6">
-              equipoise — balanced tension between opposing forces.
+              equipoise: the balanced tension between opposing forces.
             </p>
             <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-6">
               A structured methodology for navigating the transition from legacy SaaS to AI-native
-              operations — resolving C-suite jurisdictional competition, assigning decision rights,
+              operations, resolving C-suite jurisdictional competition, assigning decision rights,
               and maintaining operational continuity through deliberate equilibrium.
             </p>
             <p className="text-base text-slate-500 leading-relaxed">
               Developed from enterprise AI transformation engagements across manufacturing,
-              healthcare, and energy utilities — industries where operational continuity isn&#39;t
+              healthcare, and energy utilities, industries where operational continuity isn&#39;t
               optional and regulatory compliance spans both the old and new systems simultaneously.
             </p>
           </div>
@@ -70,13 +70,13 @@ export default function EquipoiseFramework() {
               An AI agent that autonomously processes claims is simultaneously a technology system
               (CIO), an operational workflow (COO), a risk exposure (CRO), a financial
               decision-maker with P&amp;L impact (CFO), a novel form of labor (CHRO), and a
-              consumer of governed data (CDO). Whoever governs the agents — their roles,
-              permissions, guardrails, evaluation, escalation, and budgets — controls what and
+              consumer of governed data (CDO). Whoever governs the agents (their roles,
+              permissions, guardrails, evaluation, escalation, and budgets) controls what and
               how the company decides.
             </p>
             <p className="text-white/50 text-base leading-relaxed">
               The Equipoise Framework resolves this by shifting the question from &#34;who owns
-              AI?&#34; to &#34;who owns which AI-related decisions?&#34; — and building the
+              AI?&#34; to &#34;who owns which AI-related decisions?&#34; and building the
               coordination layer that makes those assignments explicit, actionable, and revisable
               as the technology evolves.
             </p>
@@ -136,7 +136,7 @@ export default function EquipoiseFramework() {
               Five phases. Decision rights at every step.
             </h2>
             <p className="text-slate-600 leading-relaxed">
-              The Equipoise Framework is not a theoretical model — it is a sequenced engagement
+              The Equipoise Framework is not a theoretical model; it is a sequenced engagement
               methodology with specific deliverables, decision gates, and explicit ownership
               assignments at each phase. Every phase answers not just &#34;what should we do?&#34;
               but &#34;who decides, who executes, and who is accountable?&#34;
@@ -149,7 +149,7 @@ export default function EquipoiseFramework() {
                 phase: '01',
                 title: 'Landscape Assessment',
                 duration: '2–3 weeks',
-                desc: 'Map the current state: every SaaS platform, contract term, data dependency, workflow integration, and governance mechanism. Identify which systems are candidates for AI-native replacement and which must remain. Surface the jurisdictional landscape — which C-suite leaders currently own which decisions, and where gaps exist.',
+                desc: 'Map the current state: every SaaS platform, contract term, data dependency, workflow integration, and governance mechanism. Identify which systems are candidates for AI-native replacement and which must remain. Surface the jurisdictional landscape: which C-suite leaders currently own which decisions, and where gaps exist.',
                 deliverables: [
                   'Complete SaaS platform inventory with contract terms and exit provisions',
                   'Data dependency map showing cross-system flows and integration points',
@@ -161,7 +161,7 @@ export default function EquipoiseFramework() {
                 phase: '02',
                 title: 'Decision Architecture',
                 duration: '2–4 weeks',
-                desc: 'Build the decision framework for each platform: stay, layer AI on top, or rip-and-replace. Critically, define the decision rights map — who owns model selection (CIO), who sets risk thresholds (CRO), who controls spend and ROI measurement (CFO), who governs human-agent workflows (CHRO), who manages data access (CDO), and who determines what agents should accomplish (COO/P&amp;L owner).',
+                desc: 'Build the decision framework for each platform: stay, layer AI on top, or rip-and-replace. Critically, define the decision rights map: who owns model selection (CIO), who sets risk thresholds (CRO), who controls spend and ROI measurement (CFO), who governs human-agent workflows (CHRO), who manages data access (CDO), and who determines what agents should accomplish (COO/P&L owner).',
                 deliverables: [
                   'Per-platform decision matrix with risk-adjusted cost modeling',
                   'Decision rights map: explicit assignment of AI-related decisions to C-suite owners',
@@ -173,7 +173,7 @@ export default function EquipoiseFramework() {
                 phase: '03',
                 title: 'Parallel Operations Design',
                 duration: '3–6 weeks',
-                desc: 'Design the dual-system architecture for the transition period. Define how legacy and AI-native systems coexist, how data flows between them, how governance applies to both, and how workloads migrate incrementally. The coordination layer — the novel jurisdiction that sits above any single function — is formalized here.',
+                desc: 'Design the dual-system architecture for the transition period. Define how legacy and AI-native systems coexist, how data flows between them, how governance applies to both, and how workloads migrate incrementally. The coordination layer, the novel jurisdiction that sits above any single function, is formalized here.',
                 deliverables: [
                   'Dual-system architecture with integration specifications',
                   'Workload migration sequence with parallel-run validation criteria',
@@ -195,7 +195,7 @@ export default function EquipoiseFramework() {
               },
               {
                 phase: '05',
-                title: 'Legacy Decommission &amp; Optimization',
+                title: 'Legacy Decommission & Optimization',
                 duration: '4–8 weeks per system',
                 desc: 'Decommission legacy systems as workloads complete migration. Archive data per retention requirements. Optimize AI-native operations based on transition learnings. Finalize the steady-state decision rights map for the AI-native operating model.',
                 deliverables: [
@@ -272,7 +272,7 @@ export default function EquipoiseFramework() {
               {
                 icon: BarChart3,
                 title: 'Financially grounded',
-                desc: 'Each phase ties to measurable financial outcomes — cost savings, productivity gains, risk reduction. The CFO tracks the transition&#39;s ROI in real time, not after the fact.',
+                desc: 'Each phase ties to measurable financial outcomes: cost savings, productivity gains, risk reduction. The CFO tracks the transition&#39;s ROI in real time, not after the fact.',
               },
               {
                 icon: GitBranch,
@@ -305,7 +305,7 @@ export default function EquipoiseFramework() {
               Your industry peers are already evaluating AI-native platforms. Are you?
             </h2>
             <p className="text-slate-600 leading-relaxed mb-8">
-              The Equipoise Framework starts with a Landscape Assessment — a 2-3 week engagement
+              The Equipoise Framework starts with a Landscape Assessment, a 2-3 week engagement
               that maps your current SaaS portfolio, surfaces jurisdictional gaps, identifies
               transition candidates, and quantifies the opportunity. No commitment beyond the
               assessment.

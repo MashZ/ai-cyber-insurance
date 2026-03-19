@@ -165,7 +165,7 @@ export default function Services() {
                 {
                   icon: Shield,
                   title: 'Dual Governance Model',
-                  desc: 'Design governance frameworks that cover both legacy and AI-native systems simultaneously — ensuring compliance continuity during transition. Includes audit trail integration, role-based access mapping, and incident management for hybrid environments.',
+                  desc: 'Design governance frameworks that cover both legacy and AI-native systems simultaneously, ensuring compliance continuity during transition. Includes audit trail integration, role-based access mapping, and incident management for hybrid environments.',
                 },
                 {
                   icon: AlertTriangle,
@@ -221,11 +221,11 @@ export default function Services() {
                 Governance frameworks have not kept pace with AI deployment. Only 39% of Fortune 100
                 companies disclosed board oversight of AI as of mid-2025. The EU AI Act, Colorado AI
                 Act, and California transparency requirements create enforceable obligations that
-                demand operational governance — not just policies on paper.
+                demand operational governance, not just policies on paper.
               </p>
               <p className="text-sm text-slate-500 leading-relaxed">
                 Our productized governance assessments are specifically designed for agentic AI
-                deployments — where autonomous systems make decisions, trigger actions, and interact
+                deployments: where autonomous systems make decisions, trigger actions, and interact
                 with employees and customers without continuous human oversight.
               </p>
             </div>
@@ -236,7 +236,7 @@ export default function Services() {
                 {
                   icon: ClipboardCheck,
                   title: 'Agentic AI Readiness Assessment',
-                  desc: 'Standardized evaluation of your enterprise\'s readiness to deploy autonomous AI agents — covering decision authority boundaries, escalation protocols, audit trail completeness, data access permissions, and human-in-the-loop requirements.',
+                  desc: 'Standardized evaluation of your enterprise\'s readiness to deploy autonomous AI agents: covering decision authority boundaries, escalation protocols, audit trail completeness, data access permissions, and human-in-the-loop requirements.',
                 },
                 {
                   icon: Gavel,
@@ -246,17 +246,17 @@ export default function Services() {
                 {
                   icon: Eye,
                   title: 'Shadow AI Detection & Governance',
-                  desc: 'Identify and govern unsanctioned AI tool usage across your enterprise — the largest governance gap most organizations face. Establish detection mechanisms, usage policies, and integration pathways for shadow AI that demonstrates value.',
+                  desc: 'Identify and govern unsanctioned AI tool usage across your enterprise, which is the largest governance gap most organizations face. Establish detection mechanisms, usage policies, and integration pathways for shadow AI that demonstrates value.',
                 },
                 {
                   icon: FileCheck,
                   title: 'Board Oversight Framework',
-                  desc: 'Design quantitative AI governance reporting for board-level consumption — covering risk exposure metrics, compliance status, incident trends, and strategic AI investment performance. Make AI governance a demonstrable fiduciary competency.',
+                  desc: 'Design quantitative AI governance reporting for board-level consumption, covering risk exposure metrics, compliance status, incident trends, and strategic AI investment performance. Make AI governance a demonstrable fiduciary competency.',
                 },
                 {
                   icon: AlertTriangle,
                   title: 'Continuous Monitoring Protocol Design',
-                  desc: 'Establish ongoing governance mechanisms that detect model drift, data quality degradation, bias emergence, and compliance deviations in real-time — moving from periodic audit to continuous assurance for AI systems in production.',
+                  desc: 'Establish ongoing governance mechanisms that detect model drift, data quality degradation, bias emergence, and compliance deviations in real-time, moving from periodic audit to continuous assurance for AI systems in production.',
                 },
               ].map((item) => (
                 <div
@@ -399,7 +399,7 @@ export default function Services() {
             <p className="text-white/60 leading-relaxed mb-8">
               Every engagement begins with a 45-minute executive briefing where we assess
               your current AI landscape, identify the highest-impact transition opportunities,
-              and outline a path forward — at no cost.
+              and outline a path forward, at no cost.
             </p>
             <Link
               to="/contact"

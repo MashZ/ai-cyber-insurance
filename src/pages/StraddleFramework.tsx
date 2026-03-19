@@ -39,11 +39,11 @@ export default function StraddleFramework() {
             </h1>
             <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-6">
               A structured methodology for navigating the transition from legacy SaaS to AI-native
-              operations — without disrupting the business you need to run today.
+              operations, without disrupting the business you need to run today.
             </p>
             <p className="text-base text-slate-500 leading-relaxed">
               Developed from enterprise AI transformation engagements across manufacturing,
-              healthcare, and energy utilities — industries where operational continuity isn't
+              healthcare, and energy utilities: industries where operational continuity isn't
               optional and regulatory compliance spans both the old and new systems simultaneously.
             </p>
           </div>
@@ -110,7 +110,7 @@ export default function StraddleFramework() {
               Five phases. Governed at every step.
             </h2>
             <p className="text-slate-600 leading-relaxed">
-              The Straddle Framework is not a theoretical model — it is a sequenced engagement
+              The Straddle Framework is not a theoretical model; it is a sequenced engagement
               methodology with specific deliverables, decision gates, and governance checkpoints
               at each phase.
             </p>
@@ -248,7 +248,7 @@ export default function StraddleFramework() {
               {
                 icon: BarChart3,
                 title: 'Financially grounded',
-                desc: 'Each phase ties to measurable financial outcomes — cost savings, productivity gains, risk reduction. The CFO can track the transition\'s ROI in real time, not after the fact.',
+                desc: 'Each phase ties to measurable financial outcomes: cost savings, productivity gains, risk reduction. The CFO can track the transition\'s ROI in real time, not after the fact.',
               },
               {
                 icon: GitBranch,
@@ -276,7 +276,7 @@ export default function StraddleFramework() {
               Your industry peers are already evaluating AI-native platforms. Are you?
             </h2>
             <p className="text-slate-600 leading-relaxed mb-8">
-              The Straddle Framework starts with a Landscape Assessment — a 2-3 week engagement
+              The Straddle Framework starts with a Landscape Assessment, a 2-3 week engagement
               that maps your current SaaS portfolio, identifies transition candidates, and
               quantifies the opportunity. No commitment beyond the assessment.
             </p>
