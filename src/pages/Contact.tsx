@@ -108,7 +108,7 @@ export default function Contact() {
                           <Linkedin size={16} className="text-[#0f4377]" />
                           <div>
                             <p className="text-sm font-medium text-[#0f2b46]">Mash Zahid</p>
-                            <p className="text-xs text-slate-500">Technical & Delivery Lead</p>
+                            <p className="text-xs text-slate-500">Technical & Operations Lead</p>
                           </div>
                         </div>
                         <ArrowUpRight
@@ -126,7 +126,7 @@ export default function Contact() {
                           <Linkedin size={16} className="text-[#0f4377]" />
                           <div>
                             <p className="text-sm font-medium text-[#0f2b46]">Reddhi Mitra</p>
-                            <p className="text-xs text-slate-500">Commercial & Operations Lead</p>
+                            <p className="text-xs text-slate-500">Commercial & Delivery Lead</p>
                           </div>
                         </div>
                         <ArrowUpRight

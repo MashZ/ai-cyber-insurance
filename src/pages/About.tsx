@@ -116,9 +116,7 @@ export default function About() {
                   into the platform that ServiceNow acquired in 2025.
                 </p>
                 <p>
-                  MBA from the University of Chicago Booth School of Business. Completed PhD
-                  coursework in Behavioral Finance and Financial Engineering. Recognized thought
-                  leader with keynotes at OpenAI Academy (6,800+ attendees) and PyData conferences.
+                  MBA from the University of Chicago Booth School of Business. Completed PhD coursework in Behavioral Finance and Financial Engineering. Recognized thought leader with keynotes at OpenAI Academy (6,800+ live attendees) and PyData conferences. Won first place in the Google hackathon in March 2026, which was opened by Sergey Brin.
                 </p>
               </div>
 
