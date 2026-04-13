@@ -9,7 +9,7 @@ export default function Header() {
   const navLinks = [
     { to: '/', label: 'Home' },
     { to: '/services', label: 'Services' },
-    { to: '/equipoise-framework', label: 'Equipoise Framework' },
+    { to: '/tensegrity-framework', label: 'Tensegrity framework' },
     { to: '/resources', label: 'Resources' },
     { to: '/about', label: 'About' },
     { to: '/contact', label: 'Contact' },

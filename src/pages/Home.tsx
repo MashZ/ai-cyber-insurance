@@ -61,10 +61,10 @@ export default function Home() {
                 <ArrowRight size={16} />
               </Link>
               <Link
-                to="/equipoise-framework"
+                to="/tensegrity-framework"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold text-[#0f2b46] bg-white/80 backdrop-blur-sm border border-slate-200 rounded-lg hover:border-slate-300 hover:bg-white transition-all duration-200"
               >
-                Explore the Equipoise Framework
+                Explore the Tensegrity framework
               </Link>
             </div>
           </div>
@@ -223,7 +223,7 @@ export default function Home() {
               },
               {
                 icon: Scale,
-                title: 'Equipoise Framework',
+                title: 'Tensegrity framework',
                 desc: 'A structured methodology for running legacy and AI-native systems in parallel -- managing dual operations, resolving C-suite jurisdictional competition over AI decisions, and governing both simultaneously without compliance gaps.',
                 tag: 'Operational',
                 span: false,

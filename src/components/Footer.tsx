@@ -45,10 +45,10 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/equipoise-framework"
+                  to="/tensegrity-framework"
                   className="text-gray-500 hover:text-[#0f2b46] transition-colors"
                 >
-                  Equipoise Framework
+                  Tensegrity framework
                 </Link>
               </li>
               <li>

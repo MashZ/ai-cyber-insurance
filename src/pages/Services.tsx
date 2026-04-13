@@ -123,8 +123,8 @@ export default function Services() {
         </div>
       </section>
 
-      {/* ─── Service 2: Equipoise Framework ─── */}
-      <section id="equipoise-framework" className="py-20 lg:py-24 border-t border-slate-100">
+      {/* ─── Service 2: Tensegrity framework ─── */}
+      <section id="tensegrity-framework" className="py-20 lg:py-24 border-t border-slate-100">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
             {/* Left */}
@@ -138,11 +138,11 @@ export default function Services() {
                 </span>
               </div>
               <h2 className="font-fraunces text-[#0f2b46] text-3xl font-semibold leading-tight mb-4">
-                The Equipoise Framework
+                The Tensegrity framework
               </h2>
               <p className="text-slate-600 leading-relaxed mb-6">
                 Most enterprises cannot execute a clean break from legacy platforms. Data is too
-                embedded, workflows too complex, contracts too long. The Equipoise Framework provides
+                embedded, workflows too complex, contracts too long. The Tensegrity framework provides
                 a structured methodology for running legacy and AI-native systems in deliberate
                 equilibrium — resolving C-suite jurisdictional competition and maintaining governance
                 of both.

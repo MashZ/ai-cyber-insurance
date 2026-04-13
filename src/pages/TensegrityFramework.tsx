@@ -14,7 +14,7 @@ import {
   Scale,
 } from 'lucide-react';
 
-export default function EquipoiseFramework() {
+export default function TensegrityFramework() {
   return (
     <main className="pt-20">
       {/* ─── Hero ─── */}
@@ -37,10 +37,10 @@ export default function EquipoiseFramework() {
             </div>
 
             <h1 className="font-fraunces text-[#0f2b46] text-4xl md:text-5xl font-semibold leading-tight mb-3">
-              The Equipoise Framework
+              The Tensegrity framework
             </h1>
             <p className="text-sm text-slate-400 italic mb-6">
-              equipoise: the balanced tension between opposing forces.
+              tensegrity: structural integrity maintained through balanced tension.
             </p>
             <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-6">
               A structured methodology for navigating the transition from legacy SaaS to AI-native
@@ -75,7 +75,7 @@ export default function EquipoiseFramework() {
               how the company decides.
             </p>
             <p className="text-white/50 text-base leading-relaxed">
-              The Equipoise Framework resolves this by shifting the question from &#34;who owns
+              The Tensegrity framework resolves this by shifting the question from &#34;who owns
               AI?&#34; to &#34;who owns which AI-related decisions?&#34; and building the
               coordination layer that makes those assignments explicit, actionable, and revisable
               as the technology evolves.
@@ -136,7 +136,7 @@ export default function EquipoiseFramework() {
               Five phases. Decision rights at every step.
             </h2>
             <p className="text-slate-600 leading-relaxed">
-              The Equipoise Framework is not a theoretical model; it is a sequenced engagement
+              The Tensegrity framework is not a theoretical model; it is a sequenced engagement
               methodology with specific deliverables, decision gates, and explicit ownership
               assignments at each phase. Every phase answers not just &#34;what should we do?&#34;
               but &#34;who decides, who executes, and who is accountable?&#34;
@@ -305,7 +305,7 @@ export default function EquipoiseFramework() {
               Your industry peers are already evaluating AI-native platforms. Are you?
             </h2>
             <p className="text-slate-600 leading-relaxed mb-8">
-              The Equipoise Framework starts with a Landscape Assessment, a 2-3 week engagement
+              The Tensegrity framework starts with a Landscape Assessment, a 2-3 week engagement
               that maps your current SaaS portfolio, surfaces jurisdictional gaps, identifies
               transition candidates, and quantifies the opportunity. No commitment beyond the
               assessment.

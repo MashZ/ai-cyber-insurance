@@ -226,7 +226,7 @@ export default function Resources() {
                   },
                   {
                     dim: 'Methodology',
-                    discimen: 'Equipoise Framework: decision rights mapping with insured risk.',
+                    discimen: 'Tensegrity framework: decision rights mapping with insured risk.',
                     mckinsey: 'Workflow redesign from "AI that chats" to "AI that settles."',
                     accenture: 'Cognitive network platforms and sovereign cloud.',
                     ibm: 'Policy enforcement and security-first scaling.',
