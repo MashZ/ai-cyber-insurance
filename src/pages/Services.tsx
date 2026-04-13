@@ -15,6 +15,11 @@ import {
   ClipboardCheck,
   Eye,
   Gavel,
+  Activity,
+  Quote,
+  Clock,
+  Users,
+  BadgeDollarSign,
 } from 'lucide-react';
 
 export default function Services() {
@@ -28,12 +33,12 @@ export default function Services() {
               Services
             </p>
             <h1 className="font-fraunces text-[#0f2b46] text-4xl md:text-5xl font-semibold leading-tight mb-6">
-              Four capabilities that cover the full AI transition lifecycle.
+              Five capabilities that cover the full AI transition lifecycle.
             </h1>
             <p className="text-lg text-slate-600 leading-relaxed">
-              From the initial decision to migrate off legacy platforms through ongoing governance
-              of AI-native operations, Discimen provides the independent advisory and risk
-              assessment that regulated enterprises need to move with confidence.
+              From the initial decision to migrate off legacy platforms through AI cyber risk
+              valuation for the current soft market window, Discimen provides the independent
+              advisory and risk assessment that regulated enterprises need to move with confidence.
             </p>
           </div>
         </div>
@@ -389,6 +394,157 @@ export default function Services() {
         </div>
       </section>
 
+      {/* ─── Service 5: AI Cyber Risk Valuation ─── */}
+      <section id="cyber-risk-valuation" className="py-20 lg:py-24 bg-slate-50/50 border-t border-slate-100">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+
+          {/* Section header */}
+          <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
+            <div className="lg:col-span-2">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-11 h-11 rounded-xl bg-[#0f2b46] flex items-center justify-center">
+                  <Activity className="text-white" size={20} />
+                </div>
+                <span className="text-[10px] font-bold tracking-widest text-[#0f4377] uppercase px-2 py-1 bg-[#0f4377]/10 rounded">
+                  Risk Valuation
+                </span>
+              </div>
+              <h2 className="font-fraunces text-[#0f2b46] text-3xl font-semibold leading-tight mb-4">
+                AI Cyber Risk Valuation
+              </h2>
+              <p className="text-slate-600 leading-relaxed mb-6">
+                The AI cyber insurance market is in a soft cycle. Carriers are competing for
+                premium, terms are favorable, and enterprises that act now can lock in correctly
+                priced coverage for exposures that the market has not yet fully priced. That
+                window closes as agentic AI claims begin to materialize and underwriters reprice.
+              </p>
+              <p className="text-sm text-slate-500 leading-relaxed mb-6">
+                Discimen provides the independent pre-underwriting assessment that enterprises
+                need to bring a defensible risk profile to their broker -- and that brokers need
+                to quantify AI exposure with enough precision to recommend the right coverage at
+                the right premium.
+              </p>
+
+              {/* Urgency callout */}
+              <div className="bg-[#0f2b46] rounded-xl p-5">
+                <div className="flex items-start gap-3">
+                  <Clock className="text-white/50 flex-shrink-0 mt-0.5" size={16} />
+                  <div>
+                    <p className="text-xs font-bold tracking-wide text-white/50 uppercase mb-1">
+                      Market Timing
+                    </p>
+                    <p className="text-sm text-white/80 leading-relaxed">
+                      AI cyber is currently a soft market. As agentic AI incidents accumulate and
+                      regulators act, underwriters will reprice and tighten exclusions. The enterprises
+                      that correctly quantify and document their AI risk profile today will secure
+                      materially better coverage than those that wait.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="lg:col-span-3 space-y-6">
+
+              {/* What has changed */}
+              <div className="bg-white border border-slate-200 rounded-xl p-6">
+                <h3 className="font-fraunces text-[#0f2b46] text-lg font-semibold mb-4">
+                  Why Existing Coverage Is Mispriced
+                </h3>
+                <div className="space-y-4">
+                  {[
+                    {
+                      icon: AlertTriangle,
+                      title: 'AI is now the attack vector, not just the asset',
+                      desc: 'Traditional cyber policies were written to protect data and systems from external threats. AI has inverted this: the AI layer itself is now being used to conduct attacks, manipulate outputs, and breach systems at a speed and scale that existing policy language does not contemplate.',
+                    },
+                    {
+                      icon: Activity,
+                      title: 'Agentic AI introduces autonomous risk',
+                      desc: 'When an autonomous agent makes an operational decision -- deleting software, moving funds, modifying a workflow -- no human authorized that action in the moment. This is a fundamentally new liability class that most policies have not addressed and most actuarial models have not yet priced.',
+                    },
+                    {
+                      icon: Users,
+                      title: 'Mid-market is the new enterprise target',
+                      desc: 'Organizations that assumed they were too small to attract sophisticated threat actors are no longer correct. The cost of AI-enabled attacks has dropped to the point where mid-market companies in financial services, manufacturing, and healthcare are being targeted at the intensity previously reserved for state-level enterprises.',
+                    },
+                  ].map((item) => (
+                    <div key={item.title} className="flex items-start gap-4">
+                      <div className="w-9 h-9 rounded-lg bg-[#0f2b46]/5 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <item.icon className="text-[#0f2b46]" size={17} />
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-[#0f2b46] mb-1">{item.title}</p>
+                        <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* What Discimen delivers */}
+              <div className="bg-white border border-slate-200 rounded-xl p-6">
+                <h3 className="font-fraunces text-[#0f2b46] text-lg font-semibold mb-4">
+                  The Discimen Pre-Underwriting Assessment
+                </h3>
+                <div className="space-y-3">
+                  {[
+                    'Agentic AI exposure inventory: mapping all autonomous decision points, their authority boundaries, and potential loss scenarios',
+                    'Attack surface documentation: identifying where AI systems introduce new breach vectors beyond conventional IT perimeter risk',
+                    'Quantified risk scoring in actuarial terms: translated from technical findings into the financial exposure language brokers and underwriters require',
+                    'Coverage gap analysis: comparing current policy language against actual AI exposure to surface uninsured or underinsured risks',
+                    'Governance documentation package: the board-level evidence trail that qualifies enterprises for better terms and demonstrates fiduciary diligence',
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-2.5">
+                      <CheckCircle2 size={15} className="text-[#0f4377] mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-slate-600 leading-relaxed">{item}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Broker co-advisory */}
+              <div className="bg-white border border-slate-200 rounded-xl p-6">
+                <h3 className="font-fraunces text-[#0f2b46] text-lg font-semibold mb-2">
+                  Broker Co-Advisory Model
+                </h3>
+                <p className="text-sm text-slate-500 leading-relaxed mb-4">
+                  Discimen works alongside insurance brokers serving regulated enterprise clients.
+                  We provide the independent technical assessment layer that brokers need to
+                  accurately place AI cyber coverage -- and that enterprises need to avoid paying
+                  for policies that do not match their actual risk profile.
+                </p>
+                <div className="flex items-start gap-3 bg-slate-50 rounded-lg p-4">
+                  <BadgeDollarSign className="text-[#0f4377] flex-shrink-0 mt-0.5" size={18} />
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    Brokers who engage Discimen bring clients a third-party-validated risk profile
+                    rather than a self-reported questionnaire. This closes the gap between what
+                    enterprises think their AI exposure is and what it actually is -- improving
+                    placement accuracy and protecting both the client and the carrier.
+                  </p>
+                </div>
+              </div>
+
+              {/* Field intelligence quote */}
+              <div className="border-l-4 border-[#0f4377] pl-6 py-2">
+                <Quote className="text-[#0f4377]/30 mb-3" size={20} />
+                <p className="text-sm text-slate-600 italic leading-relaxed mb-3">
+                  "Everyone at that leadership table should know what their AI risk number is.
+                  If you have a really good broker, they will be quantifying that risk -- because
+                  they are telling that story to your carrier. If you don&#39;t have that
+                  conversation yet, go find someone who can quantify your cyber risk and put it
+                  on the agenda."
+                </p>
+                <p className="text-xs text-slate-400 font-semibold tracking-wide uppercase">
+                  Enterprise risk practitioner, regulated financial services
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ─── CTA ─── */}
       <section className="py-20 lg:py-24 bg-[#0f2b46]">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
@@ -398,8 +554,9 @@ export default function Services() {
             </h2>
             <p className="text-white/60 leading-relaxed mb-8">
               Every engagement begins with a 45-minute executive briefing where we assess
-              your current AI landscape, identify the highest-impact transition opportunities,
-              and outline a path forward, at no cost.
+              your current AI landscape, identify the highest-impact opportunities, and outline
+              a path forward -- including where your AI cyber risk may be undervalued relative
+              to current market conditions.
             </p>
             <Link
               to="/contact"

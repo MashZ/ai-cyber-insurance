@@ -9,6 +9,8 @@ import {
   Target,
   BarChart3,
   CheckCircle2,
+  Activity,
+  Quote,
 } from 'lucide-react';
 import AbstractHeroViz from '../components/AbstractHeroViz';
 
@@ -35,7 +37,7 @@ export default function Home() {
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/70 backdrop-blur-sm border border-slate-200/50 mb-8">
               <div className="w-1.5 h-1.5 rounded-full bg-[#0f4377]" />
               <span className="text-xs font-semibold tracking-widest text-[#0f4377] uppercase">
-                AI Transition Advisory
+                AI Transition &amp; Cyber Risk Advisory
               </span>
             </div>
 
@@ -90,8 +92,8 @@ export default function Home() {
                 label: 'have proper AI governance frameworks in place',
               },
               {
-                stat: 'Aug 2026',
-                label: 'EU AI Act general application deadline for high-risk systems',
+                stat: 'Soft Market',
+                label: 'AI cyber policies are currently underpriced -- the window to lock in correct coverage is open now',
               },
             ].map((item) => (
               <div key={item.stat}>
@@ -202,10 +204,10 @@ export default function Home() {
               What We Do
             </p>
             <h2 className="font-fraunces text-[#0f2b46] text-3xl md:text-4xl font-semibold leading-tight mb-4">
-              Four capabilities. One integrated advisory.
+              Five capabilities. One integrated advisory.
             </h2>
             <p className="text-slate-600 leading-relaxed">
-              From strategic transition planning to insurance-grade risk scoring, Discimen covers
+              From strategic transition planning through AI cyber risk valuation, Discimen covers
               the full lifecycle of enterprise AI adoption for regulated industries.
             </p>
           </div>
@@ -217,24 +219,28 @@ export default function Home() {
                 title: 'AI Transition Advisory',
                 desc: 'Independent evaluation of whether to stay on legacy platforms, layer AI on top, or rip-and-replace with AI-native alternatives. We map the decision space, quantify the trade-offs, and build the business case.',
                 tag: 'Strategic',
+                span: false,
               },
               {
                 icon: Scale,
                 title: 'Equipoise Framework',
-                desc: 'A structured methodology for running legacy and AI-native systems in parallel — managing dual operations, resolving C-suite jurisdictional competition over AI decisions, and governing both simultaneously without compliance gaps.',
+                desc: 'A structured methodology for running legacy and AI-native systems in parallel -- managing dual operations, resolving C-suite jurisdictional competition over AI decisions, and governing both simultaneously without compliance gaps.',
                 tag: 'Operational',
+                span: false,
               },
               {
                 icon: Shield,
                 title: 'AI Governance Layer',
-                desc: 'Productized governance assessments for agentic AI deployments — covering decision authority mapping, escalation protocols, audit trails, regulatory alignment, and operational risk exposure.',
+                desc: 'Productized governance assessments for agentic AI deployments -- covering decision authority mapping, escalation protocols, audit trails, regulatory alignment, and operational risk exposure.',
                 tag: 'Compliance',
+                span: false,
               },
               {
                 icon: Building2,
                 title: 'AI Risk Assessment',
-                desc: 'Insurance-grade risk evaluation for AI systems — model inventory, architecture review, vulnerability profiling, and actuarial risk scoring that underwriters and product liability insurers can price from.',
+                desc: 'Insurance-grade risk evaluation for AI systems -- model inventory, architecture review, vulnerability profiling, and actuarial risk scoring that underwriters and product liability insurers can price from.',
                 tag: 'Insurance',
+                span: false,
               },
             ].map((item) => (
               <div
@@ -255,6 +261,29 @@ export default function Home() {
                 <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
+
+            {/* 5th service -- featured full-width */}
+            <div className="md:col-span-2 bg-[#0f2b46] border border-[#0f2b46] rounded-2xl p-8 hover:shadow-lg transition-all duration-300">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
+                  <Activity className="text-white" size={20} />
+                </div>
+                <span className="text-[10px] font-bold tracking-widest text-white/50 uppercase px-2 py-1 bg-white/10 rounded">
+                  Risk Valuation
+                </span>
+              </div>
+              <h3 className="font-fraunces text-white text-xl font-semibold mb-3">
+                AI Cyber Risk Valuation
+              </h3>
+              <p className="text-sm text-white/70 leading-relaxed max-w-3xl">
+                The AI cyber insurance market is in a soft cycle. Carriers are competing for
+                premium, coverage terms are favorable, and the window to lock in correctly priced
+                policies is open -- but it will close as agentic AI claims begin to materialize.
+                Discimen provides the independent pre-underwriting assessment that lets enterprises
+                bring a defensible risk profile to their broker, closing coverage gaps before the
+                market hardens.
+              </p>
+            </div>
           </div>
 
           <div className="text-center mt-10">
@@ -298,6 +327,50 @@ export default function Home() {
                   {industry.name}
                 </p>
                 <p className="text-xs text-slate-500 leading-relaxed">{industry.detail}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── Market Signals ─── */}
+      <section className="py-20 lg:py-24 bg-[#0f2b46]/95 backdrop-blur-sm relative">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8 relative">
+          <div className="max-w-2xl mb-14">
+            <p className="text-xs font-semibold tracking-widest text-white/40 uppercase mb-3">
+              What Practitioners Are Saying
+            </p>
+            <h2 className="font-fraunces text-white text-3xl md:text-4xl font-semibold leading-tight">
+              The risk landscape has shifted. Most enterprises haven&#39;t caught up.
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                quote: 'AI has gone from being the asset we protect to being the attack vector itself. This cannot be fixed through a security ticket. It requires an entirely different strategic posture.',
+                context: 'Enterprise cybersecurity practitioner',
+              },
+              {
+                quote: 'Mid-market companies can no longer hide behind the noise. Threat actors are targeting organizations of that size the way they used to target only state-level enterprises five years ago.',
+                context: 'Insurance risk professional, regulated industry',
+              },
+              {
+                quote: 'The agentic layer is where the real exposure lives. Autonomous systems making operational decisions without human authorization in the moment -- that is a class of risk that no existing framework has yet priced.',
+                context: 'Enterprise AI transformation leader',
+              },
+            ].map((item) => (
+              <div
+                key={item.context}
+                className="bg-white/5 border border-white/10 rounded-2xl p-8 flex flex-col"
+              >
+                <Quote className="text-white/20 mb-4 flex-shrink-0" size={24} />
+                <p className="text-white/80 text-sm leading-relaxed italic mb-6 flex-1">
+                  {item.quote}
+                </p>
+                <p className="text-white/30 text-xs font-semibold tracking-wide uppercase">
+                  {item.context}
+                </p>
               </div>
             ))}
           </div>
@@ -405,12 +478,12 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 lg:px-8 relative">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="font-fraunces text-[#0f2b46] text-3xl md:text-4xl font-semibold leading-tight mb-4">
-              The window is open. Enterprises are making platform decisions now.
+              The window is open. Enterprises are making platform and risk decisions now.
             </h2>
             <p className="text-slate-600 leading-relaxed mb-8">
               Whether you&#39;re evaluating AI-native ITSM, building governance for agentic
-              deployments, or quantifying AI risk for your insurers — Discimen can help you
-              move with confidence.
+              deployments, or locking in correctly priced AI cyber coverage before the soft
+              market closes -- Discimen can help you move with confidence.
             </p>
             <Link
               to="/contact"
