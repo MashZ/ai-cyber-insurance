@@ -110,7 +110,7 @@ export default function About() {
                   As an Associate Partner at IBM, he led large-scale generative AI engagements for Fortune 100 clients, including a conversation intelligence program that unlocked eight-figure operational value in its first month and contributed to the multi-year resolution of a multi-billion-dollar customer portfolio. As Global Director of AI Strategy at KPMG, he advanced the firm's flagship audit platform into neural network–based deep learning, materially improving audit efficiency and error rates across its global service lines. Earlier in his career, his workforce planning work at a leading national retailer was featured on the cover of <i>Harvard Business Review</i>.
                 </p>
                 <p>
-                  MBA from the University of Chicago Booth School of Business. Completed PhD coursework in Behavioral Finance and Financial Engineering. In September 2025 he delivered a keynote to a live audience of 6,800 practitioners at OpenAI Academy on scaling enterprise AI through systems thinking, and recently placed first at a Google hackathon opened by Sergey Brin. He runs Discimen, an independent advisory practice focused on AI transition, governance, and cyber risk valuation for regulated enterprises.
+                  MBA from the University of Chicago Booth School of Business. Completed PhD coursework in Behavioral Finance and Financial Engineering. In September 2025 he delivered a keynote to a live audience of 6,800 practitioners at OpenAI Academy on scaling enterprise AI through systems thinking, and recently placed first at a Google hackathon opened by Sergey Brin.
                 </p>
               </div>
 

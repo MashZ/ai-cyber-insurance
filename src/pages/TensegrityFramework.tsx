@@ -40,7 +40,7 @@ export default function TensegrityFramework() {
               The Tensegrity Framework
             </h1>
             <p className="text-sm text-slate-400 italic mb-6">
-              tensegrity: structural integrity maintained through balanced tension.
+              tensegrity — structural integrity maintained through balanced tension.
             </p>
             <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-6">
               A structured methodology for navigating the transition from legacy SaaS to AI-native
