@@ -30,17 +30,17 @@ export default function Contact() {
                     <p>
                       <span className="font-semibold text-[#0f2b46]">First 15 minutes:</span>{' '}
                       We listen. Understanding your current SaaS portfolio, AI initiatives, regulatory
-                      landscape, and the decisions you're facing.
+                      landscape, and the decisions you&#39;re facing.
                     </p>
                     <p>
                       <span className="font-semibold text-[#0f2b46]">Next 15 minutes:</span>{' '}
-                      We share what we're seeing in your industry — who's moving, what's working,
+                      We share what we&#39;re seeing in your industry: who&#39;s moving, what&#39;s working,
                       and where the risks are materializing.
                     </p>
                     <p>
                       <span className="font-semibold text-[#0f2b46]">Final 15 minutes:</span>{' '}
                       We outline potential paths forward and discuss whether Discimen is the right
-                      partner for your specific situation. Sometimes we're not — and we'll tell
+                      partner for your specific situation. Sometimes we&#39;re not. We&#39;ll tell
                       you that directly.
                     </p>
                   </div>

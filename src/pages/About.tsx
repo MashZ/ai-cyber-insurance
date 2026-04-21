@@ -45,7 +45,7 @@ export default function About() {
               </p>
               <p>
                 Enterprises navigating the shift from legacy SaaS to AI-native operations need
-                something that doesn't exist in the market today: an independent advisory that
+                something that doesn&#39;t exist in the market today: an independent advisory that
                 combines hands-on AI implementation experience, sector-specific regulatory
                 knowledge, and the financial rigor to make every recommendation defensible to
                 a CFO, a board, and a regulator.

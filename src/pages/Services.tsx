@@ -78,7 +78,7 @@ export default function Services() {
                 {
                   icon: Search,
                   title: 'Platform Decision Analysis',
-                  desc: 'Independent evaluation of legacy vs. AI-native alternatives for your specific operational context. We map the decision space — ServiceNow vs. Serval, Salesforce vs. AI-native CRM, Workday vs. emerging alternatives — and quantify the trade-offs across cost, risk, capability, and timeline.',
+                  desc: 'Independent evaluation of legacy vs. AI-native alternatives for your specific operational context. We map the decision space across ServiceNow vs. Serval, Salesforce vs. AI-native CRM, and Workday vs. emerging alternatives, then quantify the trade-offs across cost, risk, capability, and timeline.',
                 },
                 {
                   icon: BarChart3,
@@ -93,7 +93,7 @@ export default function Services() {
                 {
                   icon: Layers,
                   title: 'Vendor Due Diligence',
-                  desc: 'Technical and commercial evaluation of AI-native vendors — assessing their architecture maturity, data handling practices, security posture, regulatory compliance capabilities, financial stability, and enterprise readiness.',
+                  desc: 'Technical and commercial evaluation of AI-native vendors, assessing their architecture maturity, data handling practices, security posture, regulatory compliance capabilities, financial stability, and enterprise readiness.',
                 },
                 {
                   icon: GitBranch,
@@ -123,7 +123,7 @@ export default function Services() {
         </div>
       </section>
 
-      {/* ─── Service 2: Tensegrity framework ─── */}
+      {/* ─── Service 2: Tensegrity Framework ─── */}
       <section id="tensegrity-framework" className="py-20 lg:py-24 border-t border-slate-100">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
@@ -138,18 +138,18 @@ export default function Services() {
                 </span>
               </div>
               <h2 className="font-fraunces text-[#0f2b46] text-3xl font-semibold leading-tight mb-4">
-                The Tensegrity framework
+                The Tensegrity Framework
               </h2>
               <p className="text-slate-600 leading-relaxed mb-6">
                 Most enterprises cannot execute a clean break from legacy platforms. Data is too
-                embedded, workflows too complex, contracts too long. The Tensegrity framework provides
+                embedded, workflows too complex, contracts too long. The Tensegrity Framework provides
                 a structured methodology for running legacy and AI-native systems in deliberate
-                equilibrium — resolving C-suite jurisdictional competition and maintaining governance
+                equilibrium, resolving C-suite jurisdictional competition and maintaining governance
                 of both.
               </p>
               <p className="text-sm text-slate-500 leading-relaxed">
                 Developed from real-world enterprise AI transformation engagements across
-                manufacturing, healthcare, and energy — industries where cross-functional tensions are
+                manufacturing, healthcare, and energy, all industries where cross-functional tensions are
                 most complex and governance requirements most stringent.
               </p>
             </div>
@@ -160,7 +160,7 @@ export default function Services() {
                 {
                   icon: Layers,
                   title: 'Dual-System Architecture Assessment',
-                  desc: 'Evaluate how legacy systems of record and AI-native platforms can coexist — mapping data flows, integration points, authentication boundaries, and conflict resolution mechanisms for overlapping functionality.',
+                  desc: 'Evaluate how legacy systems of record and AI-native platforms can coexist, mapping data flows, integration points, authentication boundaries, and conflict resolution mechanisms for overlapping functionality.',
                 },
                 {
                   icon: GitBranch,

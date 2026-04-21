@@ -40,8 +40,9 @@ export default function Resources() {
               <p className="text-white/60 leading-relaxed mb-6">
                 An interactive demonstration of how first-principles decomposition and
                 systems thinking transform enterprise operations. Built using the same
-                methodology behind the GM HR transformation that took 47,000 cases from
-                4-day resolution to 30 seconds.
+                methodology deployed inside a Fortune 25 automotive manufacturer, where an
+                HR service operations redesign compressed 47,000 annual cases from 4-day
+                to 30-second resolution.
               </p>
               <p className="text-white/50 text-sm leading-relaxed mb-8">
                 Walk through a real IT service desk scenario to see how agentic AI patterns
@@ -226,7 +227,7 @@ export default function Resources() {
                   },
                   {
                     dim: 'Methodology',
-                    discimen: 'Tensegrity framework: decision rights mapping with insured risk.',
+                    discimen: 'Tensegrity Framework: decision rights mapping with insured risk.',
                     mckinsey: 'Workflow redesign from "AI that chats" to "AI that settles."',
                     accenture: 'Cognitive network platforms and sovereign cloud.',
                     ibm: 'Policy enforcement and security-first scaling.',

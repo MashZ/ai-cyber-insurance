@@ -255,8 +255,9 @@ export default function EnablementLab() {
             </h1>
             <p className="text-lg text-slate-600 leading-relaxed mb-2">
               An interactive demonstration of how first-principles decomposition and systems
-              thinking transform enterprise operations, using the same methodology behind the
-              GM HR transformation (47,000 cases from 4-day resolution to 30 seconds).
+              thinking transform enterprise operations, using the same methodology deployed
+              inside a Fortune 25 automotive manufacturer, where an HR service redesign
+              compressed 47,000 annual cases from 4-day to 30-second resolution.
             </p>
             <p className="text-sm text-slate-400 leading-relaxed">
               Walk through a real IT service desk scenario. Decompose the problem to fundamental
@@ -465,7 +466,7 @@ export default function EnablementLab() {
                 { label: 'Avg Resolution', before: '40 min', after: '30 sec (Tier 1)' },
                 { label: 'First-Contact Resolution', before: '55%', after: '67%+' },
                 { label: 'Cost per Query', before: '$12–25', after: '$0.001–0.50' },
-                { label: 'Annual Savings', before: 'Baseline', after: '$1.2M+ (at GM scale)' },
+                { label: 'Annual Savings', before: 'Baseline', after: '$1.2M+ (Fortune 25 scale)' },
               ].map((m) => (
                 <div key={m.label} className="bg-slate-50 rounded-xl p-5">
                   <p className="text-xs text-slate-500 font-medium mb-2">{m.label}</p>
@@ -847,8 +848,9 @@ export default function EnablementLab() {
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-slate-600 leading-relaxed mb-6">
               This Lab demonstrates the methodology behind every Discimen engagement.
-              Decompose. Recompose. Operationalize. The same approach that transformed
-              47,000 HR cases at GM applies to your IT, finance, and operations workflows.
+              Decompose. Recompose. Operationalize. The same approach that compressed
+              47,000 annual HR cases inside a Fortune 25 automotive operation applies to
+              your IT, finance, and operations workflows.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

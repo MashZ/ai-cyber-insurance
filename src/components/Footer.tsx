@@ -48,7 +48,7 @@ const Footer = () => {
                   to="/tensegrity-framework"
                   className="text-gray-500 hover:text-[#0f2b46] transition-colors"
                 >
-                  Tensegrity framework
+                  Tensegrity Framework
                 </Link>
               </li>
               <li>
