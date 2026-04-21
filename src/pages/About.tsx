@@ -104,19 +104,13 @@ export default function About() {
 
               <div className="space-y-4 text-sm text-slate-600 leading-relaxed">
                 <p>
-                  Global AI Strategy and Transformation leader with enterprise AI deployment
-                  experience at General Motors, where he led the AskGM chatbot transformation,
-                  converting 47,000 annual HR cases from 4-day to 30-second resolution with 67%
-                  first-contact resolution.
+                  Mash is a twenty-plus year strategy and operations practitioner who has spent the last decade building and deploying AI systems at enterprise scale across financial services, energy and utilities, telecommunications, healthcare, automotive, and professional services. His recent work sits at the frontier of agentic AI: he serves on the Architecture Review Board for Moveworks through its $2.85B acquisition by ServiceNow, and most recently led an agentic AI transformation for one of the world's largest manufacturers, reshaping its core Operations, HR, and IT functions.
                 </p>
                 <p>
-                  Former IBM Associate Partner and KPMG Director with deep consulting experience
-                  across automotive, healthcare, energy utilities, and financial services.
-                  Served on the Moveworks Architecture Review Board, providing direct insight
-                  into the platform that ServiceNow acquired in 2025.
+                  As an Associate Partner at IBM, he led large-scale generative AI engagements for Fortune 100 clients — including a conversation intelligence program that unlocked eight-figure operational value in its first month and contributed to the multi-year resolution of a multi-billion-dollar customer portfolio. As Global Director of AI Strategy at KPMG, he advanced the firm's flagship audit platform into neural network–based deep learning, materially improving audit efficiency and error rates across its global service lines. Earlier in his career, his workforce planning work at a leading national retailer was featured on the cover of _Harvard Business Review_.
                 </p>
                 <p>
-                  MBA from the University of Chicago Booth School of Business. Completed PhD coursework in Behavioral Finance and Financial Engineering. Recognized thought leader with keynotes at OpenAI Academy (6,800+ live attendees) and PyData conferences. Won first place in the Google hackathon in March 2026, which was opened by Sergey Brin.
+                  MBA from the University of Chicago Booth School of Business. Completed PhD coursework in Behavioral Finance and Financial Engineering. In September 2025 he delivered a keynote to a live audience of 6,800 practitioners at OpenAI Academy on scaling enterprise AI through systems thinking, and recently placed first at a Google hackathon opened by Sergey Brin. He runs Discimen, an independent advisory practice focused on AI transition, governance, and cyber risk valuation for regulated enterprises.
                 </p>
               </div>
 

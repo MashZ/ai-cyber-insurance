@@ -49,7 +49,7 @@ export default function Home() {
             </p>
 
             <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-10 max-w-2xl">
-              AI applications are ultimately far less of a technical issue in many cases, and much more about rethinking the deep expertise and structure of your organization around AI. There is no shortcut to executive decisions about how AI is going to relate to employees, what the company should look like, and how it will compete in the future. These are fundamental, even existential, questions.
+              AI transformation isn't a technology decision. It's a question about who owns what, who decides what, and what your company becomes. These questions can't be delegated to the CTO.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
