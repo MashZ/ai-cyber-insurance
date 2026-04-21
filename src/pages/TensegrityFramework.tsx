@@ -56,144 +56,6 @@ export default function TensegrityFramework() {
         </div>
       </section>
 
-      {/* ─── Tensegrity Visualization ─── */}
-      <section className="py-16 lg:py-20 border-t border-slate-100">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <div className="max-w-2xl mb-12">
-            <p className="text-xs font-semibold tracking-widest text-[#0f4377] uppercase mb-3">
-              The Structural Metaphor
-            </p>
-            <h2 className="font-fraunces text-[#0f2b46] text-2xl md:text-3xl font-semibold leading-tight mb-4">
-              Continuous tension. Discontinuous compression. Redistributable load.
-            </h2>
-            <p className="text-slate-600 leading-relaxed">
-              In a tensegrity structure, rigid compression members never touch. They are held in
-              equilibrium by a continuous web of tension cables. Remove one compression rod and the
-              structure does not collapse. Tension redistributes across the remaining members.
-              This is what a resilient AI operating model looks like.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Panel 1: Stable tensegrity */}
-            <div className="bg-white border border-slate-200 rounded-2xl p-8">
-              <div className="flex items-center justify-between mb-6">
-                <span className="text-[10px] font-bold tracking-widest text-[#0f4377]/70 uppercase px-2 py-1 bg-[#0f4377]/5 rounded">
-                  Equilibrium
-                </span>
-                <span className="text-xs text-slate-400">All members present</span>
-              </div>
-
-              <svg viewBox="0 0 320 240" className="w-full h-auto" xmlns="http://www.w3.org/2000/svg" aria-label="Stable tensegrity structure showing three compression rods held in equilibrium by continuous tension cables">
-                {/* Tension cables -- thin continuous lines */}
-                <g stroke="#94a3b8" strokeWidth="1" strokeDasharray="2,3" fill="none">
-                  <line x1="80" y1="60" x2="240" y2="60" />
-                  <line x1="60" y1="180" x2="260" y2="180" />
-                  <line x1="80" y1="60" x2="60" y2="180" />
-                  <line x1="240" y1="60" x2="260" y2="180" />
-                  <line x1="80" y1="60" x2="160" y2="120" />
-                  <line x1="240" y1="60" x2="160" y2="120" />
-                  <line x1="60" y1="180" x2="160" y2="120" />
-                  <line x1="260" y1="180" x2="160" y2="120" />
-                  <line x1="80" y1="60" x2="260" y2="180" />
-                  <line x1="240" y1="60" x2="60" y2="180" />
-                </g>
-
-                {/* Compression rods -- thick, discontinuous */}
-                <g stroke="#0f2b46" strokeWidth="5" strokeLinecap="round" fill="none">
-                  <line x1="80" y1="60" x2="240" y2="60" />
-                  <line x1="60" y1="180" x2="260" y2="180" />
-                  <line x1="160" y1="40" x2="160" y2="200" />
-                </g>
-
-                {/* Joint nodes */}
-                <g fill="#0f4377">
-                  <circle cx="80" cy="60" r="4" />
-                  <circle cx="240" cy="60" r="4" />
-                  <circle cx="60" cy="180" r="4" />
-                  <circle cx="260" cy="180" r="4" />
-                  <circle cx="160" cy="40" r="4" />
-                  <circle cx="160" cy="200" r="4" />
-                  <circle cx="160" cy="120" r="3" />
-                </g>
-              </svg>
-
-              <div className="mt-6 space-y-3 text-sm">
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-[3px] bg-[#0f2b46] rounded-full flex-shrink-0" />
-                  <span className="text-slate-700">
-                    <span className="font-semibold">Compression:</span> rigid decision rights (C-suite jurisdictions, contracts, regulation)
-                  </span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-[1px] bg-slate-400 flex-shrink-0" style={{ borderTop: '1px dashed #94a3b8' }} />
-                  <span className="text-slate-700">
-                    <span className="font-semibold">Tension:</span> coordination layer (policies, escalation, decision rights mapping)
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Panel 2: Redistributed tension after a member is removed */}
-            <div className="bg-white border border-slate-200 rounded-2xl p-8">
-              <div className="flex items-center justify-between mb-6">
-                <span className="text-[10px] font-bold tracking-widest text-[#0f4377]/70 uppercase px-2 py-1 bg-[#0f4377]/5 rounded">
-                  Redistribution
-                </span>
-                <span className="text-xs text-slate-400">One compression member removed</span>
-              </div>
-
-              <svg viewBox="0 0 320 240" className="w-full h-auto" xmlns="http://www.w3.org/2000/svg" aria-label="Tensegrity structure after one compression rod is removed, showing tension redistributing across remaining members">
-                {/* Remaining tension cables -- slightly heavier to show reloading */}
-                <g stroke="#0f4377" strokeWidth="1.25" strokeDasharray="2,3" fill="none" opacity="0.85">
-                  <line x1="80" y1="60" x2="240" y2="60" />
-                  <line x1="60" y1="180" x2="260" y2="180" />
-                  <line x1="80" y1="60" x2="60" y2="180" />
-                  <line x1="240" y1="60" x2="260" y2="180" />
-                  <line x1="80" y1="60" x2="160" y2="120" />
-                  <line x1="240" y1="60" x2="160" y2="120" />
-                  <line x1="60" y1="180" x2="160" y2="120" />
-                  <line x1="260" y1="180" x2="160" y2="120" />
-                </g>
-
-                {/* Ghosted removed member */}
-                <line x1="160" y1="40" x2="160" y2="200" stroke="#cbd5e1" strokeWidth="5" strokeLinecap="round" strokeDasharray="4,6" opacity="0.5" />
-
-                {/* Remaining compression rods */}
-                <g stroke="#0f2b46" strokeWidth="5" strokeLinecap="round" fill="none">
-                  <line x1="80" y1="60" x2="240" y2="60" />
-                  <line x1="60" y1="180" x2="260" y2="180" />
-                </g>
-
-                {/* Joint nodes */}
-                <g fill="#0f4377">
-                  <circle cx="80" cy="60" r="4" />
-                  <circle cx="240" cy="60" r="4" />
-                  <circle cx="60" cy="180" r="4" />
-                  <circle cx="260" cy="180" r="4" />
-                  <circle cx="160" cy="120" r="3" />
-                </g>
-                <g fill="#cbd5e1">
-                  <circle cx="160" cy="40" r="4" />
-                  <circle cx="160" cy="200" r="4" />
-                </g>
-              </svg>
-
-              <div className="mt-6 space-y-3 text-sm">
-                <p className="text-slate-700 leading-relaxed">
-                  When a vendor contract expires, a regulation shifts, or a C-suite role is
-                  redrawn, the coordination layer absorbs the change. The architecture does not
-                  need to be rebuilt. It rebalances.
-                </p>
-                <p className="text-[#0f4377] font-semibold leading-relaxed">
-                  Point-solution stacks break here. Tensegrity does not.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ─── The Jurisdictional Challenge ─── */}
       <section className="py-20 lg:py-24 bg-[#0f2b46]">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
@@ -399,6 +261,144 @@ export default function TensegrityFramework() {
               Built for regulated industries where operational continuity is non-negotiable.
             </h2>
           </div>
+
+          {/* ─── Tensegrity Visualization ─── */}
+          <section className="py-16 lg:py-20 border-t border-slate-100">
+            <div className="max-w-6xl mx-auto px-6 lg:px-8">
+              <div className="max-w-2xl mb-12">
+                <p className="text-xs font-semibold tracking-widest text-[#0f4377] uppercase mb-3">
+                  The Structural Metaphor
+                </p>
+                <h2 className="font-fraunces text-[#0f2b46] text-2xl md:text-3xl font-semibold leading-tight mb-4">
+                  Continuous tension. Discontinuous compression. Redistributable load.
+                </h2>
+                <p className="text-slate-600 leading-relaxed">
+                  In a tensegrity structure, rigid compression members never touch. They are held in
+                  equilibrium by a continuous web of tension cables. Remove one compression rod and the
+                  structure does not collapse. Tension redistributes across the remaining members.
+                  This is what a resilient AI operating model looks like.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Panel 1: Stable tensegrity */}
+                <div className="bg-white border border-slate-200 rounded-2xl p-8">
+                  <div className="flex items-center justify-between mb-6">
+                    <span className="text-[10px] font-bold tracking-widest text-[#0f4377]/70 uppercase px-2 py-1 bg-[#0f4377]/5 rounded">
+                      Equilibrium
+                    </span>
+                    <span className="text-xs text-slate-400">All members present</span>
+                  </div>
+
+                  <svg viewBox="0 0 320 240" className="w-full h-auto" xmlns="http://www.w3.org/2000/svg" aria-label="Stable tensegrity structure showing three compression rods held in equilibrium by continuous tension cables">
+                    {/* Tension cables -- thin continuous lines */}
+                    <g stroke="#94a3b8" strokeWidth="1" strokeDasharray="2,3" fill="none">
+                      <line x1="80" y1="60" x2="240" y2="60" />
+                      <line x1="60" y1="180" x2="260" y2="180" />
+                      <line x1="80" y1="60" x2="60" y2="180" />
+                      <line x1="240" y1="60" x2="260" y2="180" />
+                      <line x1="80" y1="60" x2="160" y2="120" />
+                      <line x1="240" y1="60" x2="160" y2="120" />
+                      <line x1="60" y1="180" x2="160" y2="120" />
+                      <line x1="260" y1="180" x2="160" y2="120" />
+                      <line x1="80" y1="60" x2="260" y2="180" />
+                      <line x1="240" y1="60" x2="60" y2="180" />
+                    </g>
+
+                    {/* Compression rods -- thick, discontinuous */}
+                    <g stroke="#0f2b46" strokeWidth="5" strokeLinecap="round" fill="none">
+                      <line x1="80" y1="60" x2="240" y2="60" />
+                      <line x1="60" y1="180" x2="260" y2="180" />
+                      <line x1="160" y1="40" x2="160" y2="200" />
+                    </g>
+
+                    {/* Joint nodes */}
+                    <g fill="#0f4377">
+                      <circle cx="80" cy="60" r="4" />
+                      <circle cx="240" cy="60" r="4" />
+                      <circle cx="60" cy="180" r="4" />
+                      <circle cx="260" cy="180" r="4" />
+                      <circle cx="160" cy="40" r="4" />
+                      <circle cx="160" cy="200" r="4" />
+                      <circle cx="160" cy="120" r="3" />
+                    </g>
+                  </svg>
+
+                  <div className="mt-6 space-y-3 text-sm">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-[3px] bg-[#0f2b46] rounded-full flex-shrink-0" />
+                      <span className="text-slate-700">
+                        <span className="font-semibold">Compression:</span> rigid decision rights (C-suite jurisdictions, contracts, regulation)
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-[1px] bg-slate-400 flex-shrink-0" style={{ borderTop: '1px dashed #94a3b8' }} />
+                      <span className="text-slate-700">
+                        <span className="font-semibold">Tension:</span> coordination layer (policies, escalation, decision rights mapping)
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Panel 2: Redistributed tension after a member is removed */}
+                <div className="bg-white border border-slate-200 rounded-2xl p-8">
+                  <div className="flex items-center justify-between mb-6">
+                    <span className="text-[10px] font-bold tracking-widest text-[#0f4377]/70 uppercase px-2 py-1 bg-[#0f4377]/5 rounded">
+                      Redistribution
+                    </span>
+                    <span className="text-xs text-slate-400">One compression member removed</span>
+                  </div>
+
+                  <svg viewBox="0 0 320 240" className="w-full h-auto" xmlns="http://www.w3.org/2000/svg" aria-label="Tensegrity structure after one compression rod is removed, showing tension redistributing across remaining members">
+                    {/* Remaining tension cables -- slightly heavier to show reloading */}
+                    <g stroke="#0f4377" strokeWidth="1.25" strokeDasharray="2,3" fill="none" opacity="0.85">
+                      <line x1="80" y1="60" x2="240" y2="60" />
+                      <line x1="60" y1="180" x2="260" y2="180" />
+                      <line x1="80" y1="60" x2="60" y2="180" />
+                      <line x1="240" y1="60" x2="260" y2="180" />
+                      <line x1="80" y1="60" x2="160" y2="120" />
+                      <line x1="240" y1="60" x2="160" y2="120" />
+                      <line x1="60" y1="180" x2="160" y2="120" />
+                      <line x1="260" y1="180" x2="160" y2="120" />
+                    </g>
+
+                    {/* Ghosted removed member */}
+                    <line x1="160" y1="40" x2="160" y2="200" stroke="#cbd5e1" strokeWidth="5" strokeLinecap="round" strokeDasharray="4,6" opacity="0.5" />
+
+                    {/* Remaining compression rods */}
+                    <g stroke="#0f2b46" strokeWidth="5" strokeLinecap="round" fill="none">
+                      <line x1="80" y1="60" x2="240" y2="60" />
+                      <line x1="60" y1="180" x2="260" y2="180" />
+                    </g>
+
+                    {/* Joint nodes */}
+                    <g fill="#0f4377">
+                      <circle cx="80" cy="60" r="4" />
+                      <circle cx="240" cy="60" r="4" />
+                      <circle cx="60" cy="180" r="4" />
+                      <circle cx="260" cy="180" r="4" />
+                      <circle cx="160" cy="120" r="3" />
+                    </g>
+                    <g fill="#cbd5e1">
+                      <circle cx="160" cy="40" r="4" />
+                      <circle cx="160" cy="200" r="4" />
+                    </g>
+                  </svg>
+
+                  <div className="mt-6 space-y-3 text-sm">
+                    <p className="text-slate-700 leading-relaxed">
+                      When a vendor contract expires, a regulation shifts, or a C-suite role is
+                      redrawn, the coordination layer absorbs the change. The architecture does not
+                      need to be rebuilt. It rebalances.
+                    </p>
+                    <p className="text-[#0f4377] font-semibold leading-relaxed">
+                      Point-solution stacks break here. Tensegrity does not.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
