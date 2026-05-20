@@ -142,8 +142,8 @@ export default function Home() {
                   label: 'first-contact resolution, up from prior 55% baseline',
                 },
                 {
-                  stat: '$1.2M+',
-                  label: 'documented annual operating savings at enterprise scale',
+                  stat: '$30–40M+',
+                  label: 'annualized run-rate operating savings at full deployment',
                 },
               ].map((item) => (
                 <div key={item.stat}>

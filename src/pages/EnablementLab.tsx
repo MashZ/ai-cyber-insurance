@@ -466,7 +466,7 @@ export default function EnablementLab() {
                 { label: 'Avg Resolution', before: '40 min', after: '30 sec (Tier 1)' },
                 { label: 'First-Contact Resolution', before: '55%', after: '67%+' },
                 { label: 'Cost per Query', before: '$12–25', after: '$0.001–0.50' },
-                { label: 'Annual Savings', before: 'Baseline', after: '$1.2M+ (Fortune 25 scale)' },
+                { label: 'Run-Rate Savings', before: 'Baseline', after: '$30–40M+ at full deployment' },
               ].map((m) => (
                 <div key={m.label} className="bg-slate-50 rounded-xl p-5">
                   <p className="text-xs text-slate-500 font-medium mb-2">{m.label}</p>
