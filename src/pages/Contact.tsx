@@ -108,7 +108,7 @@ export default function Contact() {
                           <Linkedin size={16} className="text-[#0f4377]" />
                           <div>
                             <p className="text-sm font-medium text-[#0f2b46]">Mash Zahid</p>
-                            <p className="text-xs text-slate-500">Technical & Operations Lead</p>
+                            <p className="text-xs text-slate-500">Managing Principal</p>
                           </div>
                         </div>
                         <ArrowUpRight
@@ -117,7 +117,7 @@ export default function Contact() {
                         />
                       </a>
                       <a
-                        href="https://www.linkedin.com/in/reddhimitra/"
+                        href="https://www.linkedin.com/in/jdhenao/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center justify-between p-3 bg-white border border-slate-200 rounded-lg hover:border-slate-300 transition-colors group"
@@ -125,8 +125,26 @@ export default function Contact() {
                         <div className="flex items-center gap-3">
                           <Linkedin size={16} className="text-[#0f4377]" />
                           <div>
-                            <p className="text-sm font-medium text-[#0f2b46]">Reddhi Mitra</p>
-                            <p className="text-xs text-slate-500">Commercial & Delivery Lead</p>
+                            <p className="text-sm font-medium text-[#0f2b46]">JD Henao</p>
+                            <p className="text-xs text-slate-500">Commercial & Growth Lead</p>
+                          </div>
+                        </div>
+                        <ArrowUpRight
+                          size={14}
+                          className="text-slate-400 group-hover:text-[#0f4377] transition-colors"
+                        />
+                      </a>
+                      <a
+                        href="https://www.linkedin.com/in/persia-shokoohi-j-d-74668415/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-between p-3 bg-white border border-slate-200 rounded-lg hover:border-slate-300 transition-colors group"
+                      >
+                        <div className="flex items-center gap-3">
+                          <Linkedin size={16} className="text-[#0f4377]" />
+                          <div>
+                            <p className="text-sm font-medium text-[#0f2b46]">Persia Shokoohi, J.D.</p>
+                            <p className="text-xs text-slate-500">Compliance & Regulatory Lead</p>
                           </div>
                         </div>
                         <ArrowUpRight

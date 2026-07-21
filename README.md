@@ -173,8 +173,9 @@ modern without being trendy. Headings adopt the display face globally via an
 ai-cyber-insurance/
 ├── public/                       # static assets served at site root
 │   ├── discimen_logo_new.png     #   logo + favicon
-│   ├── mash-zahid.jpg            #   founder photo
-│   └── reddhi-mitra.jpg          #   founder photo
+│   ├── mash-zahid.jpg            #   leadership photo
+│   ├── jd-henao.jpg              #   leadership photo
+│   └── persia-shokoohi.jpg       #   leadership photo
 ├── src/
 │   ├── components/
 │   │   ├── Header.tsx            # sticky navigation
@@ -262,16 +263,22 @@ The firm runs on a small set of principles — visible, deliberately, in this re
 
 ---
 
-## Founders
+## Leadership
 
-**Mash Zahid** — Co-Founder, Technical & Delivery Lead. Global AI strategy leader;
-former IBM Associate Partner (GenAI Practice); led agentic-AI transformation at
-Fortune scale; Moveworks Architecture Review Board; OpenAI Academy keynote speaker;
-Chicago Booth MBA.
+**Mash Zahid** — Managing Principal. Global AI strategy leader; former IBM
+Associate Partner (GenAI Practice); led agentic-AI transformation at Fortune scale;
+Moveworks Architecture Review Board; OpenAI Academy keynote speaker; Chicago Booth
+MBA.
 
-**Reddhi Mitra** — Co-Founder, Commercial & Operations Lead. 20-year management
-consultant; FTI Consulting and IBM veteran; operational transformation, risk
-management, and commercial strategy; Duke Fuqua MBA.
+**JD Henao** — Commercial & Growth Lead. Market development, strategic partnerships,
+and client engagement across Fortune 1000 companies, startups, and financial
+services; Chicago Booth MBA; Stanford MA (Organizational Behavior) and BA
+(Economics).
+
+**Persia Shokoohi, J.D.** — Compliance & Regulatory Lead. Senior compliance, risk,
+and governance executive; former CCO for SEC-registered investment advisers
+(SEC/FINRA/OCC/CFTC oversight); founder of Compliantry Consulting; University of
+Miami School of Law; CCBJ '50 Women to Watch' (2024).
 
 ---
 

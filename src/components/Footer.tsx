@@ -98,13 +98,24 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/reddhimitra/"
+                  href="https://www.linkedin.com/in/jdhenao/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-gray-500 hover:text-[#0f2b46] transition-colors"
                 >
                   <Linkedin size={14} />
-                  Reddhi Mitra
+                  JD Henao
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/persia-shokoohi-j-d-74668415/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-gray-500 hover:text-[#0f2b46] transition-colors"
+                >
+                  <Linkedin size={14} />
+                  Persia Shokoohi
                 </a>
               </li>
               <li>

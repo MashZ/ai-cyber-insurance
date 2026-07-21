@@ -68,11 +68,11 @@ export default function About() {
               Leadership
             </p>
             <h2 className="font-fraunces text-[#0f2b46] text-3xl font-semibold leading-tight mb-4">
-              Combined 40+ years of enterprise transformation across regulated industries.
+              Combined decades of enterprise AI transformation, regulatory compliance, and commercial growth across regulated industries.
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Mash */}
             <div className="bg-white border border-slate-200 rounded-2xl p-8">
               {/* Profile Photo */}
@@ -89,7 +89,7 @@ export default function About() {
                     Mash Zahid
                   </h3>
                   <p className="text-sm text-[#0f4377] font-medium">
-                    Co-Founder, Technical & Operations Lead
+                    Managing Principal
                   </p>
                 </div>
                 <a
@@ -133,27 +133,27 @@ export default function About() {
               </div>
             </div>
 
-            {/* Reddhi */}
+            {/* JD */}
             <div className="bg-white border border-slate-200 rounded-2xl p-8">
               {/* Profile Photo */}
               <div className="w-28 h-28 rounded-2xl overflow-hidden mb-6 bg-slate-100">
                 <img
-                  src="/reddhi-mitra.jpg"
-                  alt="Reddhi Mitra"
+                  src="/jd-henao.jpg"
+                  alt="JD Henao"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="flex items-start justify-between mb-6">
                 <div>
                   <h3 className="font-fraunces text-[#0f2b46] text-2xl font-semibold mb-1">
-                    Reddhi Mitra
+                    JD Henao
                   </h3>
                   <p className="text-sm text-[#0f4377] font-medium">
-                    Co-Founder, Commercial & Delivery Lead
+                    Commercial & Growth Lead
                   </p>
                 </div>
                 <a
-                  href="https://www.linkedin.com/in/reddhimitra/"
+                  href="https://www.linkedin.com/in/jdhenao/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center text-slate-400 hover:text-[#0f4377] hover:bg-[#0f4377]/5 transition-all"
@@ -164,19 +164,21 @@ export default function About() {
 
               <div className="space-y-4 text-sm text-slate-600 leading-relaxed">
                 <p>
-                  20-year management consulting veteran with senior leadership roles at FTI
-                  Consulting and IBM. Specializes in operational transformation, risk management,
-                  and commercial strategy for complex enterprise engagements.
+                  JD Henao leads market development, strategic partnerships, and client
+                  engagement. With a background spanning Fortune 1000 companies, emerging
+                  startups, and financial services, he works closely with clients to align
+                  advanced AI capabilities with real-world business challenges.
                 </p>
                 <p>
-                  Extensive experience in business case development, vendor negotiations, and
-                  go-to-market strategy for professional services firms. Brings the commercial
-                  discipline and client relationship expertise essential for advisory engagements
-                  with C-suite decision-makers.
+                  His focus is building relationships, creating commercial opportunities, and
+                  ensuring engagements are customized to deliver meaningful operational and
+                  financial impact — the commercial discipline and go-to-market rigor essential
+                  for advisory work with C-suite decision-makers.
                 </p>
                 <p>
-                  MBA from Duke University's Fuqua School of Business. Deep network across
-                  manufacturing, healthcare, energy, and financial services leadership.
+                  MBA in Marketing and Entrepreneurship from the University of Chicago Booth
+                  School of Business. MA in Organizational Behavior and BA in Economics from
+                  Stanford University.
                 </p>
               </div>
 
@@ -187,10 +189,84 @@ export default function About() {
                 <div className="flex flex-wrap gap-2">
                   {[
                     'Commercial Strategy',
-                    'Risk Management',
-                    'Operational Transformation',
-                    'Client Advisory',
+                    'Strategic Partnerships',
+                    'Market Development',
                     'Go-to-Market',
+                    'Client Advisory',
+                  ].map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs px-2.5 py-1 bg-slate-50 text-slate-500 rounded-md"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Persia */}
+            <div className="bg-white border border-slate-200 rounded-2xl p-8">
+              {/* Profile Photo */}
+              <div className="w-28 h-28 rounded-2xl overflow-hidden mb-6 bg-slate-100">
+                <img
+                  src="/persia-shokoohi.jpg"
+                  alt="Persia Shokoohi, J.D."
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex items-start justify-between mb-6">
+                <div>
+                  <h3 className="font-fraunces text-[#0f2b46] text-2xl font-semibold mb-1">
+                    Persia Shokoohi, J.D.
+                  </h3>
+                  <p className="text-sm text-[#0f4377] font-medium">
+                    Compliance & Regulatory Lead
+                  </p>
+                </div>
+                <a
+                  href="https://www.linkedin.com/in/persia-shokoohi-j-d-74668415/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center text-slate-400 hover:text-[#0f4377] hover:bg-[#0f4377]/5 transition-all"
+                >
+                  <Linkedin size={18} />
+                </a>
+              </div>
+
+              <div className="space-y-4 text-sm text-slate-600 leading-relaxed">
+                <p>
+                  Persia Shokoohi is a senior compliance, risk management, and governance
+                  executive with more than a decade leading regulatory, audit, information
+                  security, and enterprise risk programs across investment advisers, trust
+                  companies, broker-dealers, and financial institutions. She has served as
+                  Chief Compliance Officer for SEC-registered investment advisers, with oversight
+                  spanning SEC, FINRA, OCC, CFTC, NCUA, FDIC, and state requirements.
+                </p>
+                <p>
+                  As founder of Compliantry Consulting, she advises domestic and international
+                  firms on regulatory compliance, governance, risk management, data governance,
+                  regulatory reporting, and market expansion.
+                </p>
+                <p>
+                  A graduate of the University of Miami School of Law and Emory University, she
+                  was named one of Corporate Counsel Business Journal's &lsquo;50 Women to
+                  Watch&rsquo; in 2024 and speaks regularly on compliance, financial data
+                  governance, fraud prevention, and regulatory technology.
+                </p>
+              </div>
+
+              <div className="mt-6 pt-6 border-t border-slate-100">
+                <p className="text-xs font-semibold tracking-widest text-slate-400 uppercase mb-3">
+                  Core Capabilities
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    'Regulatory Compliance',
+                    'Risk Management',
+                    'Governance',
+                    'Enterprise Risk',
+                    'Financial Services',
                   ].map((tag) => (
                     <span
                       key={tag}
