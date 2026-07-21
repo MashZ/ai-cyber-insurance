@@ -107,7 +107,7 @@ export default function About() {
                   Mash Zahid is a hands-on AI engineer and enterprise technology leader who builds the evaluation and inference infrastructure that determines whether production AI actually works. He architects multi-model systems from design through deployment — most recently a multi-VLM hazard-detection stack running on NVIDIA edge hardware for one of the largest U.S. energy utilities.
                 </p>
                 <p>
-                  He has carried AI systems from architecture to production at General Motors, IBM, KPMG, NextEra/FPL, Amgen, and The Home Depot — from an enterprise agentic-AI transformation of global HR operations to conversation-intelligence automation for leading telco, delivered as an IBM Associate Partner, that unlocked eight-figure value in its first month. He serves on Moveworks' Architecture Review Board, following its $2.85B acquisition by ServiceNow.
+                  He has carried AI systems from architecture to production at General Motors, IBM, KPMG, NextEra/FPL, Amgen, and The Home Depot — from an enterprise agentic-AI transformation of global HR operations to conversation-intelligence automation for leading telco, delivered as an IBM Associate Partner, that unlocked eight-figure value in its first month. He served on Moveworks' Architecture Review Board before its $2.85B acquisition by ServiceNow.
                 </p>
                 <p>
                   He holds an MBA from the University of Chicago Booth School of Business, with doctoral coursework in behavioral finance. In 2025 he delivered a keynote to 6,846 practitioners at OpenAI Academy on scaling enterprise AI through systems thinking.
