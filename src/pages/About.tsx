@@ -104,13 +104,13 @@ export default function About() {
 
               <div className="space-y-4 text-sm text-slate-600 leading-relaxed">
                 <p>
-                  Mash is a twenty-plus year strategy and operations practitioner who has spent the last decade building and deploying AI systems at enterprise scale across financial services, energy and utilities, telecommunications, healthcare, automotive, and professional services. His recent work sits at the frontier of agentic AI: he serves on the Architecture Review Board for Moveworks through its $2.85B acquisition by ServiceNow, and most recently led an agentic AI transformation for one of the world's largest manufacturers, reshaping its core Operations, HR, and IT functions.
+                  Mash Zahid is a hands-on AI engineer and enterprise technology leader who builds the evaluation and inference infrastructure that determines whether production AI actually works. He architects multi-model systems from design through deployment — most recently a multi-VLM hazard-detection stack running on NVIDIA edge hardware for one of the largest U.S. energy utilities.
                 </p>
                 <p>
-                  As an Associate Partner at IBM, he led large-scale generative AI engagements for Fortune 100 clients, including a conversation intelligence program that unlocked eight-figure operational value in its first month and contributed to the multi-year resolution of a multi-billion-dollar customer portfolio. As Global Director of AI Strategy at KPMG, he advanced the firm's flagship audit platform into neural network–based deep learning, materially improving audit efficiency and error rates across its global service lines. Earlier in his career, his workforce planning work at a leading national retailer was featured on the cover of <i>Harvard Business Review</i>.
+                  He has carried AI systems from architecture to production at General Motors, IBM, KPMG, NextEra/FPL, Amgen, and The Home Depot — from an enterprise agentic-AI transformation of global HR operations to conversation-intelligence automation for leading telco, delivered as an IBM Associate Partner, that unlocked eight-figure value in its first month. He serves on Moveworks' Architecture Review Board, following its $2.85B acquisition by ServiceNow.
                 </p>
                 <p>
-                  MBA from the University of Chicago Booth School of Business. Completed PhD coursework in Behavioral Finance and Financial Engineering. In September 2025 he delivered a keynote to a live audience of 6,800 practitioners at OpenAI Academy on scaling enterprise AI through systems thinking, and recently placed first at a Google hackathon opened by Sergey Brin.
+                  He holds an MBA from the University of Chicago Booth School of Business, with doctoral coursework in behavioral finance. In 2025 he delivered a keynote to 6,846 practitioners at OpenAI Academy on scaling enterprise AI through systems thinking.
                 </p>
               </div>
 
